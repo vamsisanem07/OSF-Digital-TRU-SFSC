@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Disposition_1__c</fullName>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Disposition 1</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>243/391 Both Warehouses Cancel Request *</fullName>
+                <default>true</default>
+                <label>243/391 Both Warehouses Cancel Request *</label>
+            </value>
+            <value>
+                <fullName>Add/Update/Remove from Email List</fullName>
+                <default>false</default>
+                <label>Add/Update/Remove from Email List</label>
+            </value>
+            <value>
+                <fullName>Address Correction</fullName>
+                <default>false</default>
+                <label>Address Correction</label>
+            </value>
+            <value>
+                <fullName>Availability Inquiry Advertised Item</fullName>
+                <default>false</default>
+                <label>Availability Inquiry Advertised Item</label>
+            </value>
+            <value>
+                <fullName>Availability Inquiry Non-Advertised</fullName>
+                <default>false</default>
+                <label>Availability Inquiry Non-Advertised</label>
+            </value>
+            <value>
+                <fullName>Benefits/Payroll/HR</fullName>
+                <default>false</default>
+                <label>Benefits/Payroll/HR</label>
+            </value>
+            <value>
+                <fullName>BPP General Inquiry/Complaint</fullName>
+                <default>false</default>
+                <label>BPP General Inquiry/Complaint</label>
+            </value>
+            <value>
+                <fullName>Bulk Order</fullName>
+                <default>false</default>
+                <label>Bulk Order</label>
+            </value>
+            <value>
+                <fullName>Cancel</fullName>
+                <default>false</default>
+                <label>Cancel</label>
+            </value>
+            <value>
+                <fullName>Complaint from Employee</fullName>
+                <default>false</default>
+                <label>Complaint from Employee</label>
+            </value>
+            <value>
+                <fullName>Coupon / email not received</fullName>
+                <default>false</default>
+                <label>Coupon / email not received</label>
+            </value>
+            <value>
+                <fullName>Create Registry</fullName>
+                <default>false</default>
+                <label>Create Registry</label>
+            </value>
+            <value>
+                <fullName>Creation issue</fullName>
+                <default>false</default>
+                <label>Creation issue</label>
+            </value>
+            <value>
+                <fullName>Credit Inquiry</fullName>
+                <default>false</default>
+                <label>Credit Inquiry</label>
+            </value>
+            <value>
+                <fullName>Credit/Debit Card inquiry</fullName>
+                <default>false</default>
+                <label>Credit/Debit Card inquiry</label>
+            </value>
+            <value>
+                <fullName>Customer Received Email when Opted Out</fullName>
+                <default>false</default>
+                <label>Customer Received Email when Opted Out</label>
+            </value>
+            <value>
+                <fullName>Delete Registry</fullName>
+                <default>false</default>
+                <label>Delete Registry</label>
+            </value>
+            <value>
+                <fullName>Delivery Timeframe</fullName>
+                <default>false</default>
+                <label>Delivery Timeframe</label>
+            </value>
+            <value>
+                <fullName>Donation Request</fullName>
+                <default>false</default>
+                <label>Donation Request</label>
+            </value>
+            <value>
+                <fullName>Duplicate Email</fullName>
+                <default>false</default>
+                <label>Duplicate Email</label>
+            </value>
+            <value>
+                <fullName>Employment Opportunity Inquiry</fullName>
+                <default>false</default>
+                <label>Employment Opportunity Inquiry</label>
+            </value>
+            <value>
+                <fullName>English Product not Sold in Quebec</fullName>
+                <default>false</default>
+                <label>English Product not Sold in Quebec</label>
+            </value>
+            <value>
+                <fullName>Follow Up</fullName>
+                <default>false</default>
+                <label>Follow Up</label>
+            </value>
+            <value>
+                <fullName>Fraud Cancel</fullName>
+                <default>false</default>
+                <label>Fraud Cancel</label>
+            </value>
+            <value>
+                <fullName>General - Store specific inquiry</fullName>
+                <default>false</default>
+                <label>General - Store specific inquiry</label>
+            </value>
+            <value>
+                <fullName>General inquiry</fullName>
+                <default>false</default>
+                <label>General inquiry</label>
+            </value>
+            <value>
+                <fullName>General Inquiry - International Other</fullName>
+                <default>false</default>
+                <label>General Inquiry - International Other</label>
+            </value>
+            <value>
+                <fullName>General inquiry (shipping, etc)</fullName>
+                <default>false</default>
+                <label>General inquiry (shipping, etc)</label>
+            </value>
+            <value>
+                <fullName>General Product Information</fullName>
+                <default>false</default>
+                <label>General Product Information</label>
+            </value>
+            <value>
+                <fullName>General Registry Inquiry</fullName>
+                <default>false</default>
+                <label>General Registry Inquiry</label>
+            </value>
+            <value>
+                <fullName>Gift Card</fullName>
+                <default>false</default>
+                <label>Gift Card</label>
+            </value>
+            <value>
+                <fullName>Hours/Location</fullName>
+                <default>false</default>
+                <label>Hours/Location</label>
+            </value>
+            <value>
+                <fullName>ISPU</fullName>
+                <default>false</default>
+                <label>ISPU</label>
+            </value>
+            <value>
+                <fullName>Item assortment issue (color, size…)</fullName>
+                <default>false</default>
+                <label>Item assortment issue (color, size…)</label>
+            </value>
+            <value>
+                <fullName>Items not marked as purchased</fullName>
+                <default>false</default>
+                <label>Items not marked as purchased</label>
+            </value>
+            <value>
+                <fullName>Log out issue</fullName>
+                <default>false</default>
+                <label>Log out issue</label>
+            </value>
+            <value>
+                <fullName>Manufacturer Inquiry</fullName>
+                <default>false</default>
+                <label>Manufacturer Inquiry</label>
+            </value>
+            <value>
+                <fullName>Negative feedback*</fullName>
+                <default>false</default>
+                <label>Negative feedback*</label>
+            </value>
+            <value>
+                <fullName>No order number received</fullName>
+                <default>false</default>
+                <label>No order number received</label>
+            </value>
+            <value>
+                <fullName>No Order Placed</fullName>
+                <default>false</default>
+                <label>No Order Placed</label>
+            </value>
+            <value>
+                <fullName>Not in Warehouse system</fullName>
+                <default>false</default>
+                <label>Not in Warehouse system</label>
+            </value>
+            <value>
+                <fullName>Online Receipt Request</fullName>
+                <default>false</default>
+                <label>Online Receipt Request</label>
+            </value>
+            <value>
+                <fullName>Order - Placed with CSR</fullName>
+                <default>false</default>
+                <label>Order - Placed with CSR</label>
+            </value>
+            <value>
+                <fullName>Order - Shipping Charge Inquiry/Complaint</fullName>
+                <default>false</default>
+                <label>Order - Shipping Charge Inquiry/Complaint</label>
+            </value>
+            <value>
+                <fullName>Order is released</fullName>
+                <default>false</default>
+                <label>Order is released</label>
+            </value>
+            <value>
+                <fullName>Order Modify Request</fullName>
+                <default>false</default>
+                <label>Order Modify Request</label>
+            </value>
+            <value>
+                <fullName>Order not in OMS</fullName>
+                <default>false</default>
+                <label>Order not in OMS</label>
+            </value>
+            <value>
+                <fullName>Password reset issue</fullName>
+                <default>false</default>
+                <label>Password reset issue</label>
+            </value>
+            <value>
+                <fullName>Phone Busy/No Answer</fullName>
+                <default>false</default>
+                <label>Phone Busy/No Answer</label>
+            </value>
+            <value>
+                <fullName>Positive feedback</fullName>
+                <default>false</default>
+                <label>Positive feedback</label>
+            </value>
+            <value>
+                <fullName>Presell - General Inquiry</fullName>
+                <default>false</default>
+                <label>Presell - General Inquiry</label>
+            </value>
+            <value>
+                <fullName>Price Accuracy Issue/Inquiry</fullName>
+                <default>false</default>
+                <label>Price Accuracy Issue/Inquiry</label>
+            </value>
+            <value>
+                <fullName>Price Match</fullName>
+                <default>false</default>
+                <label>Price Match</label>
+            </value>
+            <value>
+                <fullName>Product review inquiry</fullName>
+                <default>false</default>
+                <label>Product review inquiry</label>
+            </value>
+            <value>
+                <fullName>Promo Bag request</fullName>
+                <default>false</default>
+                <label>Promo Bag request</label>
+            </value>
+            <value>
+                <fullName>Promotion</fullName>
+                <default>false</default>
+                <label>Promotion</label>
+            </value>
+            <value>
+                <fullName>Quality</fullName>
+                <default>false</default>
+                <label>Quality</label>
+            </value>
+            <value>
+                <fullName>R Club</fullName>
+                <default>false</default>
+                <label>R Club</label>
+            </value>
+            <value>
+                <fullName>Raincheck</fullName>
+                <default>false</default>
+                <label>Raincheck</label>
+            </value>
+            <value>
+                <fullName>Real Estate – New Store Location Proposal</fullName>
+                <default>false</default>
+                <label>Real Estate – New Store Location Proposal</label>
+            </value>
+            <value>
+                <fullName>Recall</fullName>
+                <default>false</default>
+                <label>Recall</label>
+            </value>
+            <value>
+                <fullName>Received - Damaged/Defective</fullName>
+                <default>false</default>
+                <label>Received - Damaged/Defective</label>
+            </value>
+            <value>
+                <fullName>Received - Duplicate</fullName>
+                <default>false</default>
+                <label>Received - Duplicate</label>
+            </value>
+            <value>
+                <fullName>Received - Extra items</fullName>
+                <default>false</default>
+                <label>Received - Extra items</label>
+            </value>
+            <value>
+                <fullName>Received - Late</fullName>
+                <default>false</default>
+                <label>Received - Late</label>
+            </value>
+            <value>
+                <fullName>Received - Misship</fullName>
+                <default>false</default>
+                <label>Received - Misship</label>
+            </value>
+            <value>
+                <fullName>Received - Shortage</fullName>
+                <default>false</default>
+                <label>Received - Shortage</label>
+            </value>
+            <value>
+                <fullName>Registry Complaint</fullName>
+                <default>false</default>
+                <label>Registry Complaint</label>
+            </value>
+            <value>
+                <fullName>Registry technical issue</fullName>
+                <default>false</default>
+                <label>Registry technical issue</label>
+            </value>
+            <value>
+                <fullName>Resend Operational Email - available</fullName>
+                <default>false</default>
+                <label>Resend Operational Email - available</label>
+            </value>
+            <value>
+                <fullName>Resend Operational Email - not available</fullName>
+                <default>false</default>
+                <label>Resend Operational Email - not available</label>
+            </value>
+            <value>
+                <fullName>Return Policy</fullName>
+                <default>false</default>
+                <label>Return Policy</label>
+            </value>
+            <value>
+                <fullName>Ship to Store Inquiry/Transfer</fullName>
+                <default>false</default>
+                <label>Ship to Store Inquiry/Transfer</label>
+            </value>
+            <value>
+                <fullName>Spam/Test</fullName>
+                <default>false</default>
+                <label>Spam/Test</label>
+            </value>
+            <value>
+                <fullName>Special Order Inquiry</fullName>
+                <default>false</default>
+                <label>Special Order Inquiry</label>
+            </value>
+            <value>
+                <fullName>Store Event</fullName>
+                <default>false</default>
+                <label>Store Event</label>
+            </value>
+            <value>
+                <fullName>Store Receipt Request</fullName>
+                <default>false</default>
+                <label>Store Receipt Request</label>
+            </value>
+            <value>
+                <fullName>Tech - Account issue</fullName>
+                <default>false</default>
+                <label>Tech - Account issue</label>
+            </value>
+            <value>
+                <fullName>Tech - placing order issue</fullName>
+                <default>false</default>
+                <label>Tech - placing order issue</label>
+            </value>
+            <value>
+                <fullName>Tech - Price Error</fullName>
+                <default>false</default>
+                <label>Tech - Price Error</label>
+            </value>
+            <value>
+                <fullName>Tech - Product Error</fullName>
+                <default>false</default>
+                <label>Tech - Product Error</label>
+            </value>
+            <value>
+                <fullName>Tech-Promotion issue</fullName>
+                <default>false</default>
+                <label>Tech-Promotion issue</label>
+            </value>
+            <value>
+                <fullName>Update (Add/Delete Items, Info Change)</fullName>
+                <default>false</default>
+                <label>Update (Add/Delete Items, Info Change)</label>
+            </value>
+            <value>
+                <fullName>WIZMO - Carrier Claim</fullName>
+                <default>false</default>
+                <label>WIZMO - Carrier Claim</label>
+            </value>
+            <value>
+                <fullName>WIZMO - Not Shipped</fullName>
+                <default>false</default>
+                <label>WIZMO - Not Shipped</label>
+            </value>
+            <value>
+                <fullName>WIZMO - Order Cancelled</fullName>
+                <default>false</default>
+                <label>WIZMO - Order Cancelled</label>
+            </value>
+            <value>
+                <fullName>WIZMO - Order Open/FTA/…</fullName>
+                <default>false</default>
+                <label>WIZMO - Order Open/FTA/…</label>
+            </value>
+            <value>
+                <fullName>WIZMO - Shipped traceable</fullName>
+                <default>false</default>
+                <label>WIZMO - Shipped traceable</label>
+            </value>
+            <value>
+                <fullName>WIZMO - Shipped Untraceable</fullName>
+                <default>false</default>
+                <label>WIZMO - Shipped Untraceable</label>
+            </value>
+            <value>
+                <fullName>SDND</fullName>
+                <default>false</default>
+                <label>SDND</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

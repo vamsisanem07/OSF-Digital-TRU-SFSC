@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Global_Email_Opt_In_Source__c</fullName>
+    <description>This field is used to store the picklist values associated to the different entry sources from the ToysRUs website</description>
+    <externalId>false</externalId>
+    <label>Global Email Opt In Source</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Opt_In_Source</valueSetName>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OrderFldRequiredForLevel2PkgDel</fullName>
+    <active>true</active>
+    <description>If Issue - package/delivery is selected in Level 2 Order number is required.</description>
+    <errorConditionFormula>ISPICKVAL(Disposition_2__c, &apos;Issue - package/delivery&apos;) &amp;&amp; ISBLANK(Order__c)</errorConditionFormula>
+    <errorDisplayField>Order__c</errorDisplayField>
+    <errorMessage>Please fill Order field.</errorMessage>
+</ValidationRule>

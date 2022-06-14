@@ -1,0 +1,26 @@
+<apex:page >
+    <apex:includeScript value="/support/console/32.0/integration.js"/>
+    <script type="text/javascript">
+    sforce.console.chat.onChatStarted(function(result) {
+        console.log('in comp');
+        sforce.console.chat.onAgentSend(result.chatKey,
+                                        function(resOnAgentSend) {
+                                            /*Monitors every chat message sent by the agent to verify
+                that the chat has not been transferred.*/
+                                            if(!(resOnAgentSend.isAutoGreeting && resOnAgentSend.isTransferred)) {
+                                                sforce.console.chat.sendMessage(result.chatKey,
+                                                                                resOnAgentSend.content, function(resSendMessage) {
+                                                                                    if(!resSendMessage.success){
+                                                                                        return;
+                                                                                    } });
+                                            } else {
+                                                /*Sends your customized transfer message to the customer
+    if the chat has been transferred to a new agent. Replace
+    the text in quotation marks to whatever you want your transfer
+    message to say.*/
+                                                sforce.console.chat.sendMessage(result.chatKey, "Hi! Thank you for your patience. Give me one second while I review your chat." ,
+                                                                                } });
+                                            } });
+    });
+    </script>
+</apex:page>

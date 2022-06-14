@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GiftCardShouldBeExactly16Character</fullName>
+    <active>true</active>
+    <description>Gift Card Number value should be exactly 16 characters in length.</description>
+    <errorConditionFormula>LEN(Gift_Card_Number__c) != 16 &amp;&amp; NOT(ISBLANK(Gift_Card_Number__c))</errorConditionFormula>
+    <errorDisplayField>Gift_Card_Number__c</errorDisplayField>
+    <errorMessage>Gift Card Number value should be exactly 16 characters in length.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,1849 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Document_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Document Name</shortDescription>
+        <value>Duplicate Child Records</value>
+    </labels>
+    <labels>
+        <fullName>LA_Chat_Body_ChatStartTime_04I1U000000PKcv_5381956</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_Chat_Body_ChatStartTime_04I1U000000PKcv_5381956</shortDescription>
+        <value>Chat started at {0}</value>
+    </labels>
+    <labels>
+        <fullName>LA_Chat_Body_ChatStartTime_04I1U000000PKh7_4977754</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_Chat_Body_ChatStartTime_04I1U000000PKh7_4977754</shortDescription>
+        <value>Chat started at {0}</value>
+    </labels>
+    <labels>
+        <fullName>LA_Chat_Body_ChatStartTime_04I1U000000PKhC_7337825</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_Chat_Body_ChatStartTime_04I1U000000PKhC_7337825</shortDescription>
+        <value>Chat started at {0}</value>
+    </labels>
+    <labels>
+        <fullName>LA_Chat_CloseConfirmation_ChatStateBody_04I1U000000PKcv_1907231</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_Chat_CloseConfirmation_ChatStateBody_04I1U000000PKcv_1907231</shortDescription>
+        <value>Don&apos;t worry, after the chat ends, you can save the transcript. Click Save Transcript at the bottom of the chat window.</value>
+    </labels>
+    <labels>
+        <fullName>LA_Chat_CloseConfirmation_ChatStateBody_04I1U000000PKh7_8792560</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_Chat_CloseConfirmation_ChatStateBody_04I1U000000PKh7_8792560</shortDescription>
+        <value>Don&apos;t worry, after the chat ends, you can save the transcript. Click Save Transcript at the bottom of the chat window.</value>
+    </labels>
+    <labels>
+        <fullName>LA_Chat_CloseConfirmation_ChatStateBody_04I1U000000PKhC_2082902</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_Chat_CloseConfirmation_ChatStateBody_04I1U000000PKhC_2082902</shortDescription>
+        <value>Don&apos;t worry, after the chat ends, you can save the transcript. Click Save Transcript at the bottom of the chat window.</value>
+    </labels>
+    <labels>
+        <fullName>LA_Chat_CloseConfirmation_ChatStateEnd_04I1U000000PKcv_6792592</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_Chat_CloseConfirmation_ChatStateEnd_04I1U000000PKcv_6792592</shortDescription>
+        <value>Confirm End Chat</value>
+    </labels>
+    <labels>
+        <fullName>LA_Chat_CloseConfirmation_ChatStateEnd_04I1U000000PKh7_4756323</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_Chat_CloseConfirmation_ChatStateEnd_04I1U000000PKh7_4756323</shortDescription>
+        <value>Confirm End Chat</value>
+    </labels>
+    <labels>
+        <fullName>LA_Chat_CloseConfirmation_ChatStateEnd_04I1U000000PKhC_5879622</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_Chat_CloseConfirmation_ChatStateEnd_04I1U000000PKhC_5879622</shortDescription>
+        <value>Confirm End Chat</value>
+    </labels>
+    <labels>
+        <fullName>LA_Chat_CloseConfirmation_ChatStateHeader_04I1U000000PKcv_2876118</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_Chat_CloseConfirmation_ChatStateHeader_04I1U000000PKcv_2876118</shortDescription>
+        <value>End chat?</value>
+    </labels>
+    <labels>
+        <fullName>LA_Chat_CloseConfirmation_ChatStateHeader_04I1U000000PKh7_8616173</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_Chat_CloseConfirmation_ChatStateHeader_04I1U000000PKh7_8616173</shortDescription>
+        <value>End chat?</value>
+    </labels>
+    <labels>
+        <fullName>LA_Chat_CloseConfirmation_ChatStateHeader_04I1U000000PKhC_1020561</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_Chat_CloseConfirmation_ChatStateHeader_04I1U000000PKhC_1020561</shortDescription>
+        <value>End chat?</value>
+    </labels>
+    <labels>
+        <fullName>LA_Chat_Ended_ChatButtonClose_04I03000000Gmcy_7096417</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_Chat_Ended_ChatButtonClose_04I03000000Gmcy_7096417</shortDescription>
+        <value>Close Chat</value>
+    </labels>
+    <labels>
+        <fullName>LA_Chat_Ended_ChatButtonClose_04I1U000000PKcv_1869614</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_Chat_Ended_ChatButtonClose_04I1U000000PKcv_1869614</shortDescription>
+        <value>Close Chat</value>
+    </labels>
+    <labels>
+        <fullName>LA_Chat_Ended_ChatButtonClose_04I1U000000PKh7_9689636</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_Chat_Ended_ChatButtonClose_04I1U000000PKh7_9689636</shortDescription>
+        <value>Close Chat</value>
+    </labels>
+    <labels>
+        <fullName>LA_Chat_Ended_ChatButtonClose_04I1U000000PKhC_1442547</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_Chat_Ended_ChatButtonClose_04I1U000000PKhC_1442547</shortDescription>
+        <value>Close Chat</value>
+    </labels>
+    <labels>
+        <fullName>LA_Chat_Ended_ChatEndAgent_04I1U000000PKcv_5454211</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_Chat_Ended_ChatEndAgent_04I1U000000PKcv_5454211</shortDescription>
+        <value>Chat Ended by Agent</value>
+    </labels>
+    <labels>
+        <fullName>LA_Chat_Ended_ChatEndAgent_04I1U000000PKh7_4770577</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_Chat_Ended_ChatEndAgent_04I1U000000PKh7_4770577</shortDescription>
+        <value>Chat Ended by Agent</value>
+    </labels>
+    <labels>
+        <fullName>LA_Chat_Ended_ChatEndAgent_04I1U000000PKhC_1990223</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_Chat_Ended_ChatEndAgent_04I1U000000PKhC_1990223</shortDescription>
+        <value>Chat Ended by Agent</value>
+    </labels>
+    <labels>
+        <fullName>LA_Chat_Ended_ChatEndConnection_04I1U000000PKcv_9835992</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_Chat_Ended_ChatEndConnection_04I1U000000PKcv_9835992</shortDescription>
+        <value>Chat Ended from Lost Connection</value>
+    </labels>
+    <labels>
+        <fullName>LA_Chat_Ended_ChatEndConnection_04I1U000000PKh7_2670632</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_Chat_Ended_ChatEndConnection_04I1U000000PKh7_2670632</shortDescription>
+        <value>Chat Ended from Lost Connection</value>
+    </labels>
+    <labels>
+        <fullName>LA_Chat_Ended_ChatEndConnection_04I1U000000PKhC_1347884</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_Chat_Ended_ChatEndConnection_04I1U000000PKhC_1347884</shortDescription>
+        <value>Chat Ended from Lost Connection</value>
+    </labels>
+    <labels>
+        <fullName>LA_Chat_Ended_ChatEnd_04I1U000000PKcv_6199179</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_Chat_Ended_ChatEnd_04I1U000000PKcv_6199179</shortDescription>
+        <value>Chat Ended</value>
+    </labels>
+    <labels>
+        <fullName>LA_Chat_Ended_ChatEnd_04I1U000000PKh7_4975955</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_Chat_Ended_ChatEnd_04I1U000000PKh7_4975955</shortDescription>
+        <value>Chat Ended</value>
+    </labels>
+    <labels>
+        <fullName>LA_Chat_Ended_ChatEnd_04I1U000000PKhC_4198916</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_Chat_Ended_ChatEnd_04I1U000000PKhC_4198916</shortDescription>
+        <value>Chat Ended</value>
+    </labels>
+    <labels>
+        <fullName>LA_Chat_Ended_IdleTimeoutEndChatMessage_04I1U000000PKcv_9716359</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_Chat_Ended_IdleTimeoutEndChatMessage_04I1U000000PKcv_9716359</shortDescription>
+        <value>Chat ended due to timeout</value>
+    </labels>
+    <labels>
+        <fullName>LA_Chat_Ended_IdleTimeoutEndChatMessage_04I1U000000PKh7_2119884</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_Chat_Ended_IdleTimeoutEndChatMessage_04I1U000000PKh7_2119884</shortDescription>
+        <value>Chat ended due to timeout</value>
+    </labels>
+    <labels>
+        <fullName>LA_Chat_Ended_IdleTimeoutEndChatMessage_04I1U000000PKhC_4907316</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_Chat_Ended_IdleTimeoutEndChatMessage_04I1U000000PKhC_4907316</shortDescription>
+        <value>Chat ended due to timeout</value>
+    </labels>
+    <labels>
+        <fullName>LA_OfflineSupport_CloseConfirmation_ConfirmationDialogBo_04I1U000000PKcv_4316862</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_OfflineSupport_CloseConfirmation_ConfirmationDialogBo_04I1U000000PKcv_4316862</shortDescription>
+        <value>Thanks for reaching. You will hear back from us soon.</value>
+    </labels>
+    <labels>
+        <fullName>LA_OfflineSupport_CloseConfirmation_ConfirmationDialogBo_04I1U000000PKh7_5647036</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_OfflineSupport_CloseConfirmation_ConfirmationDialogBo_04I1U000000PKh7_5647036</shortDescription>
+        <value>Thanks for reaching. You will hear back from us soon.</value>
+    </labels>
+    <labels>
+        <fullName>LA_OfflineSupport_CloseConfirmation_ConfirmationDialogBo_04I1U000000PKhC_9828748</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_OfflineSupport_CloseConfirmation_ConfirmationDialogBo_04I1U000000PKhC_9828748</shortDescription>
+        <value>Thanks for reaching. You will hear back from us soon.</value>
+    </labels>
+    <labels>
+        <fullName>LA_OfflineSupport_SupportForm_HeaderText_04I03000000GmaJ_4576538</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_OfflineSupport_SupportForm_HeaderText_04I03000000GmaJ_4576538</shortDescription>
+        <value>LIVE CHAT IS CLOSED</value>
+    </labels>
+    <labels>
+        <fullName>LA_OfflineSupport_SupportForm_HeaderText_04I03000000Gmcy_2879468</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_OfflineSupport_SupportForm_HeaderText_04I03000000Gmcy_2879468</shortDescription>
+        <value>LIVE CHAT IS CLOSED</value>
+    </labels>
+    <labels>
+        <fullName>LA_OfflineSupport_SupportForm_HeaderText_04I1U000000PKhC_7688313</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_OfflineSupport_SupportForm_HeaderText_04I1U000000PKhC_7688313</shortDescription>
+        <value>LIVE CHAT IS CLOSED</value>
+    </labels>
+    <labels>
+        <fullName>LA_PreChat_Base_LiveChat_04I03000000GmaJ_7289007</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_PreChat_Base_LiveChat_04I03000000GmaJ_7289007</shortDescription>
+        <value>LET&apos;S GET YOU SOME HELP!</value>
+    </labels>
+    <labels>
+        <fullName>LA_PreChat_Base_LiveChat_04I03000000Gmct_7786042</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_PreChat_Base_LiveChat_04I03000000Gmct_7786042</shortDescription>
+        <value>LET&apos;S GET YOU SOME HELP!</value>
+    </labels>
+    <labels>
+        <fullName>LA_PreChat_Base_LiveChat_04I03000000Gmcy_1903628</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_PreChat_Base_LiveChat_04I03000000Gmcy_1903628</shortDescription>
+        <value>LET&apos;S GET YOU SOME HELP!</value>
+    </labels>
+    <labels>
+        <fullName>LA_PreChat_Base_LiveChat_04I1U000000PKh7_4236970</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_PreChat_Base_LiveChat_04I1U000000PKh7_4236970</shortDescription>
+        <value>LET&apos;S GET YOU SOME HELP!</value>
+    </labels>
+    <labels>
+        <fullName>LA_PreChat_Base_LiveChat_04I1U000000PKhC_5786078</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_PreChat_Base_LiveChat_04I1U000000PKhC_5786078</shortDescription>
+        <value>LET&apos;S GET YOU SOME HELP!</value>
+    </labels>
+    <labels>
+        <fullName>LA_PreChat_Base_StartChat_04I03000000GmaJ_4618822</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_PreChat_Base_StartChat_04I03000000GmaJ_4618822</shortDescription>
+        <value>START CHAT</value>
+    </labels>
+    <labels>
+        <fullName>LA_PreChat_Base_StartChat_04I03000000Gmct_2508838</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_PreChat_Base_StartChat_04I03000000Gmct_2508838</shortDescription>
+        <value>START CHAT</value>
+    </labels>
+    <labels>
+        <fullName>LA_PreChat_Base_StartChat_04I03000000Gmcy_1302046</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_PreChat_Base_StartChat_04I03000000Gmcy_1302046</shortDescription>
+        <value>START CHAT</value>
+    </labels>
+    <labels>
+        <fullName>LA_PreChat_Base_StartChat_04I1U000000PKh7_7774108</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_PreChat_Base_StartChat_04I1U000000PKh7_7774108</shortDescription>
+        <value>START CHAT</value>
+    </labels>
+    <labels>
+        <fullName>LA_PreChat_Base_StartChat_04I1U000000PKhC_6801511</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_PreChat_Base_StartChat_04I1U000000PKhC_6801511</shortDescription>
+        <value>START CHAT</value>
+    </labels>
+    <labels>
+        <fullName>LA_Waiting_CloseConfirmation_WaitingStateBodyApology_04I1U000000PKcv_8985177</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_Waiting_CloseConfirmation_WaitingStateBodyApology_04I1U000000PKcv_8985177</shortDescription>
+        <value>No one is available to chat. Try again later.</value>
+    </labels>
+    <labels>
+        <fullName>LA_Waiting_CloseConfirmation_WaitingStateBodyApology_04I1U000000PKh7_8834341</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_Waiting_CloseConfirmation_WaitingStateBodyApology_04I1U000000PKh7_8834341</shortDescription>
+        <value>No one is available to chat. Try again later.</value>
+    </labels>
+    <labels>
+        <fullName>LA_Waiting_CloseConfirmation_WaitingStateBodyApology_04I1U000000PKhC_3032656</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_Waiting_CloseConfirmation_WaitingStateBodyApology_04I1U000000PKhC_3032656</shortDescription>
+        <value>No one is available to chat. Try again later.</value>
+    </labels>
+    <labels>
+        <fullName>LA_Waiting_CloseConfirmation_WaitingStateBodyWarning_04I1U000000PKcv_2983217</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_Waiting_CloseConfirmation_WaitingStateBodyWarning_04I1U000000PKcv_2983217</shortDescription>
+        <value>If you leave now, you’ll lose your place in line to chat.</value>
+    </labels>
+    <labels>
+        <fullName>LA_Waiting_CloseConfirmation_WaitingStateBodyWarning_04I1U000000PKh7_9746926</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_Waiting_CloseConfirmation_WaitingStateBodyWarning_04I1U000000PKh7_9746926</shortDescription>
+        <value>If you leave now, you’ll lose your place in line to chat.</value>
+    </labels>
+    <labels>
+        <fullName>LA_Waiting_CloseConfirmation_WaitingStateBodyWarning_04I1U000000PKhC_6268974</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_Waiting_CloseConfirmation_WaitingStateBodyWarning_04I1U000000PKhC_6268974</shortDescription>
+        <value>If you leave now, you’ll lose your place in line to chat.</value>
+    </labels>
+    <labels>
+        <fullName>LA_Waiting_Error_ErrorNoAgentTitle_04I03000000GmaJ_8025623</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_Waiting_Error_ErrorNoAgentTitle_04I03000000GmaJ_8025623</shortDescription>
+        <value>LIVE CHAT IS CLOSED</value>
+    </labels>
+    <labels>
+        <fullName>LA_Waiting_Error_ErrorNoAgentTitle_04I03000000Gmct_8081173</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_Waiting_Error_ErrorNoAgentTitle_04I03000000Gmct_8081173</shortDescription>
+        <value>LIVE CHAT IS CLOSED</value>
+    </labels>
+    <labels>
+        <fullName>LA_Waiting_Error_ErrorNoAgentTitle_04I03000000Gmcy_2506213</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_Waiting_Error_ErrorNoAgentTitle_04I03000000Gmcy_2506213</shortDescription>
+        <value>LIVE CHAT IS CLOSED</value>
+    </labels>
+    <labels>
+        <fullName>LA_Waiting_Error_ErrorNoAgentTitle_04I1U000000PKh7_2707897</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_Waiting_Error_ErrorNoAgentTitle_04I1U000000PKh7_2707897</shortDescription>
+        <value>LIVE CHAT IS CLOSED</value>
+    </labels>
+    <labels>
+        <fullName>LA_Waiting_Error_ErrorNoAgentTitle_04I1U000000PKhC_6000395</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_Waiting_Error_ErrorNoAgentTitle_04I1U000000PKhC_6000395</shortDescription>
+        <value>LIVE CHAT IS CLOSED</value>
+    </labels>
+    <labels>
+        <fullName>LA_Waiting_Header_Text_04I1U000000PKcv_1440859</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_Waiting_Header_Text_04I1U000000PKcv_1440859</shortDescription>
+        <value>Waiting to Chat</value>
+    </labels>
+    <labels>
+        <fullName>LA_Waiting_Header_Text_04I1U000000PKh7_7233665</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_Waiting_Header_Text_04I1U000000PKh7_7233665</shortDescription>
+        <value>Waiting to Chat</value>
+    </labels>
+    <labels>
+        <fullName>LA_Waiting_Header_Text_04I1U000000PKhC_1677007</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_Waiting_Header_Text_04I1U000000PKhC_1677007</shortDescription>
+        <value>Waiting to Chat</value>
+    </labels>
+    <labels>
+        <fullName>LA_Waiting_WithoutQueuePos_WaitingCancelChatRequest_04I1U000000PKcv_2271621</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_Waiting_WithoutQueuePos_WaitingCancelChatRequest_04I1U000000PKcv_2271621</shortDescription>
+        <value>Cancel Chat Request</value>
+    </labels>
+    <labels>
+        <fullName>LA_Waiting_WithoutQueuePos_WaitingCancelChatRequest_04I1U000000PKh7_2411759</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_Waiting_WithoutQueuePos_WaitingCancelChatRequest_04I1U000000PKh7_2411759</shortDescription>
+        <value>Cancel Chat Request</value>
+    </labels>
+    <labels>
+        <fullName>LA_Waiting_WithoutQueuePos_WaitingCancelChatRequest_04I1U000000PKhC_9286885</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_Waiting_WithoutQueuePos_WaitingCancelChatRequest_04I1U000000PKhC_9286885</shortDescription>
+        <value>Cancel Chat Request</value>
+    </labels>
+    <labels>
+        <fullName>LIMIT</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LIMIT</shortDescription>
+        <value>50000</value>
+    </labels>
+    <labels>
+        <fullName>Live_Chat_BRU_Login_URL_EN</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Live Chat BRU Login URL - EN</shortDescription>
+        <value>https://staging.babiesrus.ca/en/account-login</value>
+    </labels>
+    <labels>
+        <fullName>Live_Chat_BRU_Message_1_EN</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Live Chat BRU Message 1 EN</shortDescription>
+        <value>Have a Babies&quot;R&quot;Us account?</value>
+    </labels>
+    <labels>
+        <fullName>Live_Chat_BRU_Message_1_FR</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Live Chat BRU Message 1 FR</shortDescription>
+        <value>Vous avez un compte Babies &quot;R&quot; Us?</value>
+    </labels>
+    <labels>
+        <fullName>Live_Chat_Email_EN</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Live Chat Email EN</shortDescription>
+        <value>Email</value>
+    </labels>
+    <labels>
+        <fullName>Live_Chat_Email_FR</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Live Chat Email FR</shortDescription>
+        <value>Courriel</value>
+    </labels>
+    <labels>
+        <fullName>Live_Chat_First_Name_EN</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Live Chat First Name EN</shortDescription>
+        <value>First Name</value>
+    </labels>
+    <labels>
+        <fullName>Live_Chat_First_Name_FR</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Live Chat First Name FR</shortDescription>
+        <value>Prénom</value>
+    </labels>
+    <labels>
+        <fullName>Live_Chat_Help_Text_EN</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Live Chat Help Text EN</shortDescription>
+        <value>Our customer service team is here to help!</value>
+    </labels>
+    <labels>
+        <fullName>Live_Chat_Help_Text_FR</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Live Chat Help Text FR</shortDescription>
+        <value>Notre équipe de service à la clientèle est là pour vous aider!</value>
+    </labels>
+    <labels>
+        <fullName>Live_Chat_Last_Name_EN</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Live Chat Last Name EN</shortDescription>
+        <value>Last Name</value>
+    </labels>
+    <labels>
+        <fullName>Live_Chat_Last_Name_FR</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Live Chat Last Name FR</shortDescription>
+        <value>Nom de famille</value>
+    </labels>
+    <labels>
+        <fullName>Live_Chat_Login_URL_BRU_FR</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Live Chat Login URL BRU- FR</shortDescription>
+        <value>https://staging.babiesrus.ca/fr/account-login</value>
+    </labels>
+    <labels>
+        <fullName>Live_Chat_Login_URL_EN</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Live Chat Login URL - EN</shortDescription>
+        <value>https://staging.toysrus.ca/en/account-login</value>
+    </labels>
+    <labels>
+        <fullName>Live_Chat_Login_URL_FR</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Live Chat Login URL - FR</shortDescription>
+        <value>https://staging.toysrus.ca/fr/account-login</value>
+    </labels>
+    <labels>
+        <fullName>Live_Chat_Login_URL_RLE_FR</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Live Chat Login URL RLE - FR</shortDescription>
+        <value>https://staging.riselittleearthling.ca/fr/account-login</value>
+    </labels>
+    <labels>
+        <fullName>Live_Chat_Message_1_EN</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Live Chat Message 1 EN</shortDescription>
+        <value>Have a Toys&quot;R&quot;Us account?</value>
+    </labels>
+    <labels>
+        <fullName>Live_Chat_Message_1_FR</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Live Chat Message 1 FR</shortDescription>
+        <value>Vous avez un compte Toys &quot;R&quot; Us?</value>
+    </labels>
+    <labels>
+        <fullName>Live_Chat_Message_2_EN</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Live Chat Message 2 EN</shortDescription>
+        <value>Login here!</value>
+    </labels>
+    <labels>
+        <fullName>Live_Chat_Message_2_FR</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Live Chat Message 2 FR</shortDescription>
+        <value>Connectez-vous ici!</value>
+    </labels>
+    <labels>
+        <fullName>Live_Chat_RLE_Login_URL_EN</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Live Chat RLE Login URL - EN</shortDescription>
+        <value>https://staging.riselittleearthling.ca/en/account-login</value>
+    </labels>
+    <labels>
+        <fullName>Live_Chat_RLE_Message_1_EN</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Live Chat RLE Message 1 EN</shortDescription>
+        <value>Have a Rise Little Earthling account?</value>
+    </labels>
+    <labels>
+        <fullName>Live_Chat_RLE_Message_1_FR</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Live Chat RLE Message 1 FR</shortDescription>
+        <value>Vous avez un compte Rise Little Earthling?</value>
+    </labels>
+    <labels>
+        <fullName>Live_Chat_Required_Fields_Message_EN</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Live Chat Required Fields Message EN</shortDescription>
+        <value>This field is required</value>
+    </labels>
+    <labels>
+        <fullName>Live_Chat_Required_Fields_Message_FR</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Live Chat Required Fields Message FR</shortDescription>
+        <value>Ce champ est requis</value>
+    </labels>
+    <labels>
+        <fullName>Live_Chat_Start_Chat_Button_EN</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Live Chat Start Chat Button EN</shortDescription>
+        <value>Start Chat</value>
+    </labels>
+    <labels>
+        <fullName>Live_Chat_Start_Chat_Button_FR</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Live Chat Start Chat Button FR</shortDescription>
+        <value>Démarrer la discussion</value>
+    </labels>
+    <labels>
+        <fullName>Other_Role_Id</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Other Role Id</shortDescription>
+        <value>00E03000000Lk4wEAC</value>
+    </labels>
+    <labels>
+        <fullName>PCAll</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PCAll</shortDescription>
+        <value>To receive emails and offers that match your interests</value>
+    </labels>
+    <labels>
+        <fullName>Pre_Chat_Enter_Valid_Email_Message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Pre Chat Enter Valid Email Message</shortDescription>
+        <value>Please enter valid Email Address</value>
+    </labels>
+    <labels>
+        <fullName>Privacy_Policy_Text</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Privacy Policy Text</shortDescription>
+        <value>. You can change your email preferences or unsubscribe from our emails at any time.</value>
+    </labels>
+    <labels>
+        <fullName>Privacy_Policy_URL</fullName>
+        <categories>R-club</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Privacy Policy URL</shortDescription>
+        <value>https://www.toysrus.ca/en/folder?cid=legal-privacy-policy</value>
+    </labels>
+    <labels>
+        <fullName>Privacy_Policy_URL_Text</fullName>
+        <categories>R-club</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Privacy Policy URL Text</shortDescription>
+        <value>Privacy Policy</value>
+    </labels>
+    <labels>
+        <fullName>RLE_Email</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RLE Email</shortDescription>
+        <value>Clothing</value>
+    </labels>
+    <labels>
+        <fullName>R_Club_number_registered</fullName>
+        <categories>R-club</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>R-Club number registered</shortDescription>
+        <value>This R-Club number has already been registered.</value>
+    </labels>
+    <labels>
+        <fullName>R_club_Account_Information</fullName>
+        <categories>R-club</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>R-club Account Information</shortDescription>
+        <value>R Club™ Account Information</value>
+    </labels>
+    <labels>
+        <fullName>R_club_Add_Another_Child</fullName>
+        <categories>R-club</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>R-club Add Another Child</shortDescription>
+        <value>Add Another Child</value>
+    </labels>
+    <labels>
+        <fullName>R_club_And</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>R-club And</shortDescription>
+        <value>and</value>
+    </labels>
+    <labels>
+        <fullName>R_club_Babies_R_Us_Newsletter</fullName>
+        <categories>R-club</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>R-club Babies R Us Newsletter</shortDescription>
+        <value>Yes, I would like to receive &lt;strong&gt;&lt;u&gt;Babies“R”Us&lt;/u&gt; electronic messages&lt;/strong&gt; which include notice of the newest products, promotions, sales, contests, in-store events and more from Babies“R”Us and Toys“R”Us (Canada) Ltd. I confirm that l have attained the legal age of majority in the province/territory in which I reside.</value>
+    </labels>
+    <labels>
+        <fullName>R_club_Baby</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>R_club_Baby</shortDescription>
+        <value>Baby Items</value>
+    </labels>
+    <labels>
+        <fullName>R_club_Change_Subscription_Description</fullName>
+        <categories>R-club</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>R-club Change Subscription Description</shortDescription>
+        <value>&lt;p&gt;Enter your email address to stop receiving marketing emails.&lt;/p&gt;
+            &lt;p&gt;You&apos;ll still receive transactional and account-related emails.&lt;/p&gt;</value>
+    </labels>
+    <labels>
+        <fullName>R_club_Child_Birthday</fullName>
+        <categories>R-club</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>R-club Child Birthday</shortDescription>
+        <value>Month &amp; Year of Birth</value>
+    </labels>
+    <labels>
+        <fullName>R_club_Child_First_Name</fullName>
+        <categories>R-club</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>R-club Child First Name</shortDescription>
+        <value>Child&apos;s First Name</value>
+    </labels>
+    <labels>
+        <fullName>R_club_Child_Gender</fullName>
+        <categories>R-club</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>R-club Child Gender</shortDescription>
+        <value>Gender</value>
+    </labels>
+    <labels>
+        <fullName>R_club_Child_Gender_Placeholder</fullName>
+        <categories>R-club</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>R-club Child Gender Placeholder</shortDescription>
+        <value>Select Child Gender</value>
+    </labels>
+    <labels>
+        <fullName>R_club_City</fullName>
+        <categories>R-club</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>R-club City</shortDescription>
+        <value>City</value>
+    </labels>
+    <labels>
+        <fullName>R_club_Clothing</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>R_club Clothing</shortDescription>
+        <value>Clothing</value>
+    </labels>
+    <labels>
+        <fullName>R_club_Description</fullName>
+        <categories>R-club</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>R-club Description</shortDescription>
+        <value>&lt;p&gt;Birthday gifts made easy! Register a child’s birthday and we’ll help you to find a perfect gift.&lt;/p&gt;
+                        &lt;p&gt;You’ll receive special offers and gifts ideas geared towards the child’s age.&lt;/p&gt;</value>
+    </labels>
+    <labels>
+        <fullName>R_club_Email_Address</fullName>
+        <categories>R-club</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>R-club Email Address</shortDescription>
+        <value>Email Address</value>
+    </labels>
+    <labels>
+        <fullName>R_club_Email_Preferences</fullName>
+        <categories>R-club</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>R-club Email Preferences</shortDescription>
+        <value>&lt;p&gt;&lt;b&gt;What interests you?&lt;/b&gt;&lt;br/&gt;
+We want to share messages about the topics you care about most!&lt;/p&gt;</value>
+    </labels>
+    <labels>
+        <fullName>R_club_Error_Email</fullName>
+        <categories>R-club</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>R-club Error Email</shortDescription>
+        <value>The email address you&apos;ve entered is invalid. Please enter a valid email address.</value>
+    </labels>
+    <labels>
+        <fullName>R_club_Error_Phone</fullName>
+        <categories>R-club</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>R-club Error Phone</shortDescription>
+        <value>Please specify a valid phone number.</value>
+    </labels>
+    <labels>
+        <fullName>R_club_Error_Postal_Code</fullName>
+        <categories>R-club</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>R-club Error Postal Code</shortDescription>
+        <value>Please enter a valid Post Code.</value>
+    </labels>
+    <labels>
+        <fullName>R_club_Error_Required</fullName>
+        <categories>R-club</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>R-club Error Required</shortDescription>
+        <value>This field is required.</value>
+    </labels>
+    <labels>
+        <fullName>R_club_First_Name</fullName>
+        <categories>R-club</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>R-club First Name</shortDescription>
+        <value>First Name</value>
+    </labels>
+    <labels>
+        <fullName>R_club_Gender_Female</fullName>
+        <categories>R-club</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>R club Gender Female</shortDescription>
+        <value>Female</value>
+    </labels>
+    <labels>
+        <fullName>R_club_Gender_Male</fullName>
+        <categories>R-club</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>R club Gender Male</shortDescription>
+        <value>Male</value>
+    </labels>
+    <labels>
+        <fullName>R_club_Join_Program</fullName>
+        <categories>R-club</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>R-club Join Program</shortDescription>
+        <value>Join R club™</value>
+    </labels>
+    <labels>
+        <fullName>R_club_Language_Preference</fullName>
+        <categories>R-club</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>R-club Language Preference</shortDescription>
+        <value>Language Preference</value>
+    </labels>
+    <labels>
+        <fullName>R_club_Language_Preference_Placeholder</fullName>
+        <categories>R-club</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>R-club Language Preference Placeholder</shortDescription>
+        <value>Select Language Preference</value>
+    </labels>
+    <labels>
+        <fullName>R_club_Last_Name</fullName>
+        <categories>R-club</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>R-club Last Name</shortDescription>
+        <value>Last Name</value>
+    </labels>
+    <labels>
+        <fullName>R_club_Loyalty_Number</fullName>
+        <categories>R-club</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>R-club Loyalty Number</shortDescription>
+        <value>&quot;R&quot; Club Card Number</value>
+    </labels>
+    <labels>
+        <fullName>R_club_Loyalty_Number_Error</fullName>
+        <categories>R-club</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>R-club Loyalty Number Error</shortDescription>
+        <value>Please enter an R-Club number that has 13 digits only.</value>
+    </labels>
+    <labels>
+        <fullName>R_club_Month_Placeholder</fullName>
+        <categories>R-club</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>R-club Month Placeholder</shortDescription>
+        <value>Select Month</value>
+    </labels>
+    <labels>
+        <fullName>R_club_Months</fullName>
+        <categories>R-club</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>R-club Months</shortDescription>
+        <value>January,February,March,April,May,June,July,August,September,October,November,December</value>
+    </labels>
+    <labels>
+        <fullName>R_club_Phone</fullName>
+        <categories>R-club</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>R-club Phone</shortDescription>
+        <value>Phone Number</value>
+    </labels>
+    <labels>
+        <fullName>R_club_Phone_Example</fullName>
+        <categories>R-club</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>R-club Phone Example</shortDescription>
+        <value>Example : 1 123 456 7890</value>
+    </labels>
+    <labels>
+        <fullName>R_club_Phone_Placeholder</fullName>
+        <categories>R-club</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>R-club Phone Placeholder</shortDescription>
+        <value>999-999-9999</value>
+    </labels>
+    <labels>
+        <fullName>R_club_Policy</fullName>
+        <categories>R-club</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>R-club Policy</shortDescription>
+        <value>&lt;p&gt;By clicking &quot;Join R Club&lt;sup&gt;&amp;reg;&lt;/sup&gt;&quot; I would like to &lt;strong&gt;register&lt;/strong&gt; my R Club&lt;sup&gt;&amp;reg;&lt;/sup&gt; Card and accept the &lt;a href=&quot;https://www.toysrus.ca/en/folder?cid=legal-terms-and-conditions&quot;&gt;terms and conditions&lt;/a&gt; of the Toys“R”Us (Canada) Ltd. R Club&lt;sup&gt;&amp;reg;&lt;/sup&gt; program. I would also like to receive R Club&lt;sup&gt;&amp;reg;&lt;/sup&gt; electronic messages which include notice of the newest products, promotions, sales, contests, in-store events and more.I confirm that I have attained the legal age of majority in the province/territory in which I reside.&lt;/p&gt;</value>
+    </labels>
+    <labels>
+        <fullName>R_club_Policy_2</fullName>
+        <categories>R-club</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>R-club Policy 2</shortDescription>
+        <value>You can update your message preferences or unsubscribe at any time from our electronic messages.
+For more information on how we use personal information, please read the ”R” Us Family &lt;a href=&quot;http://toysrus.ca/en/folder?cid=legal-privacy-policy&quot; title=&quot;Privacy Policy&quot;&gt;Privacy Policy&lt;/a&gt;.</value>
+    </labels>
+    <labels>
+        <fullName>R_club_Policy_request</fullName>
+        <categories>R-club</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>R-club Policy request</shortDescription>
+        <value>&lt;p&gt;By clicking &quot;Join R Club&lt;sup&gt;&amp;reg;&lt;/sup&gt;&quot; I would like to &lt;strong&gt;request&lt;/strong&gt; my R Club&lt;sup&gt;&amp;reg;&lt;/sup&gt; Card and accept the &lt;a href=&quot;https://www.toysrus.ca/en/folder?cid=legal-terms-and-conditions&quot;&gt;terms and conditions&lt;/a&gt; of the Toys“R”Us (Canada) Ltd. R Club&lt;sup&gt;&amp;reg;&lt;/sup&gt; program. I would also like to receive R Club&lt;sup&gt;&amp;reg;&lt;/sup&gt; electronic messages which include notice of the newest products, promotions, sales, contests, in-store events and more. I confirm that I have attained the legal age of majority in the province/territory in which I reside.&lt;/p&gt;</value>
+    </labels>
+    <labels>
+        <fullName>R_club_Postal_Code</fullName>
+        <categories>R-club</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>R-club Postal Code</shortDescription>
+        <value>Postal Code</value>
+    </labels>
+    <labels>
+        <fullName>R_club_Postal_Code_Example</fullName>
+        <categories>R-club</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>R-club Postal Code Example</shortDescription>
+        <value>Example : A0A 8T9</value>
+    </labels>
+    <labels>
+        <fullName>R_club_Province_Placeholder</fullName>
+        <categories>R-club</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>R club Province Placeholder</shortDescription>
+        <value>Please Select</value>
+    </labels>
+    <labels>
+        <fullName>R_club_RLE_Newsletter</fullName>
+        <categories>R-club</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>R-club RLE Newsletter</shortDescription>
+        <value>Yes, I would like to receive &lt;strong&gt;&lt;u&gt; Rise Little Earthlings &lt;/u&gt;&lt;/strong&gt; electronic messages which include notice of the newest products, promotions, sales, contests, in-store events and more from Babies“R”Us and Toys“R”Us (Canada) Ltd. I confirm that l have attained the legal age of majority in the province/territory in which I reside.</value>
+    </labels>
+    <labels>
+        <fullName>R_club_Register_Birthdays</fullName>
+        <categories>R-club</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>R-club Register Birthdays</shortDescription>
+        <value>I would like to register Birthdays with Toy”R”Us</value>
+    </labels>
+    <labels>
+        <fullName>R_club_Register_Birthdays_Title</fullName>
+        <categories>R-club</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>R-club Register Birthdays Title</shortDescription>
+        <value>Children’s Birthdays &lt;span&gt;(Optional)&lt;/span&gt;</value>
+    </labels>
+    <labels>
+        <fullName>R_club_Remove_All</fullName>
+        <categories>R-club</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>R-club Remove All</shortDescription>
+        <value>Remove All</value>
+    </labels>
+    <labels>
+        <fullName>R_club_Required</fullName>
+        <categories>R-club</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>R club Required</shortDescription>
+        <value>required</value>
+    </labels>
+    <labels>
+        <fullName>R_club_State_Province</fullName>
+        <categories>R-club</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>R-club State/Province</shortDescription>
+        <value>Province</value>
+    </labels>
+    <labels>
+        <fullName>R_club_Street_Address_1</fullName>
+        <categories>R-club</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>R-club Street Address 1</shortDescription>
+        <value>Street Address 1</value>
+    </labels>
+    <labels>
+        <fullName>R_club_Street_Address_2</fullName>
+        <categories>R-club</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>R-club Street Address 2</shortDescription>
+        <value>Street Address 2</value>
+    </labels>
+    <labels>
+        <fullName>R_club_Submit</fullName>
+        <categories>R-club</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>R-club Submit</shortDescription>
+        <value>Submit</value>
+    </labels>
+    <labels>
+        <fullName>R_club_Toys</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>R-club Toys</shortDescription>
+        <value>Toys</value>
+    </labels>
+    <labels>
+        <fullName>R_club_Toys_R_Us_Newsletter</fullName>
+        <categories>R-club</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>R-club Toys R Us Newsletter</shortDescription>
+        <value>Yes, I would like to receive &lt;strong&gt;&lt;u&gt;Toys“R”Us&lt;/u&gt; electronic messages&lt;/strong&gt; which include notice of the newest products, promotions, sales, contests, in-store events and more from Toys“R”Us (Canada) Ltd. I confirm that I have attained the legal age of majority in the province/territory in which I reside.</value>
+    </labels>
+    <labels>
+        <fullName>R_club_Year_Placeholder</fullName>
+        <categories>R-club</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>R-club Year Placeholder</shortDescription>
+        <value>Select Year</value>
+    </labels>
+    <labels>
+        <fullName>Rclub_I_HAVE_CARD</fullName>
+        <categories>Rclub-Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Rclub_I_HAVE_CARD</shortDescription>
+        <value>I Have an Existing Card</value>
+    </labels>
+    <labels>
+        <fullName>Rclub_Join</fullName>
+        <categories>Rclub-Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Rclub_Join</shortDescription>
+        <value>Join the club...</value>
+    </labels>
+    <labels>
+        <fullName>Rclub_RegisterCard</fullName>
+        <categories>Rclub-Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Rclub_RegisterCard</shortDescription>
+        <value>I Would Like to Register for a Card</value>
+    </labels>
+    <labels>
+        <fullName>Rclub_SignUpOnline</fullName>
+        <categories>Rclub-Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Rclub_SignUpOnline</shortDescription>
+        <value>Sign up online</value>
+    </labels>
+    <labels>
+        <fullName>Rclub_Signed_up_in_store</fullName>
+        <categories>Rclub-Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Rclub_Signed_up_in_store</shortDescription>
+        <value>Signed up in store</value>
+    </labels>
+    <labels>
+        <fullName>Rclub_benefit1</fullName>
+        <categories>Rclub-Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Rclub_benefit1</shortDescription>
+        <value>10% off your first purchase</value>
+    </labels>
+    <labels>
+        <fullName>Rclub_benefit2</fullName>
+        <categories>Rclub-Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Rclub_benefit2</shortDescription>
+        <value>a special birthday offer for your kids</value>
+    </labels>
+    <labels>
+        <fullName>Rclub_benefit3</fullName>
+        <categories>Rclub-Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Rclub_benefit3</shortDescription>
+        <value>members-only promotions</value>
+    </labels>
+    <labels>
+        <fullName>Rclub_benefit4</fullName>
+        <categories>Rclub-Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Rclub_benefit4</shortDescription>
+        <value>exclusive contests and giveaways</value>
+    </labels>
+    <labels>
+        <fullName>Rclub_benefit5</fullName>
+        <categories>Rclub-Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Rclub_benefit5</shortDescription>
+        <value>invitations to special events</value>
+    </labels>
+    <labels>
+        <fullName>Rclub_benefit6</fullName>
+        <categories>Rclub-Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Rclub_benefit6</shortDescription>
+        <value>special extended return and exchange privileges: within 90 days* instead of the regular 30! (*with original receipt and proof of membership - conditions apply)</value>
+    </labels>
+    <labels>
+        <fullName>Rclub_subtitle_benefits</fullName>
+        <categories>Rclub-Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Rclub_subtitle_benefits</shortDescription>
+        <value>and enjoy terrific benefits like:</value>
+    </labels>
+    <labels>
+        <fullName>SB_AddAnotherChild</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_AddAnotherChild</shortDescription>
+        <value>Add another child</value>
+    </labels>
+    <labels>
+        <fullName>SB_All_Baby_Kids_Clothing</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_All Baby &amp; Kids Clothing</shortDescription>
+        <value>All Baby &amp; Kids Clothing</value>
+    </labels>
+    <labels>
+        <fullName>SB_All_Toys_Games</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_All Toys &amp; Games</shortDescription>
+        <value>All Toys &amp; Games</value>
+    </labels>
+    <labels>
+        <fullName>SB_All_things_Baby</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_All things Baby</shortDescription>
+        <value>All things Baby</value>
+    </labels>
+    <labels>
+        <fullName>SB_And</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_And</shortDescription>
+        <value>and</value>
+    </labels>
+    <labels>
+        <fullName>SB_AvailableDesc</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_AvailableDesc</shortDescription>
+        <value>To subscribe or unsubscribe from any publication, just check or uncheck the appropriate box and click on the updates button to change your email preferences.</value>
+    </labels>
+    <labels>
+        <fullName>SB_AvailablePublications</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_AvailablePublications</shortDescription>
+        <value>Available Publications</value>
+    </labels>
+    <labels>
+        <fullName>SB_BRU</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_BRU</shortDescription>
+        <value>Babies&quot;R&quot;Us Emails</value>
+    </labels>
+    <labels>
+        <fullName>SB_BRUDesc</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_BRUDesc</shortDescription>
+        <value>YES! I would like to receive electronic communications from Babies”R”Us. Emails from Babies”R”Us include information on the newest products, promotions, sales, contests, in-store events and more!</value>
+    </labels>
+    <labels>
+        <fullName>SB_BRUEmails</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_BRUEmails</shortDescription>
+        <value>Baby</value>
+    </labels>
+    <labels>
+        <fullName>SB_BabiesEmail</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_BabiesEmail</shortDescription>
+        <value>Bables&quot;R&quot;Us electronic messages</value>
+    </labels>
+    <labels>
+        <fullName>SB_Child</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_Child</shortDescription>
+        <value>Tell us about the kids in your life! (optional)</value>
+    </labels>
+    <labels>
+        <fullName>SB_ChildDOB</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_ChildDOB</shortDescription>
+        <value>Child&apos;s date of birth:</value>
+    </labels>
+    <labels>
+        <fullName>SB_ChildName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_ChildName</shortDescription>
+        <value>Child&apos;s name</value>
+    </labels>
+    <labels>
+        <fullName>SB_EmailAddress</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_EmailAddress</shortDescription>
+        <value>Email Address</value>
+    </labels>
+    <labels>
+        <fullName>SB_Emails_Interests</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_Emails&amp;Interests</shortDescription>
+        <value>To receive emails and offers that match your interests</value>
+    </labels>
+    <labels>
+        <fullName>SB_English</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_English</shortDescription>
+        <value>English</value>
+    </labels>
+    <labels>
+        <fullName>SB_EventsAndActivities</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_EventsAndActivities</shortDescription>
+        <value>Events &amp; Activities</value>
+    </labels>
+    <labels>
+        <fullName>SB_FirstName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_FirstName</shortDescription>
+        <value>First Name</value>
+    </labels>
+    <labels>
+        <fullName>SB_French</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_French</shortDescription>
+        <value>French</value>
+    </labels>
+    <labels>
+        <fullName>SB_FrenchUnsub</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_FrenchUnsub</shortDescription>
+        <value>Vous avez été désabonné de cette liste de marketing par e-mail. Attendez jusqu&apos;à dix (10) jours pour que la modification prenne effet. Veuillez noter que vous pouvez continuer à recevoir des courriels transactionnels de Toys &quot;R&quot; Us (Canada) Ltd.</value>
+    </labels>
+    <labels>
+        <fullName>SB_LangDesc</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_LangDesc</shortDescription>
+        <value>To update your language preference, just check the applicable box and click the update button.</value>
+    </labels>
+    <labels>
+        <fullName>SB_Language</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_Language</shortDescription>
+        <value>Language</value>
+    </labels>
+    <labels>
+        <fullName>SB_LanguagePr</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_LanguagePr</shortDescription>
+        <value>Language Preference</value>
+    </labels>
+    <labels>
+        <fullName>SB_LastName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_LastName</shortDescription>
+        <value>Last Name</value>
+    </labels>
+    <labels>
+        <fullName>SB_NoLonger</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_NoLonger</shortDescription>
+        <value>By clicking the update button, I have attained the legal age of majority in the province/territory in which I reside, and consent to these terms and conditions and privacy policy.</value>
+    </labels>
+    <labels>
+        <fullName>SB_PostalCode</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_PostalCode</shortDescription>
+        <value>Postal Code (optional)</value>
+    </labels>
+    <labels>
+        <fullName>SB_PreferanceCenter</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_PreferanceCenter</shortDescription>
+        <value>Email preference centre-welcome!</value>
+    </labels>
+    <labels>
+        <fullName>SB_Privacy</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_Privacy</shortDescription>
+        <value>privacy policy.</value>
+    </labels>
+    <labels>
+        <fullName>SB_ReceiveStoreEvents</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_ReceiveStoreEvents</shortDescription>
+        <value>To receive store events in your area</value>
+    </labels>
+    <labels>
+        <fullName>SB_RemoveThisChild</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_RemoveThisChild</shortDescription>
+        <value>Remove this child</value>
+    </labels>
+    <labels>
+        <fullName>SB_ShopNow</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_ShopNow</shortDescription>
+        <value>Shop Now</value>
+    </labels>
+    <labels>
+        <fullName>SB_TRUDesc</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_TRUDesc</shortDescription>
+        <value>YES! I would like to receive electronic communications from Toys”R”Us.
+Emails from Toys”R”Us include information on the newest products, promotions, sales, contests, in-store events and more!</value>
+    </labels>
+    <labels>
+        <fullName>SB_TRUEmail</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_TRUEmail</shortDescription>
+        <value>Toys</value>
+    </labels>
+    <labels>
+        <fullName>SB_TellUs</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_TellUs</shortDescription>
+        <value>Tell us what appeals to you! (optional)</value>
+    </labels>
+    <labels>
+        <fullName>SB_Terms</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_Terms</shortDescription>
+        <value>terms and conditions</value>
+    </labels>
+    <labels>
+        <fullName>SB_Thanks</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_Thanks</shortDescription>
+        <value>Thank you! Your preferences have been updated.</value>
+    </labels>
+    <labels>
+        <fullName>SB_ToysEMail</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_ToysEMail</shortDescription>
+        <value>Toys &quot;R&quot; Us electronic messages</value>
+    </labels>
+    <labels>
+        <fullName>SB_UnDesc</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_UnDesc</shortDescription>
+        <value>I no longer wish to receive any future communications from Toys“R”Us, Babies“R”Us and Rise Little Earthling.</value>
+    </labels>
+    <labels>
+        <fullName>SB_Unsub_Desc_EN</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_Unsub_Desc_EN</shortDescription>
+        <value>I no longer wish to receive any future communications from Toys“R”Us, Babies“R”Us and Rise Little Earthling.</value>
+    </labels>
+    <labels>
+        <fullName>SB_UnsubscibeDesc_FR</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_UnsubscibeDesc_FR</shortDescription>
+        <value>Je ne souhaite plus recevoir de communications de Toys“R”Us et Babies“R”Us.</value>
+    </labels>
+    <labels>
+        <fullName>SB_UnsubscribeDes</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_UnsubscribeDes</shortDescription>
+        <value>By clicking the update button, I have attained the legal age of majority in the province/territory in which I reside, and consent to these</value>
+    </labels>
+    <labels>
+        <fullName>SB_Unsubscribe_EN</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_Unsubscribe_EN</shortDescription>
+        <value>Unsubscribe</value>
+    </labels>
+    <labels>
+        <fullName>SB_Unsubscribe_FR</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_Unsubscribe_FR</shortDescription>
+        <value>Désabonnement</value>
+    </labels>
+    <labels>
+        <fullName>SB_Unsubscribe_From_All</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_Unsubscribe From All</shortDescription>
+        <value>Unsubscribe From All</value>
+    </labels>
+    <labels>
+        <fullName>SB_Update</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_Update</shortDescription>
+        <value>Save Profile</value>
+    </labels>
+    <labels>
+        <fullName>SB_UpdateAnyField</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_UpdateAnyField</shortDescription>
+        <value>Update any field and &quot;Save profile&quot; at the bottom</value>
+    </labels>
+    <labels>
+        <fullName>SB_Welcome</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_Welcome</shortDescription>
+        <value>Use this page to edit your subscription preferences for email communications from Toys“R”Us (Canada) Ltd.</value>
+    </labels>
+    <labels>
+        <fullName>SB_Yes</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_Yes</shortDescription>
+        <value>Yes, I would like to receive</value>
+    </labels>
+    <labels>
+        <fullName>SB_YesDesc</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_YesDesc</shortDescription>
+        <value>which include notice of the newest products, promotions, sales, contests, in-store events and more from Toys&quot;R&quot;Us (Canada) Ltd. I confirm that I have attained the legal age of majority in the province/territory in which I reside.</value>
+    </labels>
+    <labels>
+        <fullName>SB_YourProfile</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_YourProfile</shortDescription>
+        <value>Your profile</value>
+    </labels>
+    <labels>
+        <fullName>SB_activePlayOutdoor</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_activePlayOutdoor</shortDescription>
+        <value>Active Play &amp; Outdoor</value>
+    </labels>
+    <labels>
+        <fullName>SB_babyGearEssentials</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_babyGearEssentials</shortDescription>
+        <value>Baby Gear &amp; Essentials</value>
+    </labels>
+    <labels>
+        <fullName>SB_books</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_books</shortDescription>
+        <value>Books</value>
+    </labels>
+    <labels>
+        <fullName>SB_collectorsGrownups</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_collectorsGrownups</shortDescription>
+        <value>Collectors - Grownups</value>
+    </labels>
+    <labels>
+        <fullName>SB_collectorsKids</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_collectorsKids</shortDescription>
+        <value>Collectors - Kids</value>
+    </labels>
+    <labels>
+        <fullName>SB_educationLearningToysGames</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_educationLearningToysGames</shortDescription>
+        <value>Education &amp; Learning Toys Games</value>
+    </labels>
+    <labels>
+        <fullName>SB_giftRecommendation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_giftRecommendation</shortDescription>
+        <value>To receive exciting birthday gift recommendations.</value>
+    </labels>
+    <labels>
+        <fullName>SB_nurseryFeeding</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_nurseryFeeding</shortDescription>
+        <value>Nursery &amp; Feeding</value>
+    </labels>
+    <labels>
+        <fullName>SB_partyAndGiftGiving</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_partyAndGiftGiving</shortDescription>
+        <value>Party &amp; Gift-Giving</value>
+    </labels>
+    <labels>
+        <fullName>SB_pregnancyParenting</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_pregnancyParenting</shortDescription>
+        <value>Pregnancy &amp; Parenting</value>
+    </labels>
+    <labels>
+        <fullName>SB_preschoolPlaytime</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_preschoolPlaytime</shortDescription>
+        <value>Preschool Playtime</value>
+    </labels>
+    <labels>
+        <fullName>SB_safetyHealthWellness</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_safetyHealthWellness</shortDescription>
+        <value>Safety, Health &amp; Wellness</value>
+    </labels>
+    <labels>
+        <fullName>SB_toysActivities</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SB_toysActivities</shortDescription>
+        <value>Toys &amp; Activities</value>
+    </labels>
+    <labels>
+        <fullName>SCC_AgentProfile</fullName>
+        <categories>Profile Name</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AgentProfile</shortDescription>
+        <value>Agent</value>
+    </labels>
+    <labels>
+        <fullName>SCC_Email2Case_Address</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Email2Case Address</shortDescription>
+        <value>[LABEL_SCC_Email2Case_Address]</value>
+    </labels>
+    <labels>
+        <fullName>SCC_Email2Case_Email_Template</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Email2Case Email Template</shortDescription>
+        <value>Auto response for Email to Case</value>
+    </labels>
+    <labels>
+        <fullName>SCC_ErrorFromApex</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SCC_ErrorFromApex</shortDescription>
+        <value>An error occured:</value>
+    </labels>
+    <labels>
+        <fullName>SCC_ErrorFromCC</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SCC_ErrorFromCC</shortDescription>
+        <value>Error returned by Commerce Cloud:</value>
+    </labels>
+    <labels>
+        <fullName>SCC_ExtDataSourceAuthMiss</fullName>
+        <categories>Commerce Cloud Authentication</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SCC_ExtDataSourceAuthMiss</shortDescription>
+        <value>You don&apos;t have permission to view this data. Ask your administrator to set up authentication for the external data source.</value>
+    </labels>
+    <labels>
+        <fullName>SCC_HelpReq_NotAllowed</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HelpReq_NotAllowed</shortDescription>
+        <value>Help request is not allowed.</value>
+    </labels>
+    <labels>
+        <fullName>SCC_HelpReq_PostFailed</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HelpReq_PostFailed</shortDescription>
+        <value>Help request failed to post. Please try later!</value>
+    </labels>
+    <labels>
+        <fullName>SCC_HelpReq_Posted</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HelpReq_Posted</shortDescription>
+        <value>Help request is posted to group.</value>
+    </labels>
+    <labels>
+        <fullName>SCC_HelpReq_ProcessFailed</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HelpReq_ProcessFailed</shortDescription>
+        <value>Help request failed. Contact your administrator!</value>
+    </labels>
+    <labels>
+        <fullName>SCC_HelpRequestsGroupId</fullName>
+        <categories>Group Id</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HelpRequestsGroupId</shortDescription>
+        <value>[LABEL_SCC_HelpRequestsGroupId]</value>
+    </labels>
+    <labels>
+        <fullName>SCC_ManagerProfile</fullName>
+        <categories>Profile Name</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ManagerProfile</shortDescription>
+        <value>Manager</value>
+    </labels>
+    <labels>
+        <fullName>SCC_Missing_Default_Account</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SCC_Missing_Default_Account</shortDescription>
+        <value>Order synchronization has failed due to missing default account in CRM. Please contact Admin of CRM.</value>
+    </labels>
+    <labels>
+        <fullName>SCC_Thread_Id_RegEX</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Thread Id RegEX</shortDescription>
+        <value>ref:.*:ref</value>
+    </labels>
+    <labels>
+        <fullName>SCC_WebCaseReplyToAddress</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SCC_WebCaseReplyToAddress</shortDescription>
+        <value>[LABEL_SCC_WebCaseReplyToAddress]</value>
+    </labels>
+    <labels>
+        <fullName>SCC_WebCaseToAddress</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SCC_WebCaseToAddress</shortDescription>
+        <value>[LABEL_SCC_WebCaseToAddress]</value>
+    </labels>
+    <labels>
+        <fullName>Terms_and_Conditions_Description_Text</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Terms and Conditions Text</shortDescription>
+        <value>Yes! I would like to receive electronic messages about new products, promotions, contests, in-store events &amp; more from Toys&quot;R&quot;Us (Canada) Ltd., including about our brands, such as Babies “R” Us and Rise Little Earthling. You can change your email preferences or unsubscribe from our emails at any time.</value>
+    </labels>
+    <labels>
+        <fullName>Terms_and_Conditions_URL</fullName>
+        <categories>R-club</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Terms and Conditions URL</shortDescription>
+        <value>https://www.toysrus.ca/en/folder?cid=legal-terms-and-conditions</value>
+    </labels>
+    <labels>
+        <fullName>Terms_and_Conditions_URL_Text</fullName>
+        <categories>R-club</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Terms and Conditions URL Text</shortDescription>
+        <value>Terms and Conditions</value>
+    </labels>
+    <labels>
+        <fullName>Warehouse_Role_Id</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Warehouse Role Id</shortDescription>
+        <value>00E03000000Lk4zEAC</value>
+    </labels>
+</CustomLabels>

@@ -1,0 +1,29 @@
+{
+  "status": 0,
+  "result": [
+    {
+      "createdById": "0051U000005tLLaQAM",
+      "createdByName": "Toysrus AdminOldUser",
+      "createdDate": "2020-10-05T15:19:54.000Z",
+      "fileName": "liveChatAgentConfigs/English.liveChatAgentConfig",
+      "fullName": "English",
+      "id": "0C61U000000boDxSAI",
+      "lastModifiedById": "0051U000008bjiLQAQ",
+      "lastModifiedByName": "George Mahesh",
+      "lastModifiedDate": "2022-06-08T20:36:37.000Z",
+      "type": "LiveChatAgentConfig"
+    },
+    {
+      "createdById": "0051U000005tLLaQAM",
+      "createdByName": "Toysrus AdminOldUser",
+      "createdDate": "2020-10-05T15:19:54.000Z",
+      "fileName": "liveChatAgentConfigs/French.liveChatAgentConfig",
+      "fullName": "French",
+      "id": "0C61U000000boDySAI",
+      "lastModifiedById": "0051U0000060JrUQAU",
+      "lastModifiedByName": "Christine Lamonde",
+      "lastModifiedDate": "2022-06-09T13:47:02.000Z",
+      "type": "LiveChatAgentConfig"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Do_not_allow_Default_LastName</fullName>
+    <active>true</active>
+    <description>Do not allow manual person account creation with default last name</description>
+    <errorConditionFormula>AND(
+ISBLANK(SFCC_Customer_Id__pc ),
+OR(
+LastName=&apos;Default&apos;,
+LastName=&apos;default&apos;,
+LastName=&apos;DEFAULT&apos;
+)
+)</errorConditionFormula>
+    <errorMessage>Accounts with &apos;Default&apos; last name cannot be created, the name is reserved for SCC integration.</errorMessage>
+</ValidationRule>

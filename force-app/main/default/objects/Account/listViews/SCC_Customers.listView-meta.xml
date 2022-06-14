@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCC_Customers</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>PC_EMAIL</columns>
+    <columns>SFCC_Customer_Number__pc</columns>
+    <columns>ACCOUNT.CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.CREATED_DATE</field>
+        <operation>greaterThan</operation>
+        <value>9/14/2019 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>Person_Contact_ID__c</field>
+        <operation>equals</operation>
+        <value>0011U00001kKcNSQA0</value>
+    </filters>
+    <label>SCC Customers</label>
+</ListView>

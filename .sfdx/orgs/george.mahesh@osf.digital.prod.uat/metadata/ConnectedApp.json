@@ -1,0 +1,53 @@
+{
+  "status": 0,
+  "result": [
+    {
+      "createdById": "0051U000005XFFIQA4",
+      "createdByName": "AstoundOldUser",
+      "createdDate": "2019-08-01T13:35:48.000Z",
+      "fileName": "connectedApps/CommerceCloudConnector.connectedApp",
+      "fullName": "CommerceCloudConnector",
+      "id": "09H1U0000001V6qUAE",
+      "lastModifiedById": "0051U000005XFFIQA4",
+      "lastModifiedByName": "AstoundOldUser",
+      "lastModifiedDate": "2019-08-01T13:35:48.000Z",
+      "type": "ConnectedApp"
+    },
+    {
+      "createdById": "0051U000008bjiLQAQ",
+      "createdByName": "George Mahesh",
+      "createdDate": "2021-09-27T15:29:24.000Z",
+      "fileName": "connectedApps/Baby_Registry.connectedApp",
+      "fullName": "Baby_Registry",
+      "id": "09H1U0000001XzXUAU",
+      "lastModifiedById": "0051U000008bjiLQAQ",
+      "lastModifiedByName": "George Mahesh",
+      "lastModifiedDate": "2021-09-27T15:32:25.000Z",
+      "type": "ConnectedApp"
+    },
+    {
+      "createdById": "0051U000005XFFIQA4",
+      "createdByName": "AstoundOldUser",
+      "createdDate": "2019-08-08T13:59:47.000Z",
+      "fileName": "connectedApps/Keytree.connectedApp",
+      "fullName": "Keytree",
+      "id": "09H1U0000001VDhUAM",
+      "lastModifiedById": "0051U000005XFFIQA4",
+      "lastModifiedByName": "AstoundOldUser",
+      "lastModifiedDate": "2019-08-08T13:59:47.000Z",
+      "type": "ConnectedApp"
+    },
+    {
+      "createdById": "0051U000001ugPnQAI",
+      "createdByName": "Automated Process",
+      "createdDate": "2018-12-19T20:27:32.000Z",
+      "fileName": "connectedApps/CPQIntegrationUserApp.connectedApp",
+      "fullName": "CPQIntegrationUserApp",
+      "id": "09H1U000000HDhLUAW",
+      "lastModifiedById": "0051U000001ugPnQAI",
+      "lastModifiedByName": "Automated Process",
+      "lastModifiedDate": "2018-12-19T20:27:32.000Z",
+      "type": "ConnectedApp"
+    }
+  ]
+}

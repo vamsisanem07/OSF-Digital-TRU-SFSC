@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Baby_Baby_Items__c</fullName>
+    <externalId>false</externalId>
+    <label>Baby &amp; Baby Items</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Baby</fullName>
+                <default>false</default>
+                <label>Baby</label>
+            </value>
+            <value>
+                <fullName>Baby Gear &amp; Essentials</fullName>
+                <default>false</default>
+                <label>Baby Gear &amp; Essentials</label>
+            </value>
+            <value>
+                <fullName>Nursury &amp; Feeding</fullName>
+                <default>false</default>
+                <label>Nursury &amp; Feeding</label>
+            </value>
+            <value>
+                <fullName>Pregnancy &amp; Parenting</fullName>
+                <default>false</default>
+                <label>Pregnancy &amp; Parenting</label>
+            </value>
+            <value>
+                <fullName>Safety, Health &amp; Wellness</fullName>
+                <default>false</default>
+                <label>Safety, Health &amp; Wellness</label>
+            </value>
+            <value>
+                <fullName>Toys &amp; Activities</fullName>
+                <default>false</default>
+                <label>Toys &amp; Activities</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,207 @@
+.slds-container {
+    max-width: 1180px;
+    margin-bottom: 30px;
+    padding-left: .938rem;
+    padding-right: .938rem;
+}
+.slds-gutters {
+    margin-left: -.938rem;
+    margin-right: -.938rem;
+}
+.slds-gutters .slds-col {
+    padding-left: .938rem;
+    padding-right: .938rem;
+}
+.slds-gutters-medium {
+    margin-left: -7px;
+    margin-right: -7px;
+}
+.slds-gutters-medium .slds-col {
+    padding-left: 7px;
+    padding-right: 7px;
+}
+.slds-gutters-small {
+    margin-left: -2px;
+    margin-right: -2px;
+}
+.slds-gutters-small .slds-col {
+    padding-left: 2px;
+    padding-right: 2px;
+}
+.slds-form {
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #e7edf8;
+}
+.slds-form_desc {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    line-height: 1.38;
+}
+.slds-form-element {
+    padding: 0!important;
+}
+.slds-form-element__legend {
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    float: none;
+    flex-direction: row;
+}
+.slds-form-element__legend span {
+    font-size: 14px;
+    color: #a7a7a7;
+    font-weight: normal;
+}
+.slds-form-element_help {
+    font-size: 14px;
+    color: #a7a7a7;
+    line-height: 1.3;
+    margin-top: 7px;
+}
+.slds-form-element_help p {
+    margin: 0;
+    padding: 0;
+}
+.slds-card {
+    padding: 20px 15px 10px;
+    border-radius: 5px;
+    box-shadow: 0 3px 5px 0 rgba(15,77,188,.2);
+    border: solid 1px #0f4dbc;
+    background-color: #f3f6fc;
+}
+.slds-card .slds-form-element__row {
+    border-radius: 5px;
+    padding: 15px 7px;
+    background-color: #fff;
+    margin:0 0 15px;
+    position: relative;
+}
+.slds-card .slds-form-element__row > .slds-col:not(:first-child) {
+    margin-top: 10px;
+}
+.slds-card .slds-form-element__row .delete-btn {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 14px;
+    height: 14px;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14'%3e%3cpath style='fill:%239fb8e4' d='M2838.36,1103.99l4.13-4.14a1.676,1.676,0,0,0-2.37-2.37l-4.13,4.14-4.14-4.14a1.676,1.676,0,0,0-2.37,2.37l4.14,4.14-4.14,4.14a1.7,1.7,0,0,0,0,2.38,1.715,1.715,0,0,0,1.19.49,1.674,1.674,0,0,0,1.18-.49l4.14-4.14,4.13,4.14a1.678,1.678,0,0,0,2.37,0,1.7,1.7,0,0,0,0-2.38Z' transform='translate(-2829 -1097)'/%3e%3c/svg%3e");
+}
+.slds-card .slds-form-element__row svg {
+    fill: #9fb8e4;
+}
+.slds-card_buttons {
+    display: flex;
+    padding-top: 10px;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
+.slds-card_button {
+    display: table;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.policy {
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 1.38;
+}
+.policy p {
+    margin: 0;
+    padding: 0;
+}
+.recEmailSecHeader{
+    padding-top: 10px;
+    border-top: solid 2px #dce0f2; 
+   
+}
+.recEmailSec{
+    border-bottom: solid 2px #dce0f2;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.termsLink {
+    text-decoration: underline;
+    color:#333;
+}
+.smlTxt{
+    color: #8b8b8b;
+    font-size: 10px;
+}
+.policyLink {
+    text-decoration: underline;
+    color: #8b8b8b;
+}
+.termsLink:hover, .termsLink:focus, .policyLink:hover, .policyLink:focus {
+    color:#2574A9;
+}
+
+/* For terms and conditions checkbox alignment */
+span.slds-checkbox.terms-check .slds-form-element {
+    display: inline-block;
+  
+}
+
+
+@media (min-width: 580px) {
+    .slds-container {
+        margin: 0 auto 80px;
+        padding-left: 1.875rem;
+        padding-right: 1.875rem;
+    }
+    .slds-form {
+        padding-bottom: 40px;
+        margin-bottom: 20px;
+    }
+    .slds-gutters {
+        margin-left: -1.875rem;
+        margin-right: -1.875rem;
+    }
+    .slds-gutters > .slds-col {
+        padding-left: 1.875rem;
+        padding-right: 1.875rem;
+    }
+    .slds-card {
+        padding: 30px 20px 20px;
+    }
+    .slds-card_buttons {
+        flex-direction: row;
+    }
+    .slds-card_button {
+        width: 260px;
+    }
+}
+.fake-label {
+    flex-direction: row;
+}
+@media (min-width: 768px) {
+    .slds-card .slds-form-element__row {
+        padding: 25px 43px 25px 13px;
+    }
+    .slds-card .slds-form-element__row .slds-col:not(:first-child) {
+        margin-top: 0;
+    }
+    .slds-card .slds-form-element__row .delete-btn {
+        top: 50px;
+    }
+    .fake-label {
+        justify-content: flex-end;
+        padding-right: 15px;
+    }
+}
+@media (min-width: 992px) {
+    .slds-card .slds-form-element__row {
+        padding: 25px 83px 25px 13px;
+    }
+    .slds-card .slds-form-element__row .delete-btn {
+        right: 30px;
+    }
+}

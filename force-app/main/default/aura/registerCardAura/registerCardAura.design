@@ -1,0 +1,3 @@
+<design:component label="Register Card Aura">
+    <design:attribute name="newCard" label="Register new Card?"/>
+</design:component>

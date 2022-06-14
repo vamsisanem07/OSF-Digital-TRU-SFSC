@@ -1,0 +1,29 @@
+{
+  "status": 0,
+  "result": [
+    {
+      "createdById": "0051U000005XFFIQA4",
+      "createdByName": "AstoundOldUser",
+      "createdDate": "2019-07-31T13:24:29.000Z",
+      "fileName": "siteDotComSites/R_club1.site",
+      "fullName": "R_club1",
+      "id": "0DM1U000000qaFbWAI",
+      "lastModifiedById": "0051U000008bjiLQAQ",
+      "lastModifiedByName": "George Mahesh",
+      "lastModifiedDate": "2022-04-29T09:32:17.000Z",
+      "type": "SiteDotCom"
+    },
+    {
+      "createdById": "0051U000008bjiLQAQ",
+      "createdByName": "George Mahesh",
+      "createdDate": "2022-03-01T20:05:57.000Z",
+      "fileName": "siteDotComSites/Salesforce_Surveys1.site",
+      "fullName": "Salesforce_Surveys1",
+      "id": "0DM1U000000eCgZWAU",
+      "lastModifiedById": "0051U000008bjiLQAQ",
+      "lastModifiedByName": "George Mahesh",
+      "lastModifiedDate": "2022-03-01T21:57:37.000Z",
+      "type": "SiteDotCom"
+    }
+  ]
+}

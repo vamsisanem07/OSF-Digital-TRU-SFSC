@@ -1,0 +1,25 @@
+<template>
+    
+        <div class="slds-container slds-is-relative">
+            <div class="slds-form">
+                <div class="slds-grid slds-wrap slds-gutters">
+                    <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1">
+                        <div
+                            class="slds-form-element slds-form-element_stacked slds-size_1-of-1 slds-small-size_1-of-2 slds-medium-size_1-of-1">
+                            <lightning-input data-id="firstName" type="text" name="ChildName" class="inputName"
+                                label={labelFName} onchange={handleFirstName} value={accountFirstName}
+                                requied="required" minlength=2 maxlength=50 variant={devicesize}></lightning-input>
+                            <lightning-input data-id="lastName" type="text" name="ChildName" class="inputName"
+                                label={labelLName} onchange={handleLastName} requied="required" minlength=2 maxlength=50
+                                variant={devicesize} value={accountLastName}></lightning-input>
+                            <lightning-input data-id="email" type="email" name="ChildName" class="inputName" disabled="true"
+                                label={labelEmail}  onchange={handleEmail} requied="required" minlength=2 maxlength=50
+                                variant={devicesize} regex="/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/" value={accountEmail}></lightning-input>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    
+</template>

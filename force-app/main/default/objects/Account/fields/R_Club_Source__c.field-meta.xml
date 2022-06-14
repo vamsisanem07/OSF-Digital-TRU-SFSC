@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>R_Club_Source__c</fullName>
+    <externalId>false</externalId>
+    <formula>if(
+(begins( R_Club_Number__c ,&apos;63311&apos;)||begins(R_Club_Number__c ,&apos;63312&apos;)),
+&apos;In Store&apos;,
+if(
+(begins( R_Club_Number__c ,&apos;63313&apos;)||begins(R_Club_Number__c ,&apos;63314&apos;)),
+&apos;Online&apos;,
+&apos;&apos;
+)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>R Club Source</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

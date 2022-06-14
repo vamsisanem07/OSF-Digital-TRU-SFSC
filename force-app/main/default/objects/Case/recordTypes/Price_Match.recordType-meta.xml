@@ -1,0 +1,1122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Price_Match</fullName>
+    <active>true</active>
+    <businessProcess>TRU Standard Process</businessProcess>
+    <description>Query Price Adjustments items</description>
+    <label>Price Adjustment</label>
+    <picklistValues>
+        <picklist>Case_SCC_Sync_Status__c</picklist>
+        <values>
+            <fullName>Created</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Synchronised</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Updated</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Case_Sub_Type__c</picklist>
+        <values>
+            <fullName>Baby Registry General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Complaint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Store</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Item General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order Cancel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price Match</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Promotion General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RClub General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Return</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Website General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>What is my order status</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Where is my order</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Disposition_1__c</picklist>
+        <values>
+            <fullName>Accepted in error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Add%2FUpdate%2FRemove from Email List</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Address Correction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Availability Inquiry Advertised Item</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Availability Inquiry Non-Advertised</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BPP General Inquiry%2FComplaint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Benefits%2FPayroll%2FHR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bulk Order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chat terminated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Complaint from Employee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coupon %2F email not received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Create Registry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Creation issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit%2FDebit Card inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Received Email when Opted Out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delete Registry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delivery Timeframe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Donation Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duplicate Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employment Opportunity Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>English Product not Sold in Quebec</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Follow Up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fraud Cancel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General - Store specific inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Inquiry - International Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Product Information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Registry Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General inquiry %28shipping%2C etc%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gift Card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hours%2FLocation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ISPU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Item assortment issue %28color%2C size%E2%80%A6%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Items not marked as purchased</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Log out issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturer Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Negative feedback*</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Order Placed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No order number or email received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not in Warehouse system</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Online Receipt Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order - Placed with CSR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order - Shipping Charge Inquiry%2FComplaint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order Modify Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order is released</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order not in OMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Password reset issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone Busy%2FNo Answer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Positive feedback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Presell - General Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price Accuracy Issue%2FInquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price Match</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product review inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Promo Bag request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Promotion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>R Club</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Raincheck</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Real Estate %E2%80%93 New Store Location Proposal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recall</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Received - Damaged%2FDefective</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Received - Duplicate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Received - Extra items</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Received - Late</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Received - Misship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Received - Shortage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Registry Complaint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Registry technical issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resend Operational Email - available</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resend Operational Email - not available</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Return Policy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SDND</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SM no response required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ship to Store Inquiry%2FTransfer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spam%2FTest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Special Order Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Store Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Store Receipt Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tech - Account issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tech - Price Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tech - Product Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tech - placing order issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tech-Promotion issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Update %28Add%2FDelete Items%2C Info Change%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WIZMO - Carrier Claim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WIZMO - Not Shipped</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WIZMO - Order Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WIZMO - Order Open%2FFTA%2F%E2%80%A6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WIZMO - Shipped Untraceable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WIZMO - Shipped traceable</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Disposition_2__c</picklist>
+        <values>
+            <fullName>0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Activation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alleged Safety Concerns %28no injury%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Allergic Reaction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Already Shipped</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Authorization Explanation of hold%2Fprocess</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Authorization Void request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Balance Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Broken%2FDamaged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CanPar and other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Canada Post</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancel -  OMS %2F No warehouse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancellation not Credited</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clarification of Return Policy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Combine GC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Complaint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Content of Product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit%2FDebit Card Issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cust Not Satisfied with Resolution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Denied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Devalue GC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Did Not Revalue Ecommerce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Did Not Revalue Stores</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drop Ship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drop Ship - over timeline</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drop Ship - within timeline</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drop Ship Cancel Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ecommerce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exclusions%2FRestrictions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Expired Product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Follow Up Stores</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Follow Up ecommerce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Forgot to give card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fraud Claim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GC locked</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GTAGSM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General ISPU Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General SDND inquiries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hasn%27t received card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ISPU Cancel request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ISPU Technical Issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In store</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In-Store vs%2E Online Pricing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>InStore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Injury</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inquiries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Instructions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance%2FOther</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Issue - package%2Fdelivery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Item Not available at Pick Up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Item not marked pick up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Item refunded but picked up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lost card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lost%2FStolen Card%2FReplacement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturer Info Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturer Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing%2Fincorrect item</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multiple birth inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Contact Information Available</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Warehouse - 2 days or less</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Warehouse - over 2 days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No order found</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not R4PU but less than 1 hour</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not R4PU but over 1 hour</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not activated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Online</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order found</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order is Shipped</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order is released Drop Ship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order is released No Warehouse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order is released SFS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PM Not Honored%2FDispute</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Participating%2FProgram Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pick Up Dispute - Wants credit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pick Up Dispute - Wants item</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Policy Inquiry - rain check</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Potential Fraud%2FFraud</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price Match Request Ecommerce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price Match Request Stores</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Private Label Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Does not work as described</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Missing Part</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Promotion Complaint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Property Damage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proxy Issues%2FInquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Purolator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recall Information Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Red Flag</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Return policy complaint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SDND  -  Technical Issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SFS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SFS - 2 days or less</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SFS - Wrong order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SFS - Wrong product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SFS - over 2 days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SFS Cancel Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Store Did Not Fulfill%2FItem Not Available</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Store Did Not Provide Rain Check</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Store Event - Complaints%2FIssues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stores</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRU cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tax Exempt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Third-Party Card Issue%2FInquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User Confusion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WIZMO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>eGC Not Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>email not received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>pick up extension request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>refund request</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>GC_frozen__c</picklist>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>KIT_Status__c</picklist>
+        <values>
+            <fullName>Resolved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting on Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting on Store</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting on Support</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Monitor_Queue__c</picklist>
+        <values>
+            <fullName>All Levels - Monitor Queue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tier 2 - Monitor Queue</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Origin</picklist>
+        <values>
+            <fullName>Chat offline form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Urgent</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Queue_Sub_type__c</picklist>
+        <values>
+            <fullName>Address Correction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bin Check</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carrier claim %28Canada Post%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carrier claim %28not Canada Post%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drop Ship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ECR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Escalation and Ecom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gift Card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ISPU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Inquiries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price Match</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>R Club</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Return Label - HWP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tech Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WIZMO</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason</picklist>
+        <values>
+            <fullName>Price Match</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Receipt_requested__c</picklist>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Store_Feedback_Type__c</picklist>
+        <values>
+            <fullName>Negative</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Positive</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Baby Registry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stores</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unidentified</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

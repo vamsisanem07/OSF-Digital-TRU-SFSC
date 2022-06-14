@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>Mapping for populating Opt In Dates when parent field is filled.</description>
+    <enableFeeds>false</enableFeeds>
+    <label>TRU Opt In Dates Mapping</label>
+    <visibility>Protected</visibility>
+</CustomObject>

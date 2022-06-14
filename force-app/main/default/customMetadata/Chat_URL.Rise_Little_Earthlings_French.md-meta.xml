@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Rise Little Earthlings French</label>
+    <protected>false</protected>
+    <values>
+        <field>Balance_URL__c</field>
+        <value xsi:type="xsd:string">https://www.riselittleearthling.ca/fr/home</value>
+    </values>
+    <values>
+        <field>Brand__c</field>
+        <value xsi:type="xsd:string">RLE</value>
+    </values>
+    <values>
+        <field>Language__c</field>
+        <value xsi:type="xsd:string">fr</value>
+    </values>
+    <values>
+        <field>PA_URL__c</field>
+        <value xsi:type="xsd:string">https://www.riselittleearthling.ca/fr/help?FID=order#pricing</value>
+    </values>
+    <values>
+        <field>Return_URL__c</field>
+        <value xsi:type="xsd:string">https://www.riselittleearthling.ca/fr/help?fid=returns#retours%20et%20%C3%A9changes</value>
+    </values>
+</CustomMetadata>

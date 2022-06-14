@@ -1,0 +1,29 @@
+<template>
+    <template if:true={childDisplay}>
+        <template if:true={childDetail}>
+            <div class="slds-container slds-is-relative">
+                <div class="slds-form">
+                    <div class="slds-grid slds-wrap slds-gutters">
+                        <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1">
+                            <div
+                                class="slds-form-element slds-form-element_stacked slds-size_1-of-1 slds-small-size_1-of-2 slds-medium-size_1-of-1">
+                                <lightning-input type="text" name="ChildName" class="inputName" label={labelChName}
+                                    onchange={handleName} requied="required" minlength=2 maxlength=50
+                                    value={childDetail.Name__c} message-when-pattern-mismatch="Invalid Name"
+                                    variant={devicesize} message-when-value-missing="Please add input">
+                                </lightning-input>
+                                <lightning-input max={maxDate} min={minDate} class="inputDate" variant={devicesize}
+                                    message-when-bad-input={labelBadInput} message-when-range-overflow={labelOverflow}
+                                    message-when-range-underflow={labelUnderflow} onchange={handleDOB} type="date"
+                                    name="input1" value={childDetail.Birthday__c} label={labelChDob}></lightning-input>
+                                <lightning-button onclick={removeChild} class="btnStyleblue" label={labeRemoveChild}>
+                                </lightning-button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </template>
+    </template>
+</template>

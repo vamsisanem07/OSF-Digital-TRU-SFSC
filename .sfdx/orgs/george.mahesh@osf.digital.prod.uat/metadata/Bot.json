@@ -1,0 +1,65 @@
+{
+  "status": 0,
+  "result": [
+    {
+      "createdById": "0051U000008bjiLQAQ",
+      "createdByName": "George Mahesh",
+      "createdDate": "2022-05-03T12:36:47.000Z",
+      "fileName": "bots/Toys_R_Us_Customer_Service_Bot.bot",
+      "fullName": "Toys_R_Us_Customer_Service_Bot",
+      "id": "0Xx8M0000008OJcSAM",
+      "lastModifiedById": "0051U000008bjiLQAQ",
+      "lastModifiedByName": "George Mahesh",
+      "lastModifiedDate": "2022-05-03T12:36:47.000Z",
+      "type": "Bot"
+    },
+    {
+      "createdById": "0051U000008bjiLQAQ",
+      "createdByName": "George Mahesh",
+      "createdDate": "2022-05-03T12:36:54.000Z",
+      "fileName": "bots/Gigi.bot",
+      "fullName": "Gigi",
+      "id": "0Xx8M0000008OJhSAM",
+      "lastModifiedById": "0051U000008bjiLQAQ",
+      "lastModifiedByName": "George Mahesh",
+      "lastModifiedDate": "2022-05-03T12:36:54.000Z",
+      "type": "Bot"
+    },
+    {
+      "createdById": "0051U000008bjiLQAQ",
+      "createdByName": "George Mahesh",
+      "createdDate": "2022-03-01T15:04:27.000Z",
+      "fileName": "bots/Toys_R_Us_Chat_Bot.bot",
+      "fullName": "Toys_R_Us_Chat_Bot",
+      "id": "0Xx1U000000buodSAA",
+      "lastModifiedById": "0051U000008bjiLQAQ",
+      "lastModifiedByName": "George Mahesh",
+      "lastModifiedDate": "2022-03-01T15:49:51.000Z",
+      "type": "Bot"
+    },
+    {
+      "createdById": "0051U000008bjiLQAQ",
+      "createdByName": "George Mahesh",
+      "createdDate": "2022-05-03T12:36:32.000Z",
+      "fileName": "bots/French_ToysRUs.bot",
+      "fullName": "French_ToysRUs",
+      "id": "0Xx8M0000008OJYSA2",
+      "lastModifiedById": "0051U000008bjiLQAQ",
+      "lastModifiedByName": "George Mahesh",
+      "lastModifiedDate": "2022-05-03T12:36:32.000Z",
+      "type": "Bot"
+    },
+    {
+      "createdById": "0051U000008bjiLQAQ",
+      "createdByName": "George Mahesh",
+      "createdDate": "2022-05-03T12:36:26.000Z",
+      "fileName": "bots/Baby_G.bot",
+      "fullName": "Baby_G",
+      "id": "0Xx8M0000008OJXSA2",
+      "lastModifiedById": "0051U000008bjiLQAQ",
+      "lastModifiedByName": "George Mahesh",
+      "lastModifiedDate": "2022-05-03T12:36:26.000Z",
+      "type": "Bot"
+    }
+  ]
+}

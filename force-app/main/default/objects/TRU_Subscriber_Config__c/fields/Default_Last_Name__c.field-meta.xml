@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Default_Last_Name__c</fullName>
+    <description>Default value for Last Name field for new Person Account (in case if new customer did not provide last name in registration form)</description>
+    <externalId>false</externalId>
+    <label>Default Last Name</label>
+    <length>255</length>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

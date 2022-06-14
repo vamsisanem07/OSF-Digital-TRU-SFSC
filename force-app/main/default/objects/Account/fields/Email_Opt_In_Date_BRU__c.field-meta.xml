@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Email_Opt_In_Date_BRU__c</fullName>
+    <description>The date the Account opted in to BRU weekly marketing emails.</description>
+    <externalId>false</externalId>
+    <label>Email Opt In Date BRU</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

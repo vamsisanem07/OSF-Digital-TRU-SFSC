@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_Close_Unresolved_Case</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    (NOT (ISPICKVAL( KIT_Status__c , &apos;Resolved&apos;))),
+    ISPICKVAL( Status , &apos;Closed&apos;) ,
+    contains(RecordType.Name ,&apos;Store&apos;),
+    ISPICKVAL( Reason , &apos;In Store&apos;) 
+)</errorConditionFormula>
+    <errorMessage>A KIT/in-store case cannot be closed without a &quot;Resolved&quot; KIT status.</errorMessage>
+</ValidationRule>

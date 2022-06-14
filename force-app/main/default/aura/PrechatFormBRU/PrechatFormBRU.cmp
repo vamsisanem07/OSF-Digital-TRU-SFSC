@@ -1,0 +1,75 @@
+<aura:component implements="lightningsnapin:prechatUI" access="global" > 
+    <!-- Attributes -->
+    <aura:attribute name="firstName" type="String"/>
+    <aura:attribute name="lastName" type="String"/>
+    <aura:attribute name="email" type="String"/>
+    <aura:attribute name="entrySite" type="String"/>
+    <aura:attribute name="language" type="String" default="EN"/>
+    <aura:attribute name="isLoggedIn" type="Boolean" default="false"/> 
+    
+    <aura:locator target="startButton" description="Pre-chat form submit button."/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,600" rel="stylesheet"/>
+         
+    <aura:html tag="style">       
+        * {font-family: 'Montserrat', sans-serif; box-sizing: border-box;}         
+    </aura:html>  
+    {!v.entrySite} 
+    <!-- Main body -->
+    <aura:if isTrue="{!!v.isLoggedIn}">
+        
+        <aura:if isTrue="{!v.language == 'EN'}">
+            <p class="psgStyle">{!$Label.c.Live_Chat_Help_Text_EN} {!v.entrySite}</p> 
+            <div style="font-size: 15px;color: #fff;">{!$Label.c.Live_Chat_BRU_Message_1_EN}</div>
+            <a href="{!$Label.c.Live_Chat_BRU_Login_URL_EN}" style="font-size: 15px;font-weight: bold;color: #fff;">
+                {!$Label.c.Live_Chat_Message_2_EN} 
+            </a>
+            
+            <lightning:input label="{!$Label.c.Live_Chat_First_Name_EN}" variant="label-hidden" type="text" 
+                             required="true" aura:id="firstname" 
+                             messageWhenValueMissing="{!$Label.c.Live_Chat_Required_Fields_Message_EN}"
+                             placeholder="{!$Label.c.Live_Chat_First_Name_EN}" value="{!v.firstName}"/>
+            
+            <lightning:input label="{!$Label.c.Live_Chat_Last_Name_EN}" variant="label-hidden" required="true" 
+                             placeholder="{!$Label.c.Live_Chat_Last_Name_EN}"  type="text" value="{!v.lastName}"
+                             aura:id="lastname" messageWhenValueMissing="{!$Label.c.Live_Chat_Required_Fields_Message_EN}"/>
+            
+            <lightning:input label="{!$Label.c.Live_Chat_Email_EN}" variant="label-hidden" 
+                             placeholder="{!$Label.c.Live_Chat_Email_EN}" required="true" type="text" 
+                             value="{!v.email}" aura:id="email" 
+                             messageWhenValueMissing="{!$Label.c.Live_Chat_Required_Fields_Message_EN}"/>
+            
+            <lightning:button variant="brand" label="{!$Label.c.Live_Chat_Start_Chat_Button_EN}" class="redBtn" 
+                              onclick="{!c.handleStartChat}"/>
+        </aura:if>
+        
+        <aura:if isTrue="{!v.language == 'FR'}">
+            <p class="psgStyle">{!$Label.c.Live_Chat_Help_Text_FR}</p>
+            <div style="font-size: 15px;color: #fcfc92;">{!$Label.c.Live_Chat_BRU_Message_1_FR} </div>
+            <a href="{!$Label.c.Live_Chat_Login_URL_BRU_FR}" style="font-size: 15px;font-weight: bold;color: #fcfc92;">
+                {!$Label.c.Live_Chat_Message_2_FR} 
+            </a>
+            
+            <lightning:input label="{!$Label.c.Live_Chat_First_Name_FR}" variant="label-hidden" type="text" required="true"
+                             placeholder="{!$Label.c.Live_Chat_First_Name_FR}" value="{!v.firstName}"
+                             aura:id="firstname" messageWhenValueMissing="{!$Label.c.Live_Chat_Required_Fields_Message_FR}"/>
+            
+            <lightning:input label="{!$Label.c.Live_Chat_Last_Name_FR}" variant="label-hidden" required="true" 
+                             placeholder="{!$Label.c.Live_Chat_Last_Name_FR}"  type="text" value="{!v.lastName}"
+                             aura:id="lastname" messageWhenValueMissing="{!$Label.c.Live_Chat_Required_Fields_Message_FR}"/>
+            
+            <lightning:input label="{!$Label.c.Live_Chat_Email_FR}" variant="label-hidden" 
+                             placeholder="{!$Label.c.Live_Chat_Email_FR}" required="true" type="text" 
+                             value="{!v.email}" aura:id="email" 
+                             messageWhenValueMissing="{!$Label.c.Live_Chat_Required_Fields_Message_FR}"/>
+            
+            <lightning:button variant="brand" label="{!$Label.c.Live_Chat_Start_Chat_Button_FR}" class="redBtn" 
+                              onclick="{!c.handleStartChat}"/>
+        </aura:if>
+    </aura:if> 
+    
+    <!-- APIs -->
+    <lightningsnapin:prechatAPI aura:id="prechatAPI"/>
+    
+    <!-- Event handlers -->
+    <aura:handler name="init" action="{!c.handleInit}" value="{!this}"/>
+</aura:component>

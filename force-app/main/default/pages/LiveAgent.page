@@ -1,0 +1,100 @@
+<apex:page showHeader="false">
+    
+    <!-- This script takes the endpoint URL parameter passed from the deployment page and makes it the action for the form -->
+    <script type='text/javascript'> 
+    liveagent.details.preChatInit('https://d.la1c1.salesforceliveagent.com/chat','detailCallback');
+	var detailCallback = function (details){
+    for (var i = 0; i < details.customDetails.length; i++) {
+        if(details.customDetails[i].label == 'loggedin'){
+            console.log(details.customDetails[i].value);
+        }
+    }
+    (function() {
+        function handlePageLoad() {
+            var endpointMatcher = new RegExp("[\\?\\&]endpoint=([^&#]*)");
+            var domainMatcher = new RegExp("^(https?:\\/\\/(.+?\\.)?(salesforce|salesforcescrt|salesforceliveagent)\\.com(\\/[A-Za-z0-9\\-\\._~:\\/\\?#\[\\]@!$&'\\(\\)\*\\+,;\\=]*)?)");
+            
+            var endpointAttr = endpointMatcher.exec(document.location.search)[1];
+            // if the endpoint domain is valid
+            if (domainMatcher.test(decodeURIComponent(endpointAttr))) {
+                document.getElementById('prechatForm').setAttribute('action',
+                                                                    decodeURIComponent(endpointAttr.replace("javascript:", "")));
+            } else {
+                // invalid endpoint domain, set the action to empty
+                console.error("invalid domain: " + endpointAttr);
+                document.getElementById('prechatForm').setAttribute('action', "");
+            }
+        }
+        if (window.addEventListener) {
+            window.addEventListener('load', handlePageLoad, false);
+        } else {
+            window.attachEvent('onload', handlePageLoad, false);
+        }
+    })();
+    
+    
+};
+    </script>
+    
+    <h1>Pre-Chat Form</h1>
+    
+    <!-- Form that gathers information from the chat visitor and sets the values to Chat Custom Details used later in the example -->
+    <form method='post' id='prechatForm'>
+        First name: <input type='text' name='liveagent.prechat:ContactFirstName' id='firstName' /><br />
+        Last name: <input type='text' name='liveagent.prechat:ContactLastName' id='lastName' /><br />
+        Email: <input type='text' name='liveagent.prechat:ContactEmail' id='email' /><br /> 
+        
+        <!-- Hidden fields used to set additional custom details -->
+        <input type="hidden" name="liveagent.prechat:CaseStatus" value="New" /><br />
+        
+        <!-- This example assumes that "Chat" was added as picklist value to the Case Origin field -->
+        <input type="hidden" name="liveagent.prechat:CaseOrigin" value="Chat" /><br />
+        
+        <!-- This example will set the Case Record Type to a specific value for the record type configured on the org. Lookup the case record type's id on your org and set it here --> 
+        
+        <!-- Used to set the visitor's name for the agent in the Console -->
+        <input type="hidden" name="liveagent.prechat.name" id="prechat_field_name" />
+        
+        <!-- map: Use the data from prechat form to map it to the Salesforce record's fields -->
+        <input type="hidden" name="liveagent.prechat.findorcreate.map:Contact" value="FirstName,ContactFirstName;LastName,ContactLastName;Email,ContactEmail;" />
+        
+        <input type="hidden" name="liveagent.prechat.findorcreate.map:Case" value="Subject,CaseSubject;Status,CaseStatus;Origin,CaseOrigin;" />
+        
+        <!-- doFind, doCreate and isExactMatch example for a Contact: 
+        Find a contact whose Email exactly matches the value provided by the customer in the form 
+        If there's no match, then create a Contact record and set it's First Name, Last Name, Email, and Phone to the values provided by the customer -->
+        
+        <input type="hidden" name="liveagent.prechat.findorcreate.map.doFind:Contact" value="Email,true" />
+        <input type="hidden" name="liveagent.prechat.findorcreate.map.isExactMatch:Contact" value="Email,true" />
+        <input type="hidden" name="liveagent.prechat.findorcreate.map.doCreate:Contact" value="FirstName,true;LastName,true;Email,true;Phone,true" />
+        
+        <!-- doCreate example for a Case: create a case to attach to the chat, set the Case Subject to the value provided by the customer and set the case's Status and Origin fields -->
+        <input type="hidden" name="liveagent.prechat.findorcreate.map.doCreate:Case" value="Subject,true;Status,true;Origin,true;" />
+        
+        <!-- linkToEntity: Set the record Contact record, found/created above, as the Contact on the Case that's created --> 
+        <input type="hidden" name="liveagent.prechat.findorcreate.linkToEntity:Contact" value="Case,ContactId" />
+        
+        <!-- showOnCreate: Open the Contact and Case records as sub-tabs to the chat for the agent in the Console -->
+        <input type="hidden" name="liveagent.prechat.findorcreate.showOnCreate:Contact" value="true" />
+        <input type="hidden" name="liveagent.prechat.findorcreate.showOnCreate:Case" value="true" />
+        
+        <!-- saveToTranscript: Associates the records found / created, i.e. Contact and Case, to the Live Chat Transcript record. --> 
+        <input type="hidden" name="liveagent.prechat.findorcreate.saveToTranscript:Contact" value="ContactId" />
+        <input type="hidden" name="liveagent.prechat.findorcreate.saveToTranscript:Case" value="CaseId" />  
+        
+        <input type='submit' value='Chat Now' id='prechat_submit' onclick="setName()"/>
+        
+        <!-- Set the visitor's name for the agent in the Console to first and last name provided by the customer -->
+        <script type="text/javascript">
+        function setName() {
+            document.getElementById("prechat_field_name").value =  
+                document.getElementById("firstName").value + " " + document.getElementById("lastName").value;
+        }
+        </script>
+        
+        <style type="text/css">
+            p {font-weight: bolder }
+        </style>
+        
+    </form>
+</apex:page>

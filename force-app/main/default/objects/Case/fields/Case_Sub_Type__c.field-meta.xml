@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Sub_Type__c</fullName>
+    <description>This field holds case sub type value coming from Salesforce Commerce Cloud.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field holds case sub type value coming from Salesforce Commerce Cloud.</inlineHelpText>
+    <label>Case Sub Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Where is my order</fullName>
+                <default>false</default>
+                <label>Where is my order</label>
+            </value>
+            <value>
+                <fullName>What is my order status</fullName>
+                <default>false</default>
+                <label>What is my order status</label>
+            </value>
+            <value>
+                <fullName>Complaint</fullName>
+                <default>false</default>
+                <label>Complaint</label>
+            </value>
+            <value>
+                <fullName>In Store</fullName>
+                <default>false</default>
+                <label>In Store</label>
+            </value>
+            <value>
+                <fullName>Price Match</fullName>
+                <default>false</default>
+                <label>Price Match</label>
+            </value>
+            <value>
+                <fullName>Order General</fullName>
+                <default>false</default>
+                <label>Order General</label>
+            </value>
+            <value>
+                <fullName>Order Cancel</fullName>
+                <default>false</default>
+                <label>Order Cancel</label>
+            </value>
+            <value>
+                <fullName>Item General</fullName>
+                <default>false</default>
+                <label>Item General</label>
+            </value>
+            <value>
+                <fullName>Return</fullName>
+                <default>false</default>
+                <label>Return</label>
+            </value>
+            <value>
+                <fullName>Promotion General</fullName>
+                <default>false</default>
+                <label>Promotion General</label>
+            </value>
+            <value>
+                <fullName>Baby Registry General</fullName>
+                <default>false</default>
+                <label>Baby Registry General</label>
+            </value>
+            <value>
+                <fullName>Website General</fullName>
+                <default>false</default>
+                <label>Website General</label>
+            </value>
+            <value>
+                <fullName>RClub General</fullName>
+                <default>false</default>
+                <label>RClub General</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

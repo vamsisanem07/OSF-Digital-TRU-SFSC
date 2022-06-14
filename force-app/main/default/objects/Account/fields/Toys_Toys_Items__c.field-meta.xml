@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Toys_Toys_Items__c</fullName>
+    <externalId>false</externalId>
+    <label>Toys &amp; Toys Items</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Toys</fullName>
+                <default>false</default>
+                <label>Toys</label>
+            </value>
+            <value>
+                <fullName>Active Play &amp; Outdoor</fullName>
+                <default>false</default>
+                <label>Active Play &amp; Outdoor</label>
+            </value>
+            <value>
+                <fullName>Books</fullName>
+                <default>false</default>
+                <label>Books</label>
+            </value>
+            <value>
+                <fullName>Collectors - Grownups</fullName>
+                <default>false</default>
+                <label>Collectors - Grownups</label>
+            </value>
+            <value>
+                <fullName>Collectors - Kids</fullName>
+                <default>false</default>
+                <label>Collectors - Kids</label>
+            </value>
+            <value>
+                <fullName>Education &amp; Learning Toys Games</fullName>
+                <default>false</default>
+                <label>Education &amp; Learning Toys Games</label>
+            </value>
+            <value>
+                <fullName>Preschool Playtime</fullName>
+                <default>false</default>
+                <label>Preschool Playtime</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

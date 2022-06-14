@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Global_Email_Opt_In_Date__c</fullName>
+    <description>This field is used to store the customer&apos;s date at which he/she signed up for emails globally across all banners</description>
+    <externalId>false</externalId>
+    <label>Global Email Opt In Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

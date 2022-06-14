@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Consent_Needed__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Used during YM Dataload. These subscribers should be included in an opt-in campaign for Loyalty Purposes.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Used during YM Dataload. These subscribers should be included in an opt-in campaign for Loyalty Purposes.</inlineHelpText>
+    <label>Consent Needed</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

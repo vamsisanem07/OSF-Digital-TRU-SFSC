@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Gift_Card_Lost_Stolen_Replacement</fullName>
+    <active>true</active>
+    <errorConditionFormula>ispickval(Disposition_2__c ,&quot;Lost/Stolen Card/Replacement&quot;)
+&amp;&amp;
+(isblank(Text(GC_frozen__c)) || isblank(Text(Receipt_requested__c)))</errorConditionFormula>
+    <errorDisplayField>GC_frozen__c</errorDisplayField>
+    <errorMessage>For a lost, stolen or replacement card you must specify whether the card has been frozen and if a receipt has been requested.</errorMessage>
+</ValidationRule>

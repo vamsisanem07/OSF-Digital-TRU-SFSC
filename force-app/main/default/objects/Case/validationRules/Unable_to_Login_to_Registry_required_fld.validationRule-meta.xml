@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unable_to_Login_to_Registry_required_fld</fullName>
+    <active>false</active>
+    <errorConditionFormula>ispickval(Disposition_1__c ,&quot;Unable to log in to registry&quot;)
+&amp;&amp;
+isblank( Registry_Number__c )</errorConditionFormula>
+    <errorMessage>Please include the Registry Number when using this disposition.</errorMessage>
+</ValidationRule>

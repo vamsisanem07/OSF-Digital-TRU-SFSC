@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hour_of_Day_Opened__c</fullName>
+    <description>This is the Hour (1-12, starting at midnight) that the case transcript was opened. Salesforce stores created date standard field information in GMT. The formula is required to adjust the dates for EST.</description>
+    <externalId>false</externalId>
+    <formula>Hour(TIMEVALUE( CreatedDate - ( 5 / 24 ) )) +1</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Hour of Day Opened</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,88 @@
+{
+  "status": 0,
+  "result": [
+    {
+      "createdById": "0051U000005XFFIQA4",
+      "createdByName": "AstoundOldUser",
+      "createdDate": "2019-06-20T14:47:20.000Z",
+      "fileName": "Workflow/et4ae5__SMSDefinition__c.workflow",
+      "fullName": "et4ae5__SMSDefinition__c",
+      "id": "01I1U000002s3lmUAA",
+      "lastModifiedById": "0051U000005XLwAQAW",
+      "lastModifiedByName": "Marketing Cloud",
+      "lastModifiedDate": "2022-06-14T05:49:06.000Z",
+      "manageableState": "installed",
+      "namespacePrefix": "et4ae5",
+      "type": "Workflow"
+    },
+    {
+      "createdById": "0051U000005XFFIQA4",
+      "createdByName": "AstoundOldUser",
+      "createdDate": "2019-06-20T14:47:21.000Z",
+      "fileName": "Workflow/et4ae5__SendDefinition__c.workflow",
+      "fullName": "et4ae5__SendDefinition__c",
+      "id": "01I1U000002s3loUAA",
+      "lastModifiedById": "0051U000005XLwAQAW",
+      "lastModifiedByName": "Marketing Cloud",
+      "lastModifiedDate": "2022-06-14T05:49:06.000Z",
+      "manageableState": "installed",
+      "namespacePrefix": "et4ae5",
+      "type": "Workflow"
+    },
+    {
+      "createdById": "0051U000005XFFIQA4",
+      "createdByName": "AstoundOldUser",
+      "createdDate": "2019-06-20T14:47:19.000Z",
+      "fileName": "Workflow/et4ae5__IndividualEmailResult__c.workflow",
+      "fullName": "et4ae5__IndividualEmailResult__c",
+      "id": "01I1U000002s3liUAA",
+      "lastModifiedById": "0051U000005XLwAQAW",
+      "lastModifiedByName": "Marketing Cloud",
+      "lastModifiedDate": "2022-06-14T05:49:06.000Z",
+      "manageableState": "installed",
+      "namespacePrefix": "et4ae5",
+      "type": "Workflow"
+    },
+    {
+      "createdById": "0051U000005XFFIQA4",
+      "createdByName": "AstoundOldUser",
+      "createdDate": "2019-06-20T14:47:18.000Z",
+      "fileName": "Workflow/et4ae5__Automated_Send__c.workflow",
+      "fullName": "et4ae5__Automated_Send__c",
+      "id": "01I1U000002s3lXUAQ",
+      "lastModifiedById": "0051U000005XLwAQAW",
+      "lastModifiedByName": "Marketing Cloud",
+      "lastModifiedDate": "2022-06-14T05:49:06.000Z",
+      "manageableState": "installed",
+      "namespacePrefix": "et4ae5",
+      "type": "Workflow"
+    },
+    {
+      "createdById": "0051U000008bjiLQAQ",
+      "createdByName": "George Mahesh",
+      "createdDate": "1970-01-01T00:00:00.000Z",
+      "fileName": "workflows/Case.workflow",
+      "fullName": "Case",
+      "id": "",
+      "lastModifiedById": "0051U000008bjiLQAQ",
+      "lastModifiedByName": "George Mahesh",
+      "lastModifiedDate": "1970-01-01T00:00:00.000Z",
+      "namespacePrefix": "",
+      "type": "Workflow"
+    },
+    {
+      "createdById": "0051U000005XFFIQA4",
+      "createdByName": "AstoundOldUser",
+      "createdDate": "2019-06-20T14:47:21.000Z",
+      "fileName": "Workflow/et4ae5__SupportRequest__c.workflow",
+      "fullName": "et4ae5__SupportRequest__c",
+      "id": "01I1U000002s3lqUAA",
+      "lastModifiedById": "0051U000005XLwAQAW",
+      "lastModifiedByName": "Marketing Cloud",
+      "lastModifiedDate": "2022-06-14T05:49:06.000Z",
+      "manageableState": "installed",
+      "namespacePrefix": "et4ae5",
+      "type": "Workflow"
+    }
+  ]
+}

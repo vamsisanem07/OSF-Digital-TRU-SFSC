@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AllOpenCases</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <columns>NAME</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>Queue_Sub_type__c</columns>
+    <columns>Channel__c</columns>
+    <columns>OWNER_NAME</columns>
+    <columns>Store__c</columns>
+    <columns>UPDATEDBY_USER.ALIAS</columns>
+    <columns>Web_Language__c</columns>
+    <columns>CASES.RECORDTYPE</columns>
+    <columns>Email__c</columns>
+    <columns>CONTACT.FIRST_NAME</columns>
+    <columns>CONTACT.LAST_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <label>All Open Cases</label>
+</ListView>

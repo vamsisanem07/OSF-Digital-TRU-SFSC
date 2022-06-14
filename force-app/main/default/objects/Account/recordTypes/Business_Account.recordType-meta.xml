@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Business_Account</fullName>
+    <active>true</active>
+    <label>Business Account</label>
+    <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>Advertisement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employee Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Google AdWords</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Purchased List</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade Show</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Webinar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Website</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Baby_Baby_Items__c</picklist>
+        <values>
+            <fullName>Baby</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Baby Gear %26 Essentials</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nursury %26 Feeding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pregnancy %26 Parenting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Safety%2C Health %26 Wellness</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Toys %26 Activities</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Email_Opt_In_BRU_Source__c</picklist>
+        <values>
+            <fullName>BRU Account Creation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BRU Newsletter Signup</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BRU Pop Up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cart Page</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preference Centre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>R Club - In-Store Signup</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>R Club - Online Registration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RLE Account Creation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RLE Newsletter Signup</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RLE Pop Up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Registry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRU Account Creation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRU Newsletter Signup</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRU Pop Up</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Email_Opt_In_TRU_Source__c</picklist>
+        <values>
+            <fullName>BRU Account Creation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BRU Newsletter Signup</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BRU Pop Up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cart Page</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preference Centre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>R Club - In-Store Signup</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>R Club - Online Registration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RLE Account Creation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RLE Newsletter Signup</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RLE Pop Up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Registry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRU Account Creation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRU Newsletter Signup</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRU Pop Up</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Email_Opt_in_RLE_Source__c</picklist>
+        <values>
+            <fullName>BRU Account Creation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BRU Newsletter Signup</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BRU Pop Up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cart Page</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preference Centre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>R Club - In-Store Signup</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>R Club - Online Registration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RLE Account Creation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RLE Newsletter Signup</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RLE Pop Up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Registry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRU Account Creation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRU Newsletter Signup</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRU Pop Up</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Global_Email_Opt_In_Source__c</picklist>
+        <values>
+            <fullName>BRU Account Creation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BRU Newsletter Signup</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BRU Pop Up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cart Page</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preference Centre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>R Club - In-Store Signup</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>R Club - Online Registration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RLE Account Creation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RLE Newsletter Signup</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RLE Pop Up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Registry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRU Account Creation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRU Newsletter Signup</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRU Pop Up</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Industry</picklist>
+        <values>
+            <fullName>Agriculture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apparel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Banking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Biotechnology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chemicals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Communications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consulting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entertainment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Environmental</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food %26 Beverage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospitality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Machinery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not For Profit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recreation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telecommunications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transportation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utilities</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Language_Preference__c</picklist>
+        <values>
+            <fullName>EN</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>FR</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ownership</picklist>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Private</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subsidiary</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rating</picklist>
+        <values>
+            <fullName>Cold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warm</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Toys_Toys_Items__c</picklist>
+        <values>
+            <fullName>Active Play %26 Outdoor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Books</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collectors - Grownups</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collectors - Kids</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education %26 Learning Toys Games</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preschool Playtime</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Toys</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Analyst</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Integrator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Investor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Press</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reseller</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

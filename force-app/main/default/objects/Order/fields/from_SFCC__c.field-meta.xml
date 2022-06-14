@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>from_SFCC__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This field holds if this record created from Commerce Cloud</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field holds if this record created from Commerce Cloud</inlineHelpText>
+    <label>from SFCC</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,59 @@
+.THIS.psgStyle{font-size:10px; color:#fff;}
+
+.THIS.psgStyle {
+    font-size: 16px;
+    color:#fff
+}
+.THIS .slds-input{
+    width:100%;
+    padding:12px 10px;
+    
+}
+.THIS.slds-button.redBtn {
+    background: #ff2e57;
+    border: 1px solid #ff2e57;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+}
+.THIS label.slds-form-element__label.slds-no-flex.slds-assistive-text {
+    font-size: 0;
+}
+
+.THIS .slds-form-element__help{
+    color:#fff
+}
+.THIS abbr.slds-required { 
+    color: #fff; 
+    font-size: 16px;
+    position: absolute; 
+    left: 0; 
+    top: -10px;
+    text-decoration: none; 
+}
+.THIS.slds-form-element { margin-top: 20px; position: relative; }
+.THIS ::placeholder { 
+    color: #194da9;
+    font-weight:600;
+}
+
+.THIS :-ms-input-placeholder { 
+    color: #194da9;
+    font-weight:600;
+}
+
+.THIS ::-ms-input-placeholder {
+    color: #194da9;
+    font-weight:600;
+}
+.THIS .slds-form-element__help {
+    color: #fff;
+    font-size: 12px;
+    text-align: left;
+}
+.THIS .slds-input:active, .THIS .slds-input:focus {
+    outline: 0;
+}

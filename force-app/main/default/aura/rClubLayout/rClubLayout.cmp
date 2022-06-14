@@ -1,0 +1,13 @@
+<aura:component implements="forceCommunity:themeLayout" access="global" description="Full Width Theme Layout">
+    <aura:attribute name="header" type="Aura.Component[]" description="Header"/>
+    <aura:attribute name="footer" type="Aura.Component[]" description="Footer"/>
+    <div>
+        {!v.header}
+    </div>
+    <div>
+        {!v.body}
+    </div>
+    <div>
+        {!v.footer}
+    </div>
+</aura:component>

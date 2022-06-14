@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SFCC_Customer_Id__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <description>This field holds Salesforce Commerce Cloud Customer ID.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field holds Salesforce Commerce Cloud Customer ID.</inlineHelpText>
+    <label>SFCC Customer Id</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>
