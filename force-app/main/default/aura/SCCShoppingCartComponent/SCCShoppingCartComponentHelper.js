@@ -1,0 +1,5 @@
+({
+	openShoppingCartHelper : function() {
+		
+	}
+})

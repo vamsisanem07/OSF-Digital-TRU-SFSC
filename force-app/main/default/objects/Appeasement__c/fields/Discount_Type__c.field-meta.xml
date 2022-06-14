@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Discount_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Discount Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Purpose_of_Appeasement__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Checklist - 8 mth - Online</fullName>
+                <default>false</default>
+                <label>Checklist - 8 mth - Online</label>
+            </value>
+            <value>
+                <fullName>Completion - 9 mth - Online</fullName>
+                <default>false</default>
+                <label>Completion - 9 mth - Online</label>
+            </value>
+            <value>
+                <fullName>Completion - 9 mth - Stores</fullName>
+                <default>false</default>
+                <label>Completion - 9 mth - Stores</label>
+            </value>
+            <value>
+                <fullName>Congrats - 1 mth post - Online</fullName>
+                <default>false</default>
+                <label>Congrats - 1 mth post - Online</label>
+            </value>
+            <value>
+                <fullName>Congrats - 1 mth post - Stores</fullName>
+                <default>false</default>
+                <label>Congrats - 1 mth post - Stores</label>
+            </value>
+            <value>
+                <fullName>Family And Friends - 7mth - Online</fullName>
+                <default>false</default>
+                <label>Family And Friends - 7mth - Online</label>
+            </value>
+            <value>
+                <fullName>Family And Friends - 7mth - Stores</fullName>
+                <default>false</default>
+                <label>Family And Friends - 7mth - Stores</label>
+            </value>
+            <value>
+                <fullName>Feeding Infant - 2 mth post - Online</fullName>
+                <default>false</default>
+                <label>Feeding Infant - 2 mth post - Online</label>
+            </value>
+            <value>
+                <fullName>Feeding Infant - 2 mth post - Stores</fullName>
+                <default>false</default>
+                <label>Feeding Infant - 2 mth post - Stores</label>
+            </value>
+            <value>
+                <fullName>FisherPrice - 6mth - Online</fullName>
+                <default>false</default>
+                <label>FisherPrice - 6mth - Online</label>
+            </value>
+            <value>
+                <fullName>FisherPrice - 6mth - Stores</fullName>
+                <default>false</default>
+                <label>FisherPrice - 6mth - Stores</label>
+            </value>
+            <value>
+                <fullName>Welcome - Online</fullName>
+                <default>false</default>
+                <label>Welcome - Online</label>
+            </value>
+            <value>
+                <fullName>Welcome - Stores</fullName>
+                <default>false</default>
+                <label>Welcome - Stores</label>
+            </value>
+            <value>
+                <fullName>$5</fullName>
+                <default>false</default>
+                <label>$5</label>
+            </value>
+            <value>
+                <fullName>$10</fullName>
+                <default>false</default>
+                <label>$10</label>
+            </value>
+            <value>
+                <fullName>$15</fullName>
+                <default>false</default>
+                <label>$15</label>
+            </value>
+            <value>
+                <fullName>$20</fullName>
+                <default>false</default>
+                <label>$20</label>
+            </value>
+            <value>
+                <fullName>$25</fullName>
+                <default>false</default>
+                <label>$25</label>
+            </value>
+            <value>
+                <fullName>$30</fullName>
+                <default>false</default>
+                <label>$30</label>
+            </value>
+            <value>
+                <fullName>$35</fullName>
+                <default>false</default>
+                <label>$35</label>
+            </value>
+            <value>
+                <fullName>$40</fullName>
+                <default>false</default>
+                <label>$40</label>
+            </value>
+            <value>
+                <fullName>$45</fullName>
+                <default>false</default>
+                <label>$45</label>
+            </value>
+            <value>
+                <fullName>$50</fullName>
+                <default>false</default>
+                <label>$50</label>
+            </value>
+            <value>
+                <fullName>10%</fullName>
+                <default>false</default>
+                <label>10%</label>
+            </value>
+            <value>
+                <fullName>15%</fullName>
+                <default>false</default>
+                <label>15%</label>
+            </value>
+            <value>
+                <fullName>20%</fullName>
+                <default>false</default>
+                <label>20%</label>
+            </value>
+            <value>
+                <fullName>25%</fullName>
+                <default>false</default>
+                <label>25%</label>
+            </value>
+            <value>
+                <fullName>30%</fullName>
+                <default>false</default>
+                <label>30%</label>
+            </value>
+            <value>
+                <fullName>40%</fullName>
+                <default>false</default>
+                <label>40%</label>
+            </value>
+            <value>
+                <fullName>50%</fullName>
+                <default>false</default>
+                <label>50%</label>
+            </value>
+            <value>
+                <fullName>$150</fullName>
+                <default>false</default>
+                <label>$150</label>
+            </value>
+            <value>
+                <fullName>$300</fullName>
+                <default>false</default>
+                <label>$300</label>
+            </value>
+            <value>
+                <fullName>$600</fullName>
+                <default>false</default>
+                <label>$600</label>
+            </value>
+            <value>
+                <fullName>$1,000</fullName>
+                <default>false</default>
+                <label>$1,000</label>
+            </value>
+            <value>
+                <fullName>$250 ECR Product</fullName>
+                <default>false</default>
+                <label>$250 ECR Product</label>
+            </value>
+            <value>
+                <fullName>ECR Free Shipping $750</fullName>
+                <default>false</default>
+                <label>ECR Free Shipping $750</label>
+            </value>
+            <value>
+                <fullName>$500 ECR Product</fullName>
+                <default>false</default>
+                <label>$500 ECR Product</label>
+            </value>
+            <value>
+                <fullName>Birthday - Online</fullName>
+                <default>false</default>
+                <label>Birthday - Online</label>
+            </value>
+            <value>
+                <fullName>Birthday - Stores</fullName>
+                <default>false</default>
+                <label>Birthday - Stores</label>
+            </value>
+            <value>
+                <fullName>Registry completion - Online</fullName>
+                <default>false</default>
+                <label>Registry completion - Online</label>
+            </value>
+            <value>
+                <fullName>Registry completion - Stores</fullName>
+                <default>false</default>
+                <label>Registry completion - Stores</label>
+            </value>
+            <value>
+                <fullName>$10 off shipping</fullName>
+                <default>false</default>
+                <label>$10 off shipping</label>
+            </value>
+            <value>
+                <fullName>$20 off shipping</fullName>
+                <default>false</default>
+                <label>$20 off shipping</label>
+            </value>
+            <value>
+                <fullName>Free shipping</fullName>
+                <default>false</default>
+                <label>Free shipping</label>
+            </value>
+            <value>
+                <fullName>Misship Free shipping $250</fullName>
+                <default>false</default>
+                <label>Misship Free shipping $250</label>
+            </value>
+            <value>
+                <fullName>Shortship Free Shipping $250</fullName>
+                <default>false</default>
+                <label>Shortship Free Shipping $250</label>
+            </value>
+            <value>
+                <fullName>Damaged Free Shipping $250</fullName>
+                <default>false</default>
+                <label>Damaged Free Shipping $250</label>
+            </value>
+            <value>
+                <fullName>ISPU Free Shipping $250</fullName>
+                <default>false</default>
+                <label>ISPU Free Shipping $250</label>
+            </value>
+            <value>
+                <fullName>Checklist - 8 mth - Stores</fullName>
+                <default>false</default>
+                <label>Checklist - 8 mth - Stores</label>
+            </value>
+            <value>
+                <fullName>Mth Before Birthday - Stores</fullName>
+                <default>false</default>
+                <label>Mth Before Birthday - Stores</label>
+            </value>
+            <value>
+                <fullName>Mth Before Birthday - Online</fullName>
+                <default>false</default>
+                <label>Mth Before Birthday - Online</label>
+            </value>
+            <value>
+                <fullName>$05</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>$05</label>
+            </value>
+            <value>
+                <fullName>$1000</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>$1000</label>
+            </value>
+            <value>
+                <fullName>$200 ECR Shipping</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>$200 ECR Shipping</label>
+            </value>
+            <value>
+                <fullName>1 month before birthday - Online</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1 month before birthday - Online</label>
+            </value>
+            <value>
+                <fullName>1 month before birthday - Stores</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1 month before birthday - Stores</label>
+            </value>
+            <value>
+                <fullName>Checklist - 8 mth Stores</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Checklist - 8 mth Stores</label>
+            </value>
+            <value>
+                <fullName>FisherPrice – 6 mth - Online</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>FisherPrice – 6 mth - Online</label>
+            </value>
+            <value>
+                <fullName>FisherPrice – 6 mth - Stores</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>FisherPrice – 6 mth - Stores</label>
+            </value>
+            <value>
+                <fullName>Free Standard shipping</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Free Standard shipping</label>
+            </value>
+            <value>
+                <fullName>Shipping</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Shipping</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Baby Registry</controllingFieldValue>
+            <valueName>Checklist - 8 mth - Online</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Baby Registry</controllingFieldValue>
+            <valueName>Completion - 9 mth - Online</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Baby Registry</controllingFieldValue>
+            <valueName>Completion - 9 mth - Stores</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Baby Registry</controllingFieldValue>
+            <valueName>Congrats - 1 mth post - Online</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Baby Registry</controllingFieldValue>
+            <valueName>Congrats - 1 mth post - Stores</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Baby Registry</controllingFieldValue>
+            <valueName>Family And Friends - 7mth - Online</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Baby Registry</controllingFieldValue>
+            <valueName>Family And Friends - 7mth - Stores</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Baby Registry</controllingFieldValue>
+            <valueName>Feeding Infant - 2 mth post - Online</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Baby Registry</controllingFieldValue>
+            <valueName>Feeding Infant - 2 mth post - Stores</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Baby Registry</controllingFieldValue>
+            <valueName>FisherPrice - 6mth - Online</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Baby Registry</controllingFieldValue>
+            <valueName>FisherPrice - 6mth - Stores</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Baby Registry</controllingFieldValue>
+            <controllingFieldValue>RClub</controllingFieldValue>
+            <valueName>Welcome - Online</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Baby Registry</controllingFieldValue>
+            <controllingFieldValue>RClub</controllingFieldValue>
+            <valueName>Welcome - Stores</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Baby Registry</controllingFieldValue>
+            <valueName>Checklist - 8 mth - Stores</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CS Appeasement</controllingFieldValue>
+            <controllingFieldValue>Order Replacement</controllingFieldValue>
+            <valueName>$5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CS Appeasement</controllingFieldValue>
+            <controllingFieldValue>Order Replacement</controllingFieldValue>
+            <valueName>$10</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CS Appeasement</controllingFieldValue>
+            <controllingFieldValue>Order Replacement</controllingFieldValue>
+            <valueName>$15</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CS Appeasement</controllingFieldValue>
+            <controllingFieldValue>Order Replacement</controllingFieldValue>
+            <valueName>$20</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CS Appeasement</controllingFieldValue>
+            <controllingFieldValue>Order Replacement</controllingFieldValue>
+            <valueName>$25</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CS Appeasement</controllingFieldValue>
+            <controllingFieldValue>Order Replacement</controllingFieldValue>
+            <valueName>$30</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CS Appeasement</controllingFieldValue>
+            <controllingFieldValue>Order Replacement</controllingFieldValue>
+            <valueName>$35</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CS Appeasement</controllingFieldValue>
+            <controllingFieldValue>Order Replacement</controllingFieldValue>
+            <valueName>$40</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CS Appeasement</controllingFieldValue>
+            <controllingFieldValue>Order Replacement</controllingFieldValue>
+            <valueName>$45</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CS Appeasement</controllingFieldValue>
+            <controllingFieldValue>Order Replacement</controllingFieldValue>
+            <valueName>$50</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CS Appeasement</controllingFieldValue>
+            <controllingFieldValue>Order Replacement</controllingFieldValue>
+            <controllingFieldValue>Bulk Order</controllingFieldValue>
+            <valueName>10%</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CS Appeasement</controllingFieldValue>
+            <controllingFieldValue>Order Replacement</controllingFieldValue>
+            <controllingFieldValue>Bulk Order</controllingFieldValue>
+            <valueName>15%</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CS Appeasement</controllingFieldValue>
+            <controllingFieldValue>Order Replacement</controllingFieldValue>
+            <valueName>20%</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CS Appeasement</controllingFieldValue>
+            <controllingFieldValue>Order Replacement</controllingFieldValue>
+            <valueName>25%</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CS Appeasement</controllingFieldValue>
+            <controllingFieldValue>Order Replacement</controllingFieldValue>
+            <valueName>30%</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CS Appeasement</controllingFieldValue>
+            <controllingFieldValue>Order Replacement</controllingFieldValue>
+            <valueName>40%</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CS Appeasement</controllingFieldValue>
+            <controllingFieldValue>Order Replacement</controllingFieldValue>
+            <valueName>50%</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Damaged</controllingFieldValue>
+            <controllingFieldValue>Misship</controllingFieldValue>
+            <controllingFieldValue>Shortship</controllingFieldValue>
+            <valueName>$150</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Damaged</controllingFieldValue>
+            <controllingFieldValue>Misship</controllingFieldValue>
+            <controllingFieldValue>Shortship</controllingFieldValue>
+            <valueName>$300</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Damaged</controllingFieldValue>
+            <controllingFieldValue>Misship</controllingFieldValue>
+            <controllingFieldValue>Shortship</controllingFieldValue>
+            <valueName>$600</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Damaged</controllingFieldValue>
+            <controllingFieldValue>Misship</controllingFieldValue>
+            <controllingFieldValue>Shortship</controllingFieldValue>
+            <valueName>$1,000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ECR</controllingFieldValue>
+            <valueName>$250 ECR Product</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ECR</controllingFieldValue>
+            <valueName>ECR Free Shipping $750</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ECR</controllingFieldValue>
+            <valueName>$500 ECR Product</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RClub</controllingFieldValue>
+            <valueName>Birthday - Online</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RClub</controllingFieldValue>
+            <valueName>Birthday - Stores</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RClub</controllingFieldValue>
+            <valueName>Registry completion - Online</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RClub</controllingFieldValue>
+            <valueName>Registry completion - Stores</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RClub</controllingFieldValue>
+            <valueName>Mth Before Birthday - Stores</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RClub</controllingFieldValue>
+            <valueName>Mth Before Birthday - Online</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shipping</controllingFieldValue>
+            <valueName>$10 off shipping</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shipping</controllingFieldValue>
+            <valueName>$20 off shipping</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shipping</controllingFieldValue>
+            <valueName>Free shipping</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shipping</controllingFieldValue>
+            <valueName>Misship Free shipping $250</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shipping</controllingFieldValue>
+            <valueName>Shortship Free Shipping $250</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shipping</controllingFieldValue>
+            <valueName>Damaged Free Shipping $250</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shipping</controllingFieldValue>
+            <valueName>ISPU Free Shipping $250</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

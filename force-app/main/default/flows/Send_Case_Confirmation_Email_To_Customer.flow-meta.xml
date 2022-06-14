@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <processMetadataValues>
+            <name>emailAlertSelection</name>
+            <value>
+                <stringValue>Case_Confirmation_Alert_General</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_1_A1</name>
+        <label>Case Confirmation Alert (General)</label>
+        <locationX>100</locationX>
+        <locationY>200</locationY>
+        <actionName>Case.Case_Confirmation_Alert_General</actionName>
+        <actionType>emailAlert</actionType>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>emailAlertSelection</name>
+            <value>
+                <stringValue>Case_Confirmation_Alert_Store_inquiries</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_3_A1</name>
+        <label>Case Confirmation Alert (Store inquiries)</label>
+        <locationX>300</locationX>
+        <locationY>200</locationY>
+        <actionName>Case.Case_Confirmation_Alert_Store_inquiries</actionName>
+        <actionType>emailAlert</actionType>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>emailAlertSelection</name>
+            <value>
+                <stringValue>Case_Confirmation_Alert_Price_Match</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_5_A1</name>
+        <label>Case Confirmation Alert (Price Match)</label>
+        <locationX>500</locationX>
+        <locationY>200</locationY>
+        <actionName>Case.Case_Confirmation_Alert_Price_Match</actionName>
+        <actionType>emailAlert</actionType>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>49.0</apiVersion>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>0.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision</name>
+        <label>myDecision</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision2</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_1</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_1_A1</targetReference>
+            </connector>
+            <label>Record Type = Contact Us</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>1.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision2</name>
+        <label>myDecision2</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision4</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_3</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_3</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_3_A1</targetReference>
+            </connector>
+            <label>Record Type = In Store Case</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>2.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision4</name>
+        <label>myDecision4</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_5</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_5</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_5_A1</targetReference>
+            </connector>
+            <label>Record Type = Price Match</label>
+        </rules>
+    </decisions>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND([Case].RecordTypeId != null, 
+	  [Case].RecordType.DeveloperName = &apos;Contact_Us&apos;, 
+	  [Case].ContactId != null, 
+	  [Case].ContactEmail != null, 
+	  NOT(ISPICKVAL([Case].Origin, &apos;Phone&apos;)), 
+	  [Case].Not_Manual__c  = true, 
+	  OR(ISNEW(), ISCHANGED([Case].Not_Manual__c))) </stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_1</name>
+        <dataType>Boolean</dataType>
+        <expression>AND({!myVariable_current.RecordTypeId} != null, 
+	  {!myVariable_current.RecordType.DeveloperName} = &apos;Contact_Us&apos;, 
+	  {!myVariable_current.ContactId} != null, 
+	  {!myVariable_current.ContactEmail} != null, 
+	  NOT(ISPICKVAL({!myVariable_current.Origin}, &apos;Phone&apos;)), 
+	  {!myVariable_current.Not_Manual__c}  = true, 
+	  OR(ISNEW(), ISCHANGED({!myVariable_current.Not_Manual__c})))</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND([Case].RecordTypeId != null, 
+	  [Case].RecordType.DeveloperName = &apos;In_Store_Case&apos;, 
+	  [Case].ContactId != null, 
+	  [Case].ContactEmail != null, 
+	  NOT(ISPICKVAL([Case].Origin, &apos;Phone&apos;)), 
+	  [Case].Not_Manual__c  = true, 
+	  OR(ISNEW(), ISCHANGED([Case].Not_Manual__c))) </stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_3</name>
+        <dataType>Boolean</dataType>
+        <expression>AND({!myVariable_current.RecordTypeId} != null, 
+	  {!myVariable_current.RecordType.DeveloperName} = &apos;In_Store_Case&apos;, 
+	  {!myVariable_current.ContactId} != null, 
+	  {!myVariable_current.ContactEmail} != null, 
+	  NOT(ISPICKVAL({!myVariable_current.Origin}, &apos;Phone&apos;)), 
+	  {!myVariable_current.Not_Manual__c}  = true, 
+	  OR(ISNEW(), ISCHANGED({!myVariable_current.Not_Manual__c})))</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND([Case].RecordTypeId != null, 
+	  [Case].RecordType.DeveloperName = &apos;Price_Match&apos;, 
+	  [Case].ContactId != null, 
+	  [Case].ContactEmail != null, 
+	  NOT(ISPICKVAL([Case].Origin, &apos;Phone&apos;)), 
+	  [Case].Not_Manual__c  = true, 
+	  OR(ISNEW(), ISCHANGED([Case].Not_Manual__c))) </stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_5</name>
+        <dataType>Boolean</dataType>
+        <expression>AND({!myVariable_current.RecordTypeId} != null, 
+	  {!myVariable_current.RecordType.DeveloperName} = &apos;Price_Match&apos;, 
+	  {!myVariable_current.ContactId} != null, 
+	  {!myVariable_current.ContactEmail} != null, 
+	  NOT(ISPICKVAL({!myVariable_current.Origin}, &apos;Phone&apos;)), 
+	  {!myVariable_current.Not_Manual__c}  = true, 
+	  OR(ISNEW(), ISCHANGED({!myVariable_current.Not_Manual__c})))</expression>
+    </formulas>
+    <interviewLabel>Send_Case_Confirmation_Email_To_Customer-7_InterviewLabel</interviewLabel>
+    <label>Send Case Confirmation Email To Customer</label>
+    <processMetadataValues>
+        <name>ObjectType</name>
+        <value>
+            <stringValue>Case</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>ObjectVariable</name>
+        <value>
+            <elementReference>myVariable_current</elementReference>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OldObjectVariable</name>
+        <value>
+            <elementReference>myVariable_old</elementReference>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>TriggerType</name>
+        <value>
+            <stringValue>onAllChanges</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Workflow</processType>
+    <startElementReference>myDecision</startElementReference>
+    <status>Active</status>
+    <variables>
+        <name>myVariable_current</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Case</objectType>
+    </variables>
+    <variables>
+        <name>myVariable_old</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Case</objectType>
+    </variables>
+</Flow>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Order_Field_Required_If_Type_Is_Order</fullName>
+    <active>true</active>
+    <description>If Case Type = Order validate that the order field is populated</description>
+    <errorConditionFormula>ISPICKVAL(Type, &apos;Order&apos;) &amp;&amp;  ISBLANK(Order__c) &amp;&amp;
+NOT(IsPickval( Disposition_1__c ,  &apos;Bulk Order&apos;) || 
+				IsPickval( Disposition_1__c ,  &apos;General inquiry (shipping, etc)&apos;) || 
+				IsPickval( Disposition_1__c ,  &apos;General Inquiry - International Other&apos;) ||
+				IsPickval( Disposition_1__c ,  &apos;No order number received&apos;) ||
+				IsPickval( Disposition_1__c ,  &apos;Order not in OMS&apos;) ||
+IsPickval( Disposition_1__c ,  &apos;Order - Shipping charge inquiry/complaint&apos;) ||
+				IsPickval( Disposition_1__c ,  &apos;Tech - placing order issue&apos;) ||
+				IsPickval( Disposition_1__c ,  &apos;No Order Placed&apos;) ||
+(IsPickval( Disposition_1__c , &apos;ISPU&apos;) &amp;&amp; IsPickval( Disposition_2__c , &apos;General ISPU Inquiry&apos;)) ||
+(IsPickval( Disposition_1__c , &apos;ISPU&apos;) &amp;&amp; IsPickval( Disposition_2__c , &apos;Proxy Issues/Inquiry&apos;)) ||
+(IsPickval( Disposition_1__c , &apos;No order number or email received&apos;) &amp;&amp; IsPickval( Disposition_2__c , &apos;No order found&apos;)) ||
+(IsPickval( Disposition_1__c , &apos;SDND&apos;) &amp;&amp; IsPickval( Disposition_2__c , &apos;SDND  -  Technical Issues&apos;)) ||
+(IsPickval( Disposition_1__c , &apos;SDND&apos;) &amp;&amp; IsPickval( Disposition_2__c , &apos;General SDND inquiries&apos;)))</errorConditionFormula>
+    <errorDisplayField>Order__c</errorDisplayField>
+    <errorMessage>Please fill Order field.</errorMessage>
+</ValidationRule>

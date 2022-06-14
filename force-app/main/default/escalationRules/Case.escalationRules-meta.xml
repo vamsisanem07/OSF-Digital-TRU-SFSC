@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EscalationRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <escalationRule>
+        <fullName>Waiting on Store KIT Status Escalation</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <businessHoursSource>Case</businessHoursSource>
+            <escalationAction>
+                <assignedTo>In_Store_Director_Escalation</assignedTo>
+                <assignedToType>Queue</assignedToType>
+                <minutesToEscalation>30</minutesToEscalation>
+                <notifyCaseOwner>false</notifyCaseOwner>
+            </escalationAction>
+            <escalationStartTime>CaseLastModified</escalationStartTime>
+            <formula>AND( CONTAINS( OwnerId , &apos;00G&apos;), Owner:Queue.QueueName = &apos;In Store Manager Escalation&apos;, ISPICKVAL( Reason , &apos;In Store&apos;), ISPICKVAL(KIT_Status__c, &apos;Waiting on Store&apos;) )</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <businessHoursSource>Case</businessHoursSource>
+            <escalationAction>
+                <assignedTo>In_Store_District_Manager_Escalation</assignedTo>
+                <assignedToType>Queue</assignedToType>
+                <minutesToEscalation>180</minutesToEscalation>
+                <notifyCaseOwner>false</notifyCaseOwner>
+            </escalationAction>
+            <escalationStartTime>CaseLastModified</escalationStartTime>
+            <formula>AND( CONTAINS( OwnerId , &apos;00G&apos;), Owner:Queue.QueueName = &apos;In Store Director Escalation&apos;, ISPICKVAL( Reason , &apos;In Store&apos;), ISPICKVAL(KIT_Status__c, &apos;Waiting on Store&apos;) )</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <businessHoursSource>Case</businessHoursSource>
+            <escalationAction>
+                <assignedTo>In_Store_Unresolved_Cases</assignedTo>
+                <assignedToType>Queue</assignedToType>
+                <minutesToEscalation>180</minutesToEscalation>
+                <notifyCaseOwner>false</notifyCaseOwner>
+            </escalationAction>
+            <escalationStartTime>CaseLastModified</escalationStartTime>
+            <formula>AND( CONTAINS( OwnerId , &apos;00G&apos;), Owner:Queue.QueueName = &apos;In Store District Manager Escalation&apos;, ISPICKVAL( Reason , &apos;In Store&apos;), ISPICKVAL(KIT_Status__c, &apos;Waiting on Store&apos;) )</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <businessHoursSource>Case</businessHoursSource>
+            <escalationAction>
+                <assignedTo>In_Store_Manager_Escalation</assignedTo>
+                <assignedToType>Queue</assignedToType>
+                <minutesToEscalation>30</minutesToEscalation>
+                <notifyCaseOwner>false</notifyCaseOwner>
+            </escalationAction>
+            <escalationStartTime>CaseLastModified</escalationStartTime>
+            <formula>AND(  Owner:Queue.QueueName != &apos;In Store Unresolved Cases&apos;,  ISPICKVAL( Reason , &apos;In Store&apos;),  ISPICKVAL(KIT_Status__c, &apos;Waiting on Store&apos;)  )</formula>
+        </ruleEntry>
+    </escalationRule>
+</EscalationRules>

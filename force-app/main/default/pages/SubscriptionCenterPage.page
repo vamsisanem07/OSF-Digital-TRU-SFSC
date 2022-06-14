@@ -1,0 +1,683 @@
+<apex:page sidebar="false" showHeader="false" controller="SubscriptionCenterPageController" language="{!lang}">
+    <apex:slds />
+    <apex:includeLightning />
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="{!URLFOR($RESOURCE.SubscriptionCenterPageStyleSheet)}" />
+        <link rel="stylesheet" type="text/css" href="{!URLFOR($RESOURCE.ToysBabiesLogo, '/stylesheet.css')}" />
+        <link rel="preload" href="/on/demandware.static/Sites-toys-ca-Site/-/default/dwce162d55/fonts/avenir/Avenir-Roman.woff2"
+            as="font" type="font/woff2" crossorigin="" />
+        <link rel="preload" href="/on/demandware.static/Sites-toys-ca-Site/-/default/dw5c7b1934/fonts/avenir/Avenir-Black.woff2"
+            as="font" type="font/woff2" crossorigin="" />
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    </head>
+    <script>
+        document.addEventListener("select", function() {
+            // Your code to run since DOM is loaded and ready
+            if (document.getElementsByClassName("babyMasterClass")[0].checked == true) {
+                disableBabyChildOptions(document.getElementsByClassName("babyMasterClass")[0].checked);
+            }
+
+            if (document.getElementsByClassName("toyMasterClass")[0].checked == true) {
+                disableToyChildOptions(document.getElementsByClassName("toyMasterClass")[0].checked);
+            }
+
+            var allElements = document.getElementsByClassName("inputClass");
+            var allToyElements = document.getElementsByClassName("inputToysClass");
+            for (var i = 0; i < allElements.length; i++) {
+                if (allElements[i].checked == true) {
+                    disableBabyMaster(allElements[i].checked);
+                }
+            }
+
+            for (var i = 0; i < allToyElements.length; i++) {
+                if (allToyElements[i].checked >= 1) {
+                    disableToyMaster(allToyElements[i].checked);
+                }
+            }
+        });
+        document.addEventListener("DOMContentLoaded", updateInterestCheckboxes);
+
+        function updateInterestCheckboxes() {
+            if (document.getElementsByClassName("babyMasterClass")[0].checked == true) {
+                disableBabyChildOptions(document.getElementsByClassName("babyMasterClass")[0].checked);
+            }
+
+            if (document.getElementsByClassName("toyMasterClass")[0].checked == true) {
+                disableToyChildOptions(document.getElementsByClassName("toyMasterClass")[0].checked);
+            }
+
+            var allElements = document.getElementsByClassName("inputClass");
+            var allToyElements = document.getElementsByClassName("inputToysClass");
+            for (var i = 0; i < allElements.length; i++) {
+                if (allElements[i].checked == true) {
+                    disableBabyMaster(allElements[i].checked);
+                }
+            }
+
+            for (var i = 0; i < allToyElements.length; i++) {
+                if (allToyElements[i].checked >= 1) {
+                    disableToyMaster(allToyElements[i].checked);
+                }
+            }
+        }
+
+        function disableBabyChildOptions(baby) {
+            var allElements = document.getElementsByClassName("inputClass");
+            if (baby == true) {
+                for (var i = 0; i < allElements.length; i++) {
+
+                    allElements[i].checked = false;
+                    allElements[i].disabled = true;
+                    allElements[i].closest("tr").classList.add("disabled-element");
+
+                }
+            } else {
+                for (var i = 0; i < allElements.length; i++) {
+                    allElements[i].disabled = false;
+                    allElements[i].closest("tr").classList.remove("disabled-element");
+                }
+            }
+        }
+
+        function disableToyChildOptions(child) {
+            var allElements = document.getElementsByClassName("inputToysClass");
+            if (child == true) {
+                for (var i = 0; i < allElements.length; i++) {
+                    allElements[i].checked = false;
+                    allElements[i].disabled = true;
+                    allElements[i].closest("tr").classList.add("disabled-element");
+                }
+            } else {
+                for (var i = 0; i < allElements.length; i++) {
+                    allElements[i].disabled = false;
+                    allElements[i].closest("tr").classList.remove("disabled-element");
+                }
+            }
+        }
+
+        function disableBabyMaster(babyMaster) {
+            var allElements = document.getElementsByClassName("inputClass");
+            var checkedList = [].slice.call(allElements);
+            var isContainChecked = checkedList.filter(function (item) {
+                return item.checked;
+            });
+
+            if(isContainChecked.length > 0) {
+                document.getElementsByClassName("babyMasterClass")[0].checked = false;
+                document.getElementsByClassName("babyMasterClass")[0].disabled = true;
+                document.getElementsByClassName("babyMasterClass")[0].closest("tr").classList.add("disabled-element");
+            } else {
+                document.getElementsByClassName("babyMasterClass")[0].disabled = false;
+                document.getElementsByClassName("babyMasterClass")[0].closest("tr").classList.remove("disabled-element");
+            }
+        }
+        function disableToyMaster(toyMaster) {
+            var allElements = document.getElementsByClassName("inputToysClass");
+            var checkedList = [].slice.call(allElements);
+            var isContainChecked = checkedList.filter(function (item) {
+                return item.checked;
+            });
+
+            if(isContainChecked.length > 0) {
+                document.getElementsByClassName("toyMasterClass")[0].checked = false;
+                document.getElementsByClassName("toyMasterClass")[0].disabled = true;
+                document.getElementsByClassName("toyMasterClass")[0].closest("tr").classList.add("disabled-element");
+            } else {
+                document.getElementsByClassName("toyMasterClass")[0].disabled = false;
+                document.getElementsByClassName("toyMasterClass")[0].closest("tr").classList.remove("disabled-element");
+            }
+        }
+
+        window.onload = function () {
+            console.log("{!lang}");
+            document.getElementById("setLang").textContent = "{!lang}";
+            
+            var en = document.getElementById("thankseng");
+            en.style.display = "block";
+            
+            console.log("en ", en);
+            console.log("{!lang} == 'en_US' ", "{!lang}" == 'en_US');
+            console.log("{!lang} == 'fr-ch' ", "{!lang}" == 'fr-ch');
+
+            if ("{!lang}" == 'en_US') {
+                var en = document.getElementById("thankseng");
+                en.style.display = "block";
+                var enUnsub = document.getElementById("unsuben");
+                enUnsub.style.display = "block";
+
+                var fr = document.getElementById("thanksfr");
+                fr.style.display = "none";
+                var frUnsub = document.getElementById("unsubfr");
+                frUnsub.style.display = "none";
+
+                document.getElementById("enImageSection").style.display = "block";
+                document.getElementById("frImageSection").style.display = "none";
+                document.getElementById("unsub").style.display = "block";
+                document.getElementById("unsubf").style.display = "none";
+                document.getElementById("ppen").style.display = "block";
+                document.getElementById("ppfr").style.display = "none";
+
+            }
+            if ("{!lang}" == 'fr-ch') {
+                var en = document.getElementById("thankseng");
+                en.style.display = "none";
+                var enUnsub = document.getElementById("unsuben");
+                enUnsub.style.display = "none";
+
+                var fr = document.getElementById("thanksfr");
+                fr.style.display = "block";
+                var frUnsub = document.getElementById("unsuben");
+                frUnsub.style.display = "block";
+                document.getElementById("enImageSection").style.display = "none";
+                document.getElementById("frImageSection").style.display = "block";
+                document.getElementById("unsub").style.display = "none";
+                document.getElementById("unsubf").style.display = "block";
+                document.getElementById("ppen").style.display = "none";
+                document.getElementById("ppfr").style.display = "block";
+
+            }
+        };
+
+        function language(lan) {
+           
+            document.getElementById("setLang").textContent = lan.getAttribute("data-lang")
+            changeLanguage(lan.getAttribute("data-lang"));
+
+            console.log('lan.getAttribute("data-lang")' + lan.getAttribute("data-lang"));
+
+            if (lan.getAttribute("data-lang") == 'en_US') {
+                var en = document.getElementById("thankseng");
+                en.style.display = "block";
+
+                var fr = document.getElementById("thanksfr");
+                fr.style.display = "none";
+
+                document.getElementById("enImageSection").style.display = "block";
+                document.getElementById("frImageSection").style.display = "none";
+
+                document.getElementById("unsub").style.display = "block";
+                document.getElementById("unsubf").style.display = "none";
+
+                document.getElementById("ppen").style.display = "block";
+                document.getElementById("ppfr").style.display = "none";
+
+            }
+            if (lan.getAttribute("data-lang") == 'fr-ch') {
+                var en = document.getElementById("thankseng");
+                en.style.display = "none";
+
+                var fr = document.getElementById("thanksfr");
+                fr.style.display = "block";
+
+                document.getElementById("enImageSection").style.display = "none";
+                document.getElementById("frImageSection").style.display = "block";
+
+                document.getElementById("unsub").style.display = "none";
+                document.getElementById("unsubf").style.display = "block";
+
+                document.getElementById("ppen").style.display = "none";
+                document.getElementById("ppfr").style.display = "block";
+
+            }
+        }
+        function babyFormValidate()
+{
+   var postalCode = document.getElementsByClassName('postal-code-input')[0].value;
+   
+    if (postalCode == ''){
+        document.getElementById('p1').innerText = " ";
+            return true;
+    } else{
+   
+   const postalCodeRegex = new RegExp(/^[ABCEGHJKLMNPRSTVXY]\d[ABCEGHJKLMNPRSTVXY][ -]?\d[ABCEGHJKLMNPRSTVXY]\d$/i);
+    
+    var isValidatePostal = postalCodeRegex.test(postalCode);
+    if (isValidatePostal == false){
+        var langPostal = document.getElementById("setLang").innerText;
+       // alert('langPostal:'+langPostal);
+            document.getElementById('p1').innerText = " Please provide valid postal code "; 
+            document.getElementsByClassName('postal-code-input').focus;
+            return false;
+        }
+        else{
+            document.getElementById('p1').innerText = " ";
+            return true;
+        }   
+    } 
+}
+        function updatebtnclick() {
+            console.log('update click');
+            var isValidateForm = babyFormValidate();
+            if(isValidateForm == true){
+            var x = document.getElementById("thanx");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+                accountUpdate();
+            } else {
+                x.style.display = "none";
+            }
+        }
+            return false;
+        }
+        function testCanadianPostalCode(postalCode)
+{
+    
+    if (postalCode == ''){
+        document.getElementById('p1').innerText = " ";
+            return true;
+    } else{
+    const postalCodeRegex = new RegExp(/^[ABCEGHJKLMNPRSTVXY]\d[ABCEGHJKLMNPRSTVXY][ -]?\d[ABCEGHJKLMNPRSTVXY]\d$/i);
+    var isValidatePostal = postalCodeRegex.test(postalCode);
+   
+    if (isValidatePostal == false){
+        var languagePC =   document.getElementById("setLang").innerText;
+      //  alert('languagePC test:'+languagePC);
+        if (languagePC == 'en_US') {
+          
+            document.getElementById('p1').innerText = "Please provide valid postal code"; 
+        } else if(languagePC == 'fr-ch'){
+           
+            document.getElementById('p1').innerText = "Veuillez inscrire un code postal valide"; 
+        }
+
+            document.getElementsByClassName('postal-code-input').focus;
+            return false;
+        }
+        else{
+            document.getElementById('p1').innerText = " "; 
+        }
+    return postalCodeRegex.test(postalCode);
+    }
+}
+
+        function updateOutClick() {
+            console.log('update click');
+            var x = document.getElementById("thanx");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+                updateOut();
+            } else {
+                x.style.display = "none";
+            }
+            return false;
+        }
+
+        function closeUnsub() {
+            console.log('Close Unsub');
+            var x = document.getElementById("unsubfr");
+            x.style.display = "none";
+            var y = document.getElementById("unsuben");
+            y.style.display = "none";
+            accountunsub();
+            return false;
+        }
+
+
+    </script>
+
+    <div class="container txtCenter ">
+        <img src="{!URLFOR($Resource.ToysBabiesLogo,'toysRUs.svg')}" class="head_toyLogo" />
+        <img src="{!URLFOR($Resource.ToysBabiesLogo,'babiesRUs.svg')}" class="head_babyLogo" />
+        <img src="{!$Resource.LittilRiseLogo}" class="head_babyLogo" />
+    </div>
+    <apex:form >
+
+        <apex:actionFunction name="accountunsub" action="{!accountunsub}" rerender="ou" />
+        <!-- <apex:actionFunction name="updateAccount" action="{!updateAccount}" rerender="out" /> -->
+        <apex:actionFunction name="updateOut" action="{!updateOut}" rerender="out" />
+            <apex:actionFunction name="changeLanguage" action="{!changeLanguage}" rerender="out" oncomplete="updateInterestCheckboxes();">
+                <apex:param id="languagePref" name="languagePref" value="" />
+            </apex:actionFunction>
+        <apex:actionFunction name="accountUpdate" action="{!accountUpdate}" rerender="test" />
+
+
+
+        <div class="container" id="container">
+           <span style="display:none;" id ="setLang"></span>
+            <apex:outputPanel id="out" rendered="{!accountfound}">
+                <apex:variable var="language" value="{!lang}" />
+
+                <ul class="language">
+                    <li data-lang="en_US" onclick="language(this)" style="cursor: pointer;"> {!$Label.SB_English}</li>
+                    <li class="spaceLine">|</li>
+                    <li data-lang="fr-ch" onclick="language(this)" style="cursor: pointer;"> {!$Label.SB_French}</li>
+                </ul>
+                <div class="leftSpace">
+                    <h4 class="smlTitle">{!$Label.SB_PreferanceCenter} </h4>
+                    <p class="btmSpace">{!$Label.SB_Welcome}</p>
+                    <div class="section">
+                        <!--  <div class="sectionHead">{!$Label.SB_AvailablePublications}</div> 
+                        <p class="psgStyle btmSpace">
+                            {!$Label.SB_AvailableDesc}&nbsp;<a style="font-size: 16px;" class="psgStyle btmSpace" href="{!$Label.Privacy_Policy_URL}">{!$Label.SB_Privacy_Policy}</a>
+                        </p> -->
+
+                        <apex:outputpanel rendered="{!!isFrench}">
+                            <p class="psgStyle btmSpace">
+                                You can update your message preferences or unsubscribe at any time from our electronic messages. For more information on
+                                how we use personal information, please read the
+                                <a style="font-size: 16px;"
+                                    class="psgStyle btmSpace" href="https://www.toysrus.ca/en/folder?cid=legal-privacy-policy">"R" Us Family Privacy Policy.</a>
+                            </p>
+                        </apex:outputpanel>
+                        <apex:outputpanel rendered="{!isFrench}">
+                            <p class="psgStyle btmSpace">
+                                Vous pouvez mettre à jour vos préférences ou vous désabonner de nos courriels à tout moment. Pour en savoir plus sur la façon
+                                dont nous utilisons vos renseignements personnels, veuillez consulter notre
+                                <a
+                                    style="font-size: 16px;" class="psgStyle btmSpace" href="https://www.toysrus.ca/fr/folder?cid=legal-privacy-policy">Politique de confidentialité.</a>
+                            </p>
+                        </apex:outputpanel>
+
+
+                        <!-- Change -->
+                        <h4 class="smlTitle"> {!$Label.SB_YourProfile}</h4>
+                        <p class="btmSpace" style="margin-bottom:15px; font-weight:600;">{!$Label.SB_UpdateAnyField}</p>
+                        <br></br>
+
+                        <div id="subcenterId" />
+
+                        <script>
+                            $Lightning.use("c:createChildApp", function () {
+                                $Lightning.createComponent("c:osf_SubscriptionCenter",
+                                    {
+                                        accountId: "{!account.Id}",
+                                        lan:"{!lang}"
+                                       
+                                    },
+                                    "subcenterId", // the Id of div tag where your component will be rendered
+                                    function (cmp) {
+                                        console.log('Calling the LWC Component');
+                                    });
+                            });
+                        </script>
+                        <div class="language-select-wrapper">
+                            <apex:pageBlock >
+                                <apex:pageBlockSection >
+                                    <apex:pageBlockSection columns="1">
+                                        <div class="langSec" id="selectedlan">
+                                            <apex:selectRadio label="{!$Label.SB_Language}:" value="{!lang}">
+                                                <apex:selectOption itemlabel="{!$Label.SB_English}" itemValue="en_US" lang="en_US" />
+                                                <apex:selectOption itemValue="fr-ch" lang="fr-ch" itemlabel="{!$Label.SB_French}" />
+                                            </apex:selectRadio>
+                                        </div>
+                                    </apex:pageBlockSection>
+                                </apex:pageBlockSection>
+                            </apex:pageBlock>
+                        </div>
+                        <div class="borderStyle"></div>
+                        <h4 class="smlTitle">{!$Label.SB_PostalCode}</h4>
+                        <p class="btmSpace" style="margin-bottom:10px; font-weight:600;">{!$Label.SB_ReceiveStoreEvents}</p>
+                        <br></br>
+                        <div>
+                            <apex:inputField ignoreEditPermissionForRendering="true" html-placeholder="M5A 4V3" onchange="testCanadianPostalCode(this.value);" style="width:250px" styleClass="postal-code-input" value="{!account.Postal_Code__c}"
+                            />
+                        </div>
+                        <p id="p1" class="postal"></p>
+                        <br></br>
+                        <br></br>
+                        <div class="borderStyle"></div>
+                        <h4 class="smlTitle">{!$Label.SB_Child}</h4>
+                        <p class="btmSpace" style="margin-bottom:10px; font-weight:600;">{!$Label.SB_giftRecommendation}</p>
+                        <div id="LightningComponentid" />
+
+                        <script>
+                            $Lightning.use("c:createChildApp", function () {
+                                $Lightning.createComponent("c:osfAddChildContainer",
+                                    {
+                                        lan: "{!lang}"
+                                    },
+                                    "LightningComponentid", // the Id of div tag where your component will be rendered
+                                    function (cmp) {
+                                        console.log('Calling the LWC Component');
+                                    });
+                            });
+                        </script>
+                        <div class="borderStyle"></div>
+                        <h4 class="smlTitle">{!$Label.SB_TellUs}</h4>
+                        <p class="btmSpace" style="margin-bottom:15px; font-weight:600;">{!$Label.SB_Emails_Interests}</p>
+                        <div class="interests-wrapper">
+                            <apex:pageBlock >
+
+                                <!--    <apex:pageBlockSection >  -->
+                                <table height="50" style="padding-left:5px; overflow:hidden; ">
+                                    <tr class="tr-wrapper">
+                                        <td width="30%">
+                                            <apex:pageBlockSection columns="1">
+                                                <apex:inputCheckbox title="{!$Label.SB_All_things_Baby}" onclick="disableBabyChildOptions(this.checked);" styleclass="babyMasterClass"
+                                                    label="{!$Label.SB_BRUEmails}" value="{!baby}" />
+                                                <apex:inputCheckbox onclick="disableBabyMaster(this.checked);" styleclass="inputClass inputClass01" label="{!$Label.SB_babyGearEssentials}"
+                                                    value="{!babyGearEssentials}" />
+                                                <apex:inputCheckbox onclick="disableBabyMaster(this.checked);" styleclass="inputClass inputClass03" label="{!$Label.SB_nurseryFeeding}"
+                                                    value="{!nurseryFeeding}" />
+                                                <apex:inputCheckbox onclick="disableBabyMaster(this.checked);" styleclass="inputClass inputClass05" label="{!$Label.SB_pregnancyParenting}"
+                                                    value="{!pregnancyParenting}" />
+                                                <apex:inputCheckbox onclick="disableBabyMaster(this.checked);" styleclass="inputClass inputClass07" label="{!$Label.SB_safetyHealthWellness}"
+                                                    value="{!safetyHealthWellness}" />
+                                                <apex:inputCheckbox onclick="disableBabyMaster(this.checked);" styleclass="inputClass inputClass09" label="{!$Label.SB_toysActivities}"
+                                                    value="{!toysActivities}" />
+                                            </apex:pageBlockSection>
+                                        </td>
+                                        <td width="30%">
+                                            <apex:pageBlockSection columns="1">
+                                                <apex:inputCheckbox title="{!$Label.SB_All_Toys_Games}" onclick="disableToyChildOptions(this.checked);" styleclass="toyMasterClass"
+                                                    label="{!$Label.SB_TRUEmail}" value="{!toys}" />
+                                                <apex:inputCheckbox onclick="disableToyMaster(this.checked);" styleclass="inputToysClass inputClass02" label="{!$Label.SB_activePlayOutdoor}"
+                                                    value="{!activePlayOutdoor}" />
+                                                <apex:inputCheckbox onclick="disableToyMaster(this.checked);" styleclass="inputToysClass inputClass04" label="{!$Label.SB_books}"
+                                                    value="{!books}" />
+                                                <apex:inputCheckbox onclick="disableToyMaster(this.checked);" styleclass="inputToysClass inputClass06" label="{!$Label.SB_collectorsGrownups}"
+                                                    value="{!collectorsGrownups}" />
+                                                <apex:inputCheckbox onclick="disableToyMaster(this.checked);" styleclass="inputToysClass inputClass08" label="{!$Label.SB_collectorsKids}"
+                                                    value="{!collectorsKids}" />
+                                                <apex:inputCheckbox onclick="disableToyMaster(this.checked);" styleclass="inputToysClass inputClass10" label="{!$Label.SB_educationLearningToysGames}"
+                                                    value="{!educationLearningToysGames}" />
+                                                <apex:inputCheckbox onclick="disableToyMaster(this.checked);" styleclass="inputToysClass inputClass11" label="{!$Label.SB_preschoolPlaytime}"
+                                                    value="{!preschoolPlaytime}" />
+                                            </apex:pageBlockSection>
+                                        </td>
+                                        <td class="test01" width="30%">
+                                            <apex:pageBlockSection columns="1">
+                                                <apex:inputCheckbox title="{!$Label.SB_All_Baby_Kids_Clothing}" styleclass="inputClass12" label="{!$Label.RLE_Email}" value="{!clothing}"
+                                                />
+                                            </apex:pageBlockSection>
+                                            <apex:pageBlockSection columns="1">
+                                                <apex:inputCheckbox styleclass="inputClass13" label="{!$Label.SB_EventsAndActivities}" value="{!eventsAndActivities}" />
+                                            </apex:pageBlockSection>
+                                            <apex:pageBlockSection columns="1">
+                                                <apex:inputCheckbox styleclass="inputClass14" label="{!$Label.SB_partyAndGiftGiving}" value="{!partyAndGiftGiving}" />
+                                            </apex:pageBlockSection>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!--     </apex:pageBlockSection> -->
+
+                            </apex:pageBlock>
+                        </div>
+                        <br></br>
+                        <br></br>
+                        <center>
+                            <button class="btn1Style" style="font-family: 'Avenir LT Std' !important;" onclick="updatebtnclick(); return false;">{!$Label.SB_Update}</button>
+                        </center>
+
+
+
+                    </div>
+
+                </div>
+            </apex:outputPanel>
+            <!-- Thank You msg -->
+            <apex:outputPanel id="thanks">
+                <div style="display:none" id="thanx">
+                    <section class="slds-modal slds-fade-in-open">
+                        <div class="slds-modal__container">
+                            <header class="slds-modal__header slds-modal__header_empty">
+                                <button onclick="updatebtnclick(); return false;" class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+                                    title="Close">
+                                    <span class="slds-assistive-text">Close</span>
+                                </button>
+                            </header>
+                            <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                                <div style="display:block" id='thankseng'>
+                                    <b class="slds-m-around_medium" style="display:block;"> Thank you! Your preferences have been updated.</b>
+                                    <div class="slds-grid slds-grid_align-center slds-grid_vertical-align-end">
+                                        <div class="slds-col">
+                                            <img src="{!URLFOR($Resource.ToysBabiesLogo,'toysRUs.svg')}" class="toyLogo" />
+                                            <a href="https://www.toysrus.ca/en/home?utm_source=prefcentre" class="shopBtn">Shop Now</a>
+                                        </div>
+                                        <div class="slds-col">
+                                            <img src="{!URLFOR($Resource.ToysBabiesLogo,'babiesRUs.svg')}" class="babyLogo" />
+                                            <a href="https://www.babiesrus.ca/en/home?utm_source=prefcentre" class="shopBtn">Shop Now</a>
+                                        </div>
+                                        <div class="slds-col">
+                                            <img src="{!$Resource.LittilRiseLogo}" class="" />
+                                            <a href="https://www.riselittleearthling.ca/en/home" class="shopBtn">Shop Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="display:none" id='thanksfr'>
+                                    <b class="slds-m-around_medium" style="display:block;">Merci! Vos préférences ont été mises à jour.</b>
+                                    <div class="slds-grid slds-grid_align-center slds-grid_vertical-align-end">
+                                        <div class="slds-col">
+                                            <img src="{!URLFOR($Resource.ToysBabiesLogo,'toysRUs.svg')}" class="toyLogo" />
+                                            <a href="https://www.toysrus.ca/fr/home?utm_source=prefcentre" class="shopBtn"> Magasinez </a>
+                                        </div>
+                                        <div class="slds-col">
+                                            <img src="{!URLFOR($Resource.ToysBabiesLogo,'babiesRUs.svg')}" class="babyLogo" />
+                                            <a href="https://www.babiesrus.ca/fr/home?utm_source=prefcentre" class="shopBtn"> Magasinez </a>
+                                        </div>
+                                        <div class="slds-col">
+                                            <img src="{!$Resource.LittilRiseLogo}" class="" />
+                                            <a href="https://www.riselittleearthling.ca/fr/home" class="shopBtn"> Magasinez </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="slds-backdrop slds-backdrop_open"></div>
+                </div>
+            </apex:outputPanel>
+            <apex:outputPanel rendered="{!!showUnSub}">
+                <div id="unsuben"></div>
+                <div id="unsubfr"></div>
+            </apex:outputPanel>
+
+            <!-- Unsubscribe -->
+            <apex:outputPanel rendered="{!showUnSub}">
+                <div style="display:{!IF(lang == 'en_US','block','none')}" id="unsuben">
+                    <section class="slds-modal slds-fade-in-open">
+                        <div class="slds-modal__container">
+                            <header class="slds-modal__header slds-modal__header_empty">
+                                <button onclick="closeUnsub(); return false;" class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+                                    title="Close">
+                                    <span class="slds-assistive-text">Close</span>
+                                </button>
+                            </header>
+                            <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                                <div style="display:block" id='unsubeng'>
+                                    <b> You have been unsubscribed from this email marketing list. Allow up to ten (10) days
+                                        for the change to take effect. Please note that you may continue to receive transactional
+                                        email messages from Toys”R”Us (Canada) Ltd.</b>
+                                    <div class="slds-grid slds-grid_align-center">
+                                        <!-- onclick="closeUnsub(); return false;"-->
+                                        <button class="btnStyle" style="font-family: 'Avenir LT Std' !important;" onclick="closeUnsub(); return false;">CLOSE</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="slds-backdrop slds-backdrop_open"></div>
+                </div>
+                <div style="display:{!IF(lang == 'fr-ch','block','none')}" id="unsubfr">
+                    <section class="slds-modal slds-fade-in-open">
+                        <div class="slds-modal__container">
+                            <header class="slds-modal__header slds-modal__header_empty">
+                                <button onclick="closeUnsub(); return false;" class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+                                    title="Fermer">
+                                    <span class="slds-assistive-text">Fermer</span>
+                                </button>
+                            </header>
+                            <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                                <div style="display:block" id='unsubeng'>
+                                    <b>{!$Label.SB_FrenchUnsub} </b>
+                                    <div class="slds-grid slds-grid_align-center">
+                                        <!-- onclick="closeUnsub(); return false;"-->
+                                        <button class="btnStyle" style="font-family: 'Avenir LT Std' !important;" onclick="closeUnsub(); return false;">CLOSE</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="slds-backdrop slds-backdrop_open"></div>
+                </div>
+            </apex:outputPanel>
+            <!-- </apex:outputPanel>-->
+            <apex:outputPanel id="outp" rendered="{!!accountfound}">
+
+                Account Not Found OR Invalid Id In URL
+            </apex:outputPanel>
+        </div>
+        <apex:outputPanel id="out8" rendered="{!accountfound}">
+            <div class="container leftSpace" style="display:block" id='enImageSection'>
+                <center>
+                    <a href="https://toyrusca.force.com/s/?language=en_US">
+                        <apex:image id="rclubEnImage" value="{!$Resource.RClubENPC}" />
+                    </a>
+                </center>
+                <br></br>
+                <br></br>
+                <center>
+                    <a href="https://www.babiesrus.ca/en/babyregistry">
+                        <apex:image id="babyRegisterEnImage" value="{!$Resource.babyRegistryEnPC}" />
+                    </a>
+                </center>
+
+            </div>
+            <div class="container leftSpace" style="display:none" id='frImageSection'>
+                <center>
+                    <a href="https://toyrusca.force.com/s/?language=fr">
+                        <apex:image id="rclubFrImage" value="{!$Resource.rclucbFrSB}" />
+                    </a>
+                </center>
+                <br></br>
+                <br></br>
+                <center>
+                    <a href="https://www.babiesrus.ca/fr/babyregistry">
+                        <apex:image id="babyRegisterFrImage" value="{!$Resource.babyRegistryFRSB}" />
+                    </a>
+                </center>
+            </div>
+
+
+            <br></br>
+
+
+            <div class="container leftSpace" style="display:block" id='unsub'>
+                <div class="section">
+                    <h4 class="smlTitle">{!$Label.SB_Unsubscribe_EN}</h4>
+                    <p class="psgStyle">
+                        {!$Label.SB_Unsub_Desc_EN}
+                    </p>
+                    <button class="btn2Style" style="font-family: 'Avenir LT Std' !important;" onclick="updateOutClick(); return false;">{!$Label.SB_Unsubscribe_EN}</button>
+
+                </div>
+            </div>
+
+            <div class="container leftSpace" style="display:none" id='unsubf'>
+                <div class="section">
+                    <h4 class="smlTitle">{!$Label.SB_Unsubscribe_FR}</h4>
+                    <p class="psgStyle">
+                        {!$Label.SB_UnsubscibeDesc_FR}
+                    </p>
+                    <button class="btn2Style" style="font-family: 'Avenir LT Std' !important;" onclick="updateOutClick(); return false;">{!$Label.SB_Unsubscribe_FR}</button>
+
+                </div>
+            </div>
+        </apex:outputPanel>
+    </apex:form>
+</apex:page>

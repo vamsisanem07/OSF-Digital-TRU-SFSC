@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Address_Correction_Required_Fields</fullName>
+    <active>true</active>
+    <description>Validate that the Order Number and Address for Address Correction fields are populated when the Queue Sub Type field = Address Correction</description>
+    <errorConditionFormula>ISPICKVAL(Queue_Sub_type__c, &apos;Address Correction&apos;) &amp;&amp; ISNULL(Address_for_Address_Correction__c) &amp;&amp; ISNULL(Order_No__c)</errorConditionFormula>
+    <errorMessage>Please enter Order Number and Address for Address Correction.</errorMessage>
+</ValidationRule>

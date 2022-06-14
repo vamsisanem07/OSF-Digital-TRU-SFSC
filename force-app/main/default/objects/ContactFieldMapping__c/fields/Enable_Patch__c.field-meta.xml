@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enable_Patch__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This setting check if this attribute will be patched in commerce cloud from CRM or not</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This setting check if this attribute will be patched in commerce cloud from CRM or not</inlineHelpText>
+    <label>Enable Patch</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

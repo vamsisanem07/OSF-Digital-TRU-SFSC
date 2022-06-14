@@ -1,0 +1,5 @@
+({
+	validateFormInputs : function(component) {
+		
+	}
+})

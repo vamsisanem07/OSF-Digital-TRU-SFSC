@@ -1,0 +1,18 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction" 
+                access="global" controller="AppeasementCodeController">
+    
+    <aura:attribute name="isLoading" type="boolean" default="false"/>
+	<aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="currentUserRoleId" type="String" /> 
+    <aura:attribute name="warehouseRoleId" type="String" default="{!$Label.c.Warehouse_Role_Id}"/>
+    <aura:attribute name="otherRoleId" type="String" default="{!$Label.c.Other_Role_Id}"/> 
+    <aura:attribute name="buttonTitle" type="String" default="Get Appeasement Code"/>
+    
+    <aura:if isTrue="{!v.isLoading}">
+		<lightning:spinner variant="brand" size="large"/>
+    </aura:if>
+    <aura:if isTrue="{!and(v.warehouseRoleId != v.currentUserRoleId, v.otherRoleId != v.currentUserRoleId)}">
+    	<lightning:button variant="brand" label="{!v.buttonTitle}" title="{!v.buttonTitle}" 
+                          onclick="{!c.getCode}" />
+    </aura:if>    
+</aura:component>

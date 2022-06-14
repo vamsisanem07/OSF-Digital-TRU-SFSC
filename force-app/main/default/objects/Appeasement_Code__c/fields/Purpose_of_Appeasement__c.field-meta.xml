@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Purpose_of_Appeasement__c</fullName>
+    <externalId>false</externalId>
+    <label>Purpose of Appeasement</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Baby Registry</fullName>
+                <default>false</default>
+                <label>Baby Registry</label>
+            </value>
+            <value>
+                <fullName>Birthday - Stores</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Birthday - Stores</label>
+            </value>
+            <value>
+                <fullName>Bulk Order</fullName>
+                <default>false</default>
+                <label>Bulk Order</label>
+            </value>
+            <value>
+                <fullName>Checklist - 8 mth - Online</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Checklist - 8 mth - Online</label>
+            </value>
+            <value>
+                <fullName>Checklist - 8 mth - Stores</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Checklist - 8 mth - Stores</label>
+            </value>
+            <value>
+                <fullName>Completion - 9 mth - Online</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Completion - 9 mth - Online</label>
+            </value>
+            <value>
+                <fullName>Completion - 9 mth - Stores</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Completion - 9 mth - Stores</label>
+            </value>
+            <value>
+                <fullName>Congrats - 1 mth post - Online</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Congrats - 1 mth post - Online</label>
+            </value>
+            <value>
+                <fullName>Congrats - 1 mth post - Stores</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Congrats - 1 mth post - Stores</label>
+            </value>
+            <value>
+                <fullName>CS Appeasement</fullName>
+                <default>false</default>
+                <label>CS Appeasement</label>
+            </value>
+            <value>
+                <fullName>Damaged</fullName>
+                <default>false</default>
+                <label>Damaged</label>
+            </value>
+            <value>
+                <fullName>ECR</fullName>
+                <default>false</default>
+                <label>ECR</label>
+            </value>
+            <value>
+                <fullName>Family And Friends - 7mth - Online</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Family And Friends - 7mth - Online</label>
+            </value>
+            <value>
+                <fullName>Family And Friends - 7mth - Stores</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Family And Friends - 7mth - Stores</label>
+            </value>
+            <value>
+                <fullName>Feeding Infant - 2 mth post - Online</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Feeding Infant - 2 mth post - Online</label>
+            </value>
+            <value>
+                <fullName>Feeding Infant - 2 mth post - Stores</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Feeding Infant - 2 mth post - Stores</label>
+            </value>
+            <value>
+                <fullName>Misship</fullName>
+                <default>false</default>
+                <label>Misship</label>
+            </value>
+            <value>
+                <fullName>Order Replacement</fullName>
+                <default>false</default>
+                <label>Order Replacement</label>
+            </value>
+            <value>
+                <fullName>RClub</fullName>
+                <default>false</default>
+                <label>RClub</label>
+            </value>
+            <value>
+                <fullName>Registry completion - Online</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Registry completion - Online</label>
+            </value>
+            <value>
+                <fullName>Registry completion - Stores</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Registry completion - Stores</label>
+            </value>
+            <value>
+                <fullName>Shipping</fullName>
+                <default>false</default>
+                <label>Shipping</label>
+            </value>
+            <value>
+                <fullName>Shortship</fullName>
+                <default>false</default>
+                <label>Shortship</label>
+            </value>
+            <value>
+                <fullName>Welcome - Online</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Welcome - Online</label>
+            </value>
+            <value>
+                <fullName>Welcome - Stores</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Welcome - Stores</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

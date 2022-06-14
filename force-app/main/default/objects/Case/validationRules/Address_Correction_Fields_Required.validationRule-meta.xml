@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Address_Correction_Fields_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>ispickval( Disposition_1__c ,&quot;Address Correction&quot;)
+&amp;&amp;
+isblank( Address_for_Address_Correction__c )</errorConditionFormula>
+    <errorMessage>Please fill in the &apos;Address for Address Correction&apos; field.</errorMessage>
+</ValidationRule>

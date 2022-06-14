@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PriceBook_Id__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <description>This field holds Salesforce Commerce Cloud Price book id assigned to a Salesforce Commerce Cloud Site.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field holds Salesforce Commerce Cloud Price book id assigned to a Salesforce Commerce Cloud Site.</inlineHelpText>
+    <label>PriceBook Id</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

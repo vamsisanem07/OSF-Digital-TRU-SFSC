@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RoleWiseAppeasementAccessValidation</fullName>
+    <active>true</active>
+    <errorConditionFormula>($UserRole.DeveloperName  = &apos;Tier_1&apos; &amp;&amp;   
+ISPICKVAL(Purpose_of_Appeasement__c, &apos;CS Appeasement&apos;) &amp;&amp;  
+NOT(TEXT(Discount_Type__c) = &apos;10%&apos;) &amp;&amp;
+NOT(TEXT(Discount_Type__c) = &apos;15%&apos;) &amp;&amp;
+NOT(TEXT(Discount_Type__c) = &apos;20%&apos;) &amp;&amp; 
+NOT(TEXT(Discount_Type__c) = &apos;$5&apos;) &amp;&amp; 
+NOT(TEXT(Discount_Type__c) = &apos;$10&apos;) &amp;&amp;
+NOT(TEXT(Discount_Type__c) = &apos;$15&apos;) &amp;&amp;
+NOT(TEXT(Discount_Type__c) = &apos;$20&apos;) &amp;&amp;
+NOT(TEXT(Discount_Type__c) = &apos;$25&apos;)) ||
+
+($UserRole.DeveloperName  = &apos;Tier_2&apos; &amp;&amp;   
+ISPICKVAL(Purpose_of_Appeasement__c, &apos;CS Appeasement&apos;) &amp;&amp;  
+NOT(TEXT(Discount_Type__c) = &apos;10%&apos;) &amp;&amp;
+NOT(TEXT(Discount_Type__c) = &apos;15%&apos;) &amp;&amp;
+NOT(TEXT(Discount_Type__c) = &apos;20%&apos;) &amp;&amp; 
+NOT(TEXT(Discount_Type__c) = &apos;25%&apos;) &amp;&amp; 
+NOT(TEXT(Discount_Type__c) = &apos;30%&apos;) &amp;&amp; 
+NOT(TEXT(Discount_Type__c) = &apos;$5&apos;) &amp;&amp; 
+NOT(TEXT(Discount_Type__c) = &apos;$10&apos;) &amp;&amp;
+NOT(TEXT(Discount_Type__c) = &apos;$15&apos;) &amp;&amp;
+NOT(TEXT(Discount_Type__c) = &apos;$20&apos;) &amp;&amp;
+NOT(TEXT(Discount_Type__c) = &apos;$25&apos;) &amp;&amp;
+NOT(TEXT(Discount_Type__c) = &apos;$30&apos;) &amp;&amp;
+NOT(TEXT(Discount_Type__c) = &apos;$35&apos;) &amp;&amp;
+NOT(TEXT(Discount_Type__c) = &apos;$40&apos;) &amp;&amp;
+NOT(TEXT(Discount_Type__c) = &apos;$45&apos;) &amp;&amp;
+NOT(TEXT(Discount_Type__c) = &apos;$50&apos;)) || 
+
+($UserRole.DeveloperName  = &apos;Tier_1&apos; &amp;&amp; (ISPICKVAL(Purpose_of_Appeasement__c, &apos;Damaged&apos;) || ISPICKVAL(Purpose_of_Appeasement__c, &apos;Misship&apos;) || ISPICKVAL(Purpose_of_Appeasement__c, &apos;Shortship&apos;) ) &amp;&amp;  
+NOT(TEXT(Discount_Type__c) = &apos;$150&apos;)) ||
+
+($UserRole.DeveloperName  = &apos;Tier_2&apos; &amp;&amp; (ISPICKVAL(Purpose_of_Appeasement__c, &apos;Damaged&apos;) || ISPICKVAL(Purpose_of_Appeasement__c, &apos;Misship&apos;) || ISPICKVAL(Purpose_of_Appeasement__c, &apos;Shortship&apos;)) &amp;&amp; 
+NOT(TEXT(Discount_Type__c) = &apos;$150&apos;) &amp;&amp;
+NOT(TEXT(Discount_Type__c) = &apos;$300&apos;)) ||
+
+($UserRole.DeveloperName  = &apos;Lead&apos; &amp;&amp; (ISPICKVAL(Purpose_of_Appeasement__c, &apos;Damaged&apos;) || ISPICKVAL(Purpose_of_Appeasement__c, &apos;Misship&apos;) || ISPICKVAL(Purpose_of_Appeasement__c, &apos;Shortship&apos;)) &amp;&amp; 
+NOT(TEXT(Discount_Type__c) = &apos;$150&apos;) &amp;&amp;
+NOT(TEXT(Discount_Type__c) = &apos;$300&apos;) &amp;&amp;
+NOT(TEXT(Discount_Type__c) = &apos;$600&apos;)) ||
+
+($UserRole.DeveloperName = &apos;ECR&apos; &amp;&amp; (ISPICKVAL(Purpose_of_Appeasement__c, &apos;Damaged&apos;) || ISPICKVAL(Purpose_of_Appeasement__c, &apos;Misship&apos;) || ISPICKVAL(Purpose_of_Appeasement__c, &apos;Shortship&apos;)) &amp;&amp; (
+NOT(TEXT(Discount_Type__c) = &apos;$150&apos;) &amp;&amp;
+NOT(TEXT(Discount_Type__c) = &apos;$300&apos;) &amp;&amp;
+NOT(TEXT(Discount_Type__c) = &apos;$600&apos;) &amp;&amp;
+NOT(TEXT(Discount_Type__c) = &apos;$1,000&apos;))) ||
+
+(($UserRole.DeveloperName  != &apos;ECR&apos; &amp;&amp; $UserRole.DeveloperName != &apos;ECR_Manager&apos;) &amp;&amp; ISPICKVAL(Purpose_of_Appeasement__c, &apos;ECR&apos;) &amp;&amp; (TEXT(Discount_Type__c) = &apos;$250 ECR Product&apos; || TEXT(Discount_Type__c) = &apos;ECR Free Shipping $750&apos; || TEXT(Discount_Type__c) = &apos;$500 ECR Product&apos; )) || 
+
+(($UserRole.DeveloperName  != &apos;ECR&apos; &amp;&amp; $UserRole.DeveloperName != &apos;ECR_Manager&apos;) &amp;&amp; ISPICKVAL(Purpose_of_Appeasement__c, &apos;Bulk Order&apos;) &amp;&amp; (TEXT(Discount_Type__c) = &apos;10%&apos; || TEXT(Discount_Type__c) = &apos;15%&apos; )) ||
+
+(($UserRole.DeveloperName  = &apos;Warehouse&apos; || $UserRole.DeveloperName  = &apos;Other&apos;) &amp;&amp; NOT(ISBLANK(TEXT(Discount_Type__c))))</errorConditionFormula>
+    <errorDisplayField>Discount_Type__c</errorDisplayField>
+    <errorMessage>Please select a Discount Type as per your Appeasement Capacity!</errorMessage>
+</ValidationRule>

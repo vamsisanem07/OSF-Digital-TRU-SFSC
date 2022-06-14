@@ -1,0 +1,53 @@
+{
+  "status": 0,
+  "result": [
+    {
+      "createdById": "0051U000005tLLaQAM",
+      "createdByName": "Toysrus AdminOldUser",
+      "createdDate": "2020-10-19T14:55:50.000Z",
+      "fileName": "sites/Preference_Centre.site",
+      "fullName": "Preference_Centre",
+      "id": "0DM1U000000kwYOWAY",
+      "lastModifiedById": "0051U000008bjiLQAQ",
+      "lastModifiedByName": "George Mahesh",
+      "lastModifiedDate": "2022-04-29T10:15:23.000Z",
+      "type": "CustomSite"
+    },
+    {
+      "createdById": "0051U000008bjiLQAQ",
+      "createdByName": "George Mahesh",
+      "createdDate": "2022-03-01T20:05:54.000Z",
+      "fileName": "sites/Salesforce_Surveys.site",
+      "fullName": "Salesforce_Surveys",
+      "id": "0DM1U000000eCgYWAU",
+      "lastModifiedById": "0051U000008bjiLQAQ",
+      "lastModifiedByName": "George Mahesh",
+      "lastModifiedDate": "2022-03-01T21:57:37.000Z",
+      "type": "CustomSite"
+    },
+    {
+      "createdById": "0051U000005XFFIQA4",
+      "createdByName": "AstoundOldUser",
+      "createdDate": "2019-07-31T13:24:27.000Z",
+      "fileName": "sites/R_club.site",
+      "fullName": "R_club",
+      "id": "0DM1U000000qaFaWAI",
+      "lastModifiedById": "0051U000008bjiLQAQ",
+      "lastModifiedByName": "George Mahesh",
+      "lastModifiedDate": "2022-04-29T10:16:37.000Z",
+      "type": "CustomSite"
+    },
+    {
+      "createdById": "0051U000005tLLaQAM",
+      "createdByName": "Toysrus AdminOldUser",
+      "createdDate": "2020-10-05T14:33:26.000Z",
+      "fileName": "sites/LiveAgent.site",
+      "fullName": "LiveAgent",
+      "id": "0DM1U000000eBb8WAE",
+      "lastModifiedById": "0051U000008bjiLQAQ",
+      "lastModifiedByName": "George Mahesh",
+      "lastModifiedDate": "2022-04-29T10:16:04.000Z",
+      "type": "CustomSite"
+    }
+  ]
+}

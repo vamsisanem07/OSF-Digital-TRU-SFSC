@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Email_Opt_In_Date_TRU__c</fullName>
+    <description>The date the account opted in to TRU weekly marketing emails.</description>
+    <externalId>false</externalId>
+    <label>Email Opt In Date TRU</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CC_Attribute__c</fullName>
+    <description>This field holds CC Attribute Name</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field holds CC Attribute Name</inlineHelpText>
+    <label>CC Attribute</label>
+    <length>255</length>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_Account__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(AND(NOT(ISBLANK(SuppliedName)), UPPER(SuppliedName) !=  UPPER( Account.PersonContact.FirstName + &quot; &quot; +  Account.PersonContact.LastName )), IMAGE(&quot;/sfc/servlet.shepherd/version/renditionDownload?rendition=ORIGINAL_Png&amp;versionId=0681U00000EgoH1&amp;operationContext=CHATTER&amp;contentId=05T1U00001W71qw&quot;, &apos;warning&apos;, 24, 24), IF(AND(NOT(ISBLANK(SuppliedPhone)), SUBSTITUTE( SUBSTITUTE( SUBSTITUTE( SUBSTITUTE( SUBSTITUTE(SuppliedPhone, &apos;.&apos;, &apos;&apos;), &apos; &apos;, &apos;&apos;), &apos;-&apos;, &apos;&apos;), &apos;)&apos;, &apos;&apos;), &apos;(&apos;, &apos;&apos;) != SUBSTITUTE( SUBSTITUTE( SUBSTITUTE( SUBSTITUTE( SUBSTITUTE(Account.Phone, &apos;.&apos;, &apos;&apos;), &apos; &apos;, &apos;&apos;), &apos;-&apos;, &apos;&apos;), &apos;)&apos;, &apos;&apos;), &apos;(&apos;, &apos;&apos;)), IMAGE(&quot;/sfc/servlet.shepherd/version/renditionDownload?rendition=ORIGINAL_Png&amp;versionId=0681U00000EgoH1&amp;operationContext=CHATTER&amp;contentId=05T1U00001W71qw&quot;, &apos;warning&apos;, 24, 24), IF(AND(NOT(ISBLANK(Web_Language__c)), Web_Language__c != TEXT(Account.Language_Preference__c)), IMAGE(&quot;/sfc/servlet.shepherd/version/renditionDownload?rendition=ORIGINAL_Png&amp;versionId=0681U00000EgoH1&amp;operationContext=CHATTER&amp;contentId=05T1U00001W71qw&quot;, &apos;warning&apos;, 24, 24), &apos;&apos;)))</formula>
+    <label>Check Account</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

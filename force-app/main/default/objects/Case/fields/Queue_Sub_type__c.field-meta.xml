@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_Sub_type__c</fullName>
+    <externalId>false</externalId>
+    <label>Queue Sub type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Account</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Account</label>
+            </value>
+            <value>
+                <fullName>Address Correction</fullName>
+                <default>false</default>
+                <label>Address Correction</label>
+            </value>
+            <value>
+                <fullName>Authorization</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Authorization</label>
+            </value>
+            <value>
+                <fullName>Baby Registry</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Baby Registry</label>
+            </value>
+            <value>
+                <fullName>Bin Check</fullName>
+                <default>false</default>
+                <label>Bin Check</label>
+            </value>
+            <value>
+                <fullName>Bulk Order</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Bulk Order</label>
+            </value>
+            <value>
+                <fullName>Buyer Protection Plan</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Buyer Protection Plan</label>
+            </value>
+            <value>
+                <fullName>Cancel</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cancel</label>
+            </value>
+            <value>
+                <fullName>Carrier claim (Canada Post)</fullName>
+                <default>false</default>
+                <label>Carrier claim (Canada Post)</label>
+            </value>
+            <value>
+                <fullName>Carrier claim (not Canada Post)</fullName>
+                <default>false</default>
+                <label>Carrier claim (not Canada Post)</label>
+            </value>
+            <value>
+                <fullName>Charity Programs</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Charity Programs</label>
+            </value>
+            <value>
+                <fullName>Credit/Debit Card Issue</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Credit/Debit Card Issue</label>
+            </value>
+            <value>
+                <fullName>Credit Inquiry</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Credit Inquiry</label>
+            </value>
+            <value>
+                <fullName>Donations</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Donations</label>
+            </value>
+            <value>
+                <fullName>Drop Ship</fullName>
+                <default>false</default>
+                <label>Drop Ship</label>
+            </value>
+            <value>
+                <fullName>eBay</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>eBay</label>
+            </value>
+            <value>
+                <fullName>ECR</fullName>
+                <default>false</default>
+                <label>ECR</label>
+            </value>
+            <value>
+                <fullName>Email</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Email</label>
+            </value>
+            <value>
+                <fullName>Email List Only</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Email List Only</label>
+            </value>
+            <value>
+                <fullName>Employee Issues</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Employee Issues</label>
+            </value>
+            <value>
+                <fullName>Escalation and Ecom</fullName>
+                <default>false</default>
+                <label>Escalation and Ecom</label>
+            </value>
+            <value>
+                <fullName>Gift Card</fullName>
+                <default>false</default>
+                <label>Gift Card</label>
+            </value>
+            <value>
+                <fullName>International Other</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>International Other</label>
+            </value>
+            <value>
+                <fullName>ISPU</fullName>
+                <default>false</default>
+                <label>ISPU</label>
+            </value>
+            <value>
+                <fullName>Manufacturer Inquiry</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Manufacturer Inquiry</label>
+            </value>
+            <value>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Marketing</label>
+            </value>
+            <value>
+                <fullName>Order</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Order</label>
+            </value>
+            <value>
+                <fullName>Payment Inquiries</fullName>
+                <default>false</default>
+                <label>Payment Inquiries</label>
+            </value>
+            <value>
+                <fullName>Presell</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Presell</label>
+            </value>
+            <value>
+                <fullName>Price Match</fullName>
+                <default>false</default>
+                <label>Price Match</label>
+            </value>
+            <value>
+                <fullName>Price Match Policy</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Price Match Policy</label>
+            </value>
+            <value>
+                <fullName>Product Availability/Inquiry</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Product Availability/Inquiry</label>
+            </value>
+            <value>
+                <fullName>Promotion</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Promotion</label>
+            </value>
+            <value>
+                <fullName>Quality</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Quality</label>
+            </value>
+            <value>
+                <fullName>Raincheck Policy</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Raincheck Policy</label>
+            </value>
+            <value>
+                <fullName>R Club</fullName>
+                <default>false</default>
+                <label>R Club</label>
+            </value>
+            <value>
+                <fullName>Recall</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Recall</label>
+            </value>
+            <value>
+                <fullName>Receipt Request</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Receipt Request</label>
+            </value>
+            <value>
+                <fullName>Received</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Received</label>
+            </value>
+            <value>
+                <fullName>Return Label - HWP</fullName>
+                <default>false</default>
+                <label>Return Label - HWP</label>
+            </value>
+            <value>
+                <fullName>Return Policy</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Return Policy</label>
+            </value>
+            <value>
+                <fullName>Social Media</fullName>
+                <default>false</default>
+                <label>Social Media</label>
+            </value>
+            <value>
+                <fullName>Store Event</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Store Event</label>
+            </value>
+            <value>
+                <fullName>Store Specific Inquiry</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Store Specific Inquiry</label>
+            </value>
+            <value>
+                <fullName>Submit New Product Ideas</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Submit New Product Ideas</label>
+            </value>
+            <value>
+                <fullName>Tech</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Tech</label>
+            </value>
+            <value>
+                <fullName>Tech Issue</fullName>
+                <default>false</default>
+                <label>Tech Issue</label>
+            </value>
+            <value>
+                <fullName>Test Call</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Test Call</label>
+            </value>
+            <value>
+                <fullName>TRU US</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>TRU US</label>
+            </value>
+            <value>
+                <fullName>Unidentified</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Unidentified</label>
+            </value>
+            <value>
+                <fullName>Wishlist</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Wishlist</label>
+            </value>
+            <value>
+                <fullName>WIZMO</fullName>
+                <default>false</default>
+                <label>WIZMO</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

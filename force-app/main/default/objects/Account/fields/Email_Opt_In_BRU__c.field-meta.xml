@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Email_Opt_In_BRU__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Denotes whether an account has opted in to Babies R Us weekly marketing emails.  Initially loaded from YM, then linked to preference center.</description>
+    <externalId>false</externalId>
+    <label>Baby</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

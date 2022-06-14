@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Person_Account_Sep_10_2020_3_14_PM</fullName>
+    <columns>Name</columns>
+    <columns>RecordCount</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Parent</field>
+        <operation>equals</operation>
+        <value>&quot;Person Account Sep 10, 2020 3:14 PM&quot;</value>
+    </filters>
+    <label>Person Account Sep 10, 2020 3:14 PM</label>
+</ListView>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Comment_to_be_sent_to_Customer__c</fullName>
+    <description>Hidden field to save &apos;Resolved&apos; or &apos;Waiting on Customer&apos; comment and then sent it via email to customer</description>
+    <externalId>false</externalId>
+    <label>Comment to be sent to Customer</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

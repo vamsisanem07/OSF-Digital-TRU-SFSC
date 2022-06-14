@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Avenir LT Std';
+  src: url('AvenirLTStd-Book.woff2?orgId=00D1U000000qsTV') format('woff2'), url('AvenirLTStd-Book.woff?orgId=00D1U000000qsTV') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir LT Roman';
+  src: url('AvenirLTStd-Roman.woff2?orgId=00D1U000000qsTV') format('woff2'), url('AvenirLTStd-Roman.woff?orgId=00D1U000000qsTV') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir LT Medium';
+  src: url('AvenirLTStd-Medium.woff2?orgId=00D1U000000qsTV') format('woff2'), url('AvenirLTStd-Medium.woff?orgId=00D1U000000qsTV') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}

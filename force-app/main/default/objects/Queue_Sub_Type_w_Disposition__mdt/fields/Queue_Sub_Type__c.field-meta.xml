@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_Sub_Type__c</fullName>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Queue Sub Type</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Address Correction</fullName>
+                <default>false</default>
+                <label>Address Correction</label>
+            </value>
+            <value>
+                <fullName>Bin Check</fullName>
+                <default>false</default>
+                <label>Bin Check</label>
+            </value>
+            <value>
+                <fullName>Carrier claim (Canada Post)</fullName>
+                <default>false</default>
+                <label>Carrier claim (Canada Post)</label>
+            </value>
+            <value>
+                <fullName>Carrier claim (not Canada Post)</fullName>
+                <default>false</default>
+                <label>Carrier claim (not Canada Post)</label>
+            </value>
+            <value>
+                <fullName>Drop Ship</fullName>
+                <default>false</default>
+                <label>Drop Ship</label>
+            </value>
+            <value>
+                <fullName>ECR</fullName>
+                <default>false</default>
+                <label>ECR</label>
+            </value>
+            <value>
+                <fullName>Escalation Follow Up</fullName>
+                <default>true</default>
+                <label>Escalation Follow Up</label>
+            </value>
+            <value>
+                <fullName>Gift Card</fullName>
+                <default>false</default>
+                <label>Gift Card</label>
+            </value>
+            <value>
+                <fullName>ISPU</fullName>
+                <default>false</default>
+                <label>ISPU</label>
+            </value>
+            <value>
+                <fullName>Payment Inquiries</fullName>
+                <default>false</default>
+                <label>Payment Inquiries</label>
+            </value>
+            <value>
+                <fullName>Price Match</fullName>
+                <default>false</default>
+                <label>Price Match</label>
+            </value>
+            <value>
+                <fullName>Return Label - HWP</fullName>
+                <default>false</default>
+                <label>Return Label - HWP</label>
+            </value>
+            <value>
+                <fullName>Social Media</fullName>
+                <default>false</default>
+                <label>Social Media</label>
+            </value>
+            <value>
+                <fullName>Tech Issue</fullName>
+                <default>false</default>
+                <label>Tech Issue</label>
+            </value>
+            <value>
+                <fullName>WIZMO</fullName>
+                <default>false</default>
+                <label>WIZMO</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

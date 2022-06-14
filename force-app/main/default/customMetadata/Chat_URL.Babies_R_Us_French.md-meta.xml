@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Babies R Us French</label>
+    <protected>false</protected>
+    <values>
+        <field>Balance_URL__c</field>
+        <value xsi:type="xsd:string">https://www.babiesrus.ca/fr/home</value>
+    </values>
+    <values>
+        <field>Brand__c</field>
+        <value xsi:type="xsd:string">BRU</value>
+    </values>
+    <values>
+        <field>Language__c</field>
+        <value xsi:type="xsd:string">fr</value>
+    </values>
+    <values>
+        <field>PA_URL__c</field>
+        <value xsi:type="xsd:string">https://www.babiesrus.ca/fr/help?FID=order#pricing</value>
+    </values>
+    <values>
+        <field>Return_URL__c</field>
+        <value xsi:type="xsd:string">https://www.babiesrus.ca/fr/help?fid=returns#returns%20and%20exchanges</value>
+    </values>
+</CustomMetadata>

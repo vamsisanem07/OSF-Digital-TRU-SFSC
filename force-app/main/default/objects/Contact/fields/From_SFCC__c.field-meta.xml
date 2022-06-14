@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>From_SFCC__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This field holds value if Contact is created from Salesforce Commerce Cloud or not.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field holds value if Contact is created from Salesforce Commerce Cloud or not.</inlineHelpText>
+    <label>From SFCC</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

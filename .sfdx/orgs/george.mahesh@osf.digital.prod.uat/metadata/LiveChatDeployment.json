@@ -1,0 +1,15 @@
+{
+  "status": 0,
+  "result": {
+    "createdById": "0051U000005tLLaQAM",
+    "createdByName": "Toysrus AdminOldUser",
+    "createdDate": "2020-10-05T15:19:54.000Z",
+    "fileName": "liveChatDeployments/Toys_R_Us_Website.liveChatDeployment",
+    "fullName": "Toys_R_Us_Website",
+    "id": "5721U0000001rOlQAI",
+    "lastModifiedById": "0051U000005tLLaQAM",
+    "lastModifiedByName": "Toysrus AdminOldUser",
+    "lastModifiedDate": "2020-10-05T15:19:54.000Z",
+    "type": "LiveChatDeployment"
+  }
+}

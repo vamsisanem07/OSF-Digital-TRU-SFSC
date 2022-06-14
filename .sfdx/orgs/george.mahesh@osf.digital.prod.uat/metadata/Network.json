@@ -1,0 +1,29 @@
+{
+  "status": 0,
+  "result": [
+    {
+      "createdById": "0051U000008bjiLQAQ",
+      "createdByName": "George Mahesh",
+      "createdDate": "2022-03-01T20:05:55.000Z",
+      "fileName": "networks/Salesforce Surveys.network",
+      "fullName": "Salesforce Surveys",
+      "id": "0DB1U000000XcViWAK",
+      "lastModifiedById": "0051U000008bjiLQAQ",
+      "lastModifiedByName": "George Mahesh",
+      "lastModifiedDate": "2022-03-01T21:57:37.000Z",
+      "type": "Network"
+    },
+    {
+      "createdById": "0051U000005XFFIQA4",
+      "createdByName": "AstoundOldUser",
+      "createdDate": "2019-07-31T13:24:30.000Z",
+      "fileName": "networks/R-club.network",
+      "fullName": "R-club",
+      "id": "0DB1U000000xBpDWAU",
+      "lastModifiedById": "0051U000008bjiLQAQ",
+      "lastModifiedByName": "George Mahesh",
+      "lastModifiedDate": "2022-05-06T12:14:56.000Z",
+      "type": "Network"
+    }
+  ]
+}

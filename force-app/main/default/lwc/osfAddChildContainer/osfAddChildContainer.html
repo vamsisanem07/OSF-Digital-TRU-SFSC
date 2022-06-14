@@ -1,0 +1,9 @@
+<template>
+    <template  if:true={childList}>
+        <template for:each={childList} for:item="child">
+            <c-osf-add-child-line-item lan={langcmp} key={child.childIndex} child-detail={child} all-childs={childList} onupdatecall={onupdatechild} onremovechild={deletechild}>
+            </c-osf-add-child-line-item>
+        </template>
+    </template>
+        <lightning-button class="btnStyle" label={labelAddChild} onclick={handleButtonClick}></lightning-button>
+    </template>

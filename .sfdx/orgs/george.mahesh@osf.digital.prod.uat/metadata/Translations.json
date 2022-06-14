@@ -1,0 +1,44 @@
+{
+  "status": 0,
+  "result": [
+    {
+      "createdById": "0051U000005XFFIQA4",
+      "createdByName": "AstoundOldUser",
+      "createdDate": "2019-06-20T14:48:05.000Z",
+      "fileName": "translations/fr.translation",
+      "fullName": "fr",
+      "id": "01h1U0000008V5gQAE",
+      "lastModifiedById": "0051U000005XLwAQAW",
+      "lastModifiedByName": "Marketing Cloud",
+      "lastModifiedDate": "2022-06-14T05:49:28.000Z",
+      "manageableState": "beta",
+      "type": "Translations"
+    },
+    {
+      "createdById": "0051U000005XFFIQA4",
+      "createdByName": "AstoundOldUser",
+      "createdDate": "2019-06-20T14:48:04.000Z",
+      "fileName": "translations/en_US.translation",
+      "fullName": "en_US",
+      "id": "01h1U0000008V5dQAE",
+      "lastModifiedById": "0051U000005XLwAQAW",
+      "lastModifiedByName": "Marketing Cloud",
+      "lastModifiedDate": "2022-06-14T05:49:28.000Z",
+      "manageableState": "beta",
+      "type": "Translations"
+    },
+    {
+      "createdById": "0051U000008bjiLQAQ",
+      "createdByName": "George Mahesh",
+      "createdDate": "2022-03-01T15:49:51.000Z",
+      "fileName": "translations/fr_CA.translation",
+      "fullName": "fr_CA",
+      "id": "01h1U000000XiS7QAK",
+      "lastModifiedById": "0051U000008bjiLQAQ",
+      "lastModifiedByName": "George Mahesh",
+      "lastModifiedDate": "2022-03-01T21:55:27.000Z",
+      "manageableState": "unmanaged",
+      "type": "Translations"
+    }
+  ]
+}

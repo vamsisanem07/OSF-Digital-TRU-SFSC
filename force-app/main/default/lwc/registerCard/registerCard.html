@@ -1,0 +1,378 @@
+<template>
+    <div class="slds-container slds-is-relative">
+        <div class="slds-form">
+            <div class="slds-grid slds-wrap slds-gutters">
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2">
+                    <div class="slds-form-element slds-form-element_stacked slds-size_1-of-1 slds-small-size_1-of-2 slds-medium-size_1-of-1">
+                        <lightning-input
+                                type="text"
+                                name="FirstName"
+                                label={label.R_club_First_Name}
+                                onchange={handleValueChange}
+                                required="required"
+                                minlength=2
+                                maxlength=50
+                                pattern="^[a-zA-Z0-9àâäèéêëîïôœùûüÿçÀÂÄÈÉÊËÎÏÔŒÙÛÜŸÇ\s]+$"
+                                message-when-value-missing={label.R_club_Error_Required} ></lightning-input>
+                    </div>
+                    <div class="slds-form-element slds-form-element_stacked slds-size_1-of-1 slds-small-size_1-of-2 slds-medium-size_1-of-1">
+                        <lightning-input
+                                type="text"
+                                name="LastName"
+                                label={label.R_club_Last_Name}
+                                onchange={handleValueChange}
+                                required="required"
+                                minlength=2
+                                maxlength=50
+                                pattern="^[a-zA-Z0-9àâäèéêëîïôœùûüÿçÀÂÄÈÉÊËÎÏÔŒÙÛÜŸÇ\s]+$"
+                                message-when-value-missing={label.R_club_Error_Required} ></lightning-input>
+                    </div>
+                    <div class="slds-form-element slds-form-element_stacked slds-size_1-of-1 slds-small-size_1-of-2 slds-medium-size_1-of-1">
+                        <lightning-input
+                                type="email"
+                                name="PersonEmail"
+                                label={label.R_club_Email_Address}
+                                onchange={handleValueChange}
+                                required="required"
+                                pattern="^(?=.{1,64}@)(([a-zA-Z0-9!#$%&'*+\-/=?^_{|}~]+(\.[a-zA-Z0-9!#$%&'*+\-/=?^_{|}~]+)*)|('.+'))@([^\-@][a-zA-Z0-9-]{1,62}\.)+[a-zA-Z]{1,63}$"
+                                message-when-value-missing={label.R_club_Error_Required}
+                                message-when-pattern-mismatch={label.R_club_Error_Email}
+                                message-when-type-mismatch={label.R_club_Error_Email} ></lightning-input>
+                    </div>
+                    <div class="slds-form-element slds-form-element_stacked slds-size_1-of-1 slds-small-size_1-of-2 slds-medium-size_1-of-1">
+                        <lightning-combobox
+                                name="Language_Preference__c"
+                                label={label.R_club_Language_Preference}
+                                placeholder={label.R_club_Language_Preference_Placeholder}
+                                options={language}
+                                onchange={handleValueChange}
+                                required="required"
+                                message-when-value-missing={label.R_club_Error_Required} ></lightning-combobox>
+                    </div>
+                    <template if:false={newCard}>
+                        <div class="slds-form-element slds-form-element_stacked slds-size_1-of-1 slds-small-size_1-of-2 slds-medium-size_1-of-1">
+                            <lightning-input
+                                    type="text"
+                                    name="R_Club_Number__c"
+                                    label={label.R_club_Loyalty_Number}
+                                    onchange={handleValueChange}
+                                    required="required"
+                                    minlength=2
+                                    maxlength=50
+                                    pattern="^[0-9]{13}$"
+                                    message-when-pattern-mismatch={label.R_club_Loyalty_Number_Error}
+                                    message-when-value-missing={label.R_club_Error_Required} ></lightning-input>
+                        </div>
+                    </template>
+                </div>
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2">
+                    <div class="slds-p-bottom_large eng">
+                      <div class="slds-form-element slds-form-element_stacked">
+                        <div class="slds-form-element__control">
+                            <span class="slds-checkbox terms-check">&nbsp;
+                                    <p id="termslabel">
+                                        <lightning-input type="checkbox"
+                                        name="Terms_and_Conditions"
+                                        message-when-value-missing=" "
+                                        variant="label-hidden" 
+                                        aria-labelledby="termslabel">
+                                        <!-- Changes for rClub enhancement -->
+                                        </lightning-input>
+                                        <lightning-formatted-rich-text value={label.Terms_and_Conditions_Description_Text}></lightning-formatted-rich-text>
+                                     </p>                              
+                            </span>
+                        </div>
+                        <br/>
+                    </div>
+                
+                    <div class="slds-grid slds-grid_align-spread recEmailSecHeader">
+                        
+                        <lightning-formatted-rich-text value={label.R_club_Email_Preferences}></lightning-formatted-rich-text>
+                    </div>
+                        <div class="slds-grid slds-grid_align-spread recEmailSec">
+                            <div>     
+                                <div class="slds-form-element slds-form-element_stacked"> 
+                                    <div class="slds-form-element__control">
+                                        <span class="slds-checkbox">
+                                            <input
+                                                type="checkbox"
+                                                name="Email_Opt_In_TRU__c"
+                                                id="Email_Opt_In_TRU__c"
+                                                onchange={handleValueChange}
+                                            />
+                                            <label class="slds-checkbox__label" for="Email_Opt_In_TRU__c">
+                                                <span class="slds-checkbox_faux"></span>
+                                                <span class="slds-form-element__label">
+                                                    <lightning-formatted-rich-text value={label.R_club_Toys}></lightning-formatted-rich-text>
+                                                </span>
+                                            </label>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+
+                                <div class="slds-form-element slds-form-element_stacked">
+                                    
+                                    <div class="slds-form-element__control">
+                                        <span class="slds-checkbox">
+                                            <input
+                                                type="checkbox"
+                                                name="Email_Opt_In_BRU__c"
+                                                id="Email_Opt_In_BRU__c"
+                                                onchange={handleValueChange}
+                                            />
+                                            <label class="slds-checkbox__label" for="Email_Opt_In_BRU__c">
+                                                <span class="slds-checkbox_faux"></span>
+                                                <span class="slds-form-element__label">
+                                                    <lightning-formatted-rich-text value={label.R_club_Baby}></lightning-formatted-rich-text>
+                                                </span>
+                                            </label>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="slds-form-element slds-form-element_stacked">
+                                    
+                                    <div class="slds-form-element__control">
+                                        <span class="slds-checkbox">
+                                            <input
+                                                type="checkbox"
+                                                name="Email_Opt_In_RLE__c"
+                                                id="Email_Opt_In_RLE__c"
+                                                onchange={handleValueChange}
+                                            />
+                                            <label class="slds-checkbox__label" for="Email_Opt_In_RLE__c">
+                                                <span class="slds-checkbox_faux"></span>
+                                                <span class="slds-form-element__label">
+                                                    <lightning-formatted-rich-text value={label.R_club_Clothing}></lightning-formatted-rich-text>
+                                                </span>
+                                            </label>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                         <!-- Used the below code above for rClub enhancement changes --> 
+                         <!-- <div class="slds-form-element slds-form-element_stacked">
+                                <div class="slds-form-element__control">
+                                    <span class="slds-checkbox terms-check">
+                                            <p id="termslabel">
+                                                <lightning-input type="checkbox"
+                                                name="Terms_and_Conditions"
+                                                required="required"
+                                                message-when-value-missing=" "
+                                                variant="label-hidden" 
+                                                aria-labelledby="termslabel">
+                                                </lightning-input>
+                                                <lightning-formatted-rich-text value={label.Terms_and_Conditions_Description_Text}></lightning-formatted-rich-text>&nbsp;&nbsp;
+                                                <lightning-formatted-url value={label.Terms_and_Conditions_URL} target="_blank" label={label.Terms_and_Conditions_URL_Text}></lightning-formatted-url>
+                                            </p>
+                                    </span>
+                                </div>
+                            </div>
+                            
+                        <p class="smlTxt slds-m-top_medium">{label.Privacy_Policy_Text} <lightning-formatted-url value={label.Privacy_Policy_URL} target="_blank" label={label.Privacy_Policy_URL_Text}></lightning-formatted-url></p>
+                        -->
+                    </div>					
+                </div>
+            </div>
+        </div>
+
+        <template if:true={newCard}>
+            <div class="slds-form">
+                <div class="slds-grid slds-wrap slds-gutters">
+                    <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2">
+                        <fieldset class="slds-form-element slds-form-element_compound slds-form-element_address">
+                            <legend class="slds-form-element__legend slds-form-element__label">{label.R_club_Account_Information}</legend>
+                            <div class="slds-form-element__control">
+                                <div class="slds-form-element slds-form-element_stacked slds-size_1-of-1 slds-small-size_1-of-2 slds-medium-size_1-of-1">
+                                    <lightning-input
+                                            type="text"
+                                            name="PersonMailingStreet"
+                                            label={label.R_club_Street_Address_1}
+                                            onchange={handleValueChange}
+                                            required="required"
+                                            minlength=2
+                                            maxlength=50
+                                            pattern="^[a-zA-Z0-9àâäèéêëîïôœùûüÿçÀÂÄÈÉÊËÎÏÔŒÙÛÜŸÇ!-@#$%^&*(),.?':{}|<>\s]+$"
+                                            message-when-value-missing={label.R_club_Error_Required} ></lightning-input>
+                                </div>
+
+                                <div class="slds-form-element slds-form-element_stacked slds-size_1-of-1 slds-small-size_1-of-2 slds-medium-size_1-of-1">
+                                    <lightning-input
+                                            type="text"
+                                            name="Mailing_Address_Line_2__c"
+                                            label={label.R_club_Street_Address_2}
+                                            onchange={handleValueChange}
+                                            pattern="^[a-zA-Z0-9àâäèéêëîïôœùûüÿçÀÂÄÈÉÊËÎÏÔŒÙÛÜŸÇ!-@#$%^&*(),.?':{}|<>\s]+$"
+                                            minlength=2
+                                            maxlength=50 ></lightning-input>
+                                </div>
+
+                                <div class="slds-form-element slds-form-element_stacked slds-size_1-of-1 slds-small-size_1-of-2 slds-medium-size_1-of-1">
+                                    <lightning-input
+                                            type="text"
+                                            name="PersonMailingCity"
+                                            label={label.R_club_City}
+                                            onchange={handleValueChange}
+                                            required="required"
+                                            minlength=2
+                                            maxlength=50
+                                            pattern="^[a-zA-ZàâäèéêëîïôœùûüÿçÀÂÄÈÉÊËÎÏÔŒÙÛÜŸÇ\s]+$"
+                                            message-when-value-missing={label.R_club_Error_Required} ></lightning-input>
+                                </div>
+
+                                <div class="slds-form-element slds-form-element_stacked slds-size_1-of-1 slds-small-size_1-of-2 slds-medium-size_1-of-1">
+                                    <lightning-combobox
+                                            name="PersonMailingStateCode"
+                                            label={label.R_club_State_Province}
+                                            placeholder={label.R_club_Province_Placeholder}
+                                            options={states}
+                                            onchange={handleValueChange}
+                                            required="required"
+                                            message-when-value-missing={label.R_club_Error_Required} ></lightning-combobox>
+                                </div>
+                                <div class="slds-form-element slds-form-element_stacked slds-size_1-of-1 slds-small-size_3-of-12 slds-medium-size_1-of-2">
+                                    <lightning-input
+                                            type="text"
+                                            name="PersonMailingPostalCode"
+                                            label={label.R_club_Postal_Code}
+                                            onchange={handleValueChange}
+                                            required="required"
+                                            minlength=2
+                                            maxlength=50
+                                            pattern="^([ABCEGHJKLMNPRSTVXY]\d[ABCEGHJKLMNPRSTVWXYZ]) {0,1}(\d[ABCEGHJKLMNPRSTVWXYZ]\d)$"
+                                            message-when-value-missing={label.R_club_Error_Required}
+                                            message-when-pattern-mismatch={label.R_club_Error_Postal_Code} ></lightning-input>
+                                    <div class="slds-form-element_help">{label.R_club_Postal_Code_Example}</div>
+                                </div>
+                                <div class="slds-form-element slds-form-element_stacked slds-size_1-of-1 slds-small-size_1-of-2 slds-medium-size_1-of-1">
+                                    <lightning-input
+                                            type="tel"
+                                            label={label.R_club_Phone}
+                                            name="Phone"
+                                            pattern="^[+]?[\d]*[- .]?[(]?[\d]{1,3}[)]?[- .]?[\d]{1,3}[- .]?[\d]{1,4}$"
+                                            onchange={handleValueChange}
+                                            required="required"
+                                            message-when-value-missing={label.R_club_Error_Required}
+                                            message-when-pattern-mismatch={label.R_club_Error_Phone} ></lightning-input>
+                                    <div class="slds-form-element_help">{label.R_club_Phone_Example}</div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </template>
+
+        <div class="slds-grid slds-wrap slds-gutters">
+            <div class="slds-col slds-size_1-of-1"> 
+                <div class="slds-form">
+                    <legend class="slds-form-element__legend"><lightning-formatted-rich-text value={label.R_club_Register_Birthdays_Title}></lightning-formatted-rich-text></legend>
+                    <div class="slds-form_desc">
+                        <lightning-formatted-rich-text value={label.R_club_Description}></lightning-formatted-rich-text>
+                    </div>
+                    <lightning-input
+                            type="checkbox"
+                            label={label.R_club_Register_Birthdays}
+                            name="Child_Birthday_Opt_In__c"
+                            onchange={handleValueChange} ></lightning-input>
+                    <template if:true={account.Child_Birthday_Opt_In__c}>
+                    <div class="slds-card slds-m-top_large">
+                        <fieldset class="slds-form-element slds-form-element_compound">
+                            <div class="slds-form-element__control">
+                                <template for:each={childs} for:item="child" for:index="index">
+                                <div key={child.key} class="slds-form-element__row slds-wrap slds-gutters-medium">
+                                    <div class="slds-col slds-size_1-of-1 slds-medium-size_7-of-12">
+                                        <div class="slds-form-element">
+                                            <lightning-input
+                                                    type="text"
+                                                    label={label.R_club_Child_First_Name}
+                                                    data-type="child"
+                                                    data-index={index}
+                                                    onchange={handleValueChange}
+                                                    name="name"
+                                                    required="required"
+                                                    minlength=2
+                                                    maxlength=50
+                                                    pattern="^[a-zA-Z0-9àâäèéêëîïôœùûüÿçÀÂÄÈÉÊËÎÏÔŒÙÛÜŸÇ\s]+$"
+                                                    message-when-value-missing={label.R_club_Error_Required} ></lightning-input>
+                                        </div>
+                                    </div>
+                                    <div class="slds-col slds-size_1-of-1 slds-medium-size_5-of-12">
+                                        <div class="slds-grid slds-wrap slds-gutters-small">
+                                            <label class="slds-form-element__label fake-label slds-size_1-of-1">{label.R_club_Child_Birthday}<abbr title={label.R_club_Required} class="slds-required">*</abbr></label>
+                                            <div class="slds-form-element slds-col slds-size_6-of-12 without-label">
+                                                <lightning-combobox
+                                                        placeholder={label.R_club_Month_Placeholder}
+                                                        name="month"
+                                                        data-type="child"
+                                                        data-index={index}
+                                                        options={month}
+                                                        onchange={handleValueChange}
+                                                        required="required"
+                                                        message-when-value-missing={label.R_club_Error_Required} ></lightning-combobox>
+                                            </div>
+                                            <div class="slds-form-element slds-col slds-size_6-of-12 without-label">
+                                                <lightning-combobox
+                                                        placeholder={label.R_club_Year_Placeholder}
+                                                        name="year"
+                                                        data-type="child"
+                                                        data-index={index}
+                                                        options={year}
+                                                        onchange={handleValueChange}
+                                                        required="required"
+                                                        message-when-value-missing={label.R_club_Error_Required} ></lightning-combobox>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="delete-btn" data-type="child" data-index={index} onclick={handleRemoveChild}>
+                                    </button>
+                                </div>
+                                </template>
+                                <div class="slds-card_buttons slds-grid slds-wrap">
+                                    <lightning-button
+                                            class="slds-card_button"
+                                            variant="brand"
+                                            label={label.R_club_Add_Another_Child}
+                                            title={label.R_club_Add_Another_Child}
+                                            onclick={handleAddAnotherChild} ></lightning-button>
+
+                                    <lightning-button
+                                            class="slds-card_button"
+                                            label={label.R_club_Remove_All}
+                                            title={label.R_club_Remove_All}
+                                            onclick={handleRemoveAll} ></lightning-button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                    </template>
+                </div>
+               <div class="policy">
+                    <lightning-formatted-rich-text if:false={newCard} value={label.R_club_Policy}></lightning-formatted-rich-text>
+                    <lightning-formatted-rich-text if:true={newCard} value={label.R_club_Policy_request}></lightning-formatted-rich-text>
+                </div> 
+            </div>
+            <div class="slds-col slds-size_1-of-1">
+                <lightning-button
+                        class="slds-card_button"
+                        variant="brand"
+                        disabled={loading}
+                        label={label.R_club_Join_Program}
+                        title={label.R_club_Join_Program}
+                        onclick={handleSaveAccount} ></lightning-button>
+            </div>
+           <!--  <div class="slds-col slds-size_1-of-1">
+                <div class="policy slds-m-top--large slds-m-bottom--none">
+                    <lightning-formatted-rich-text value={label.R_club_Policy_2}></lightning-formatted-rich-text>
+                </div>
+            </div> -->
+        </div>
+        <template if:true={loading}>
+            <lightning-spinner alternative-text="Loading"></lightning-spinner>
+        </template>
+    </div>
+</template>

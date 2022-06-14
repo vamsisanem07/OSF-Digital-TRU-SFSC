@@ -1,0 +1,5 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" description="Container for LWC registerCard component">
+    <aura:attribute name="newCard" type="Boolean"/>
+
+    <c:registerCard newCard="{!v.newCard}"/>
+</aura:component>

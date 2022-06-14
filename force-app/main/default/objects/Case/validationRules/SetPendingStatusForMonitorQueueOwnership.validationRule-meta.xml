@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SetPendingStatusForMonitorQueueOwnership</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(OR(Owner:Queue.DeveloperName = &apos;All_Levels_Monitor_Queue&apos;, Owner:Queue.DeveloperName = &apos;Tier_2_Monitor_Queue&apos;), NOT(ISPICKVAL(Status, &apos;Pending&apos;)))</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>Please change case status to &quot;Pending&quot;.</errorMessage>
+</ValidationRule>

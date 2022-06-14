@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Image_Group_Listview__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <description>This config holds product list page image view type</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This config holds product list page image view type</inlineHelpText>
+    <label>Product Image Group Listview</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

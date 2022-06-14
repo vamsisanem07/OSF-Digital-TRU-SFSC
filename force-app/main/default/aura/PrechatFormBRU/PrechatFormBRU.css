@@ -1,0 +1,49 @@
+.THIS.psgStyle {
+    font-size: 16px;
+    color:#fff;
+}
+.THIS .slds-input{ 
+    width:100%;
+    padding:12px 10px;
+    border: none;
+    font-size: 13px;   
+        color: #614c88;
+}
+.THIS .slds-input::placeholder {
+    color: #614c88;
+}
+.THIS abbr.slds-required {
+    color: #ab0a0a;
+    font-size: 16px;
+    position: absolute;
+    left: -10px;
+    top: 0;
+    text-decoration: none;
+}
+.THIS.slds-button.redBtn {
+    background: #b9a4e2;
+    border: 1px solid #b9a4e2;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    outline:none !important;
+    cursor:pointer; 
+}
+.THIS label.slds-form-element__label.slds-no-flex.slds-assistive-text {
+    font-size: 0;
+}
+.THIS .slds-form-element__help{
+    color: #ab0a0a;
+    font-size: 12px;
+    text-align: left;
+    margin-top: 3px;
+}
+
+.THIS.slds-form-element { margin-top: 20px; position: relative;}
+
+.THIS .slds-input:active, .THIS .slds-input:focus {
+    outline: 0;
+}

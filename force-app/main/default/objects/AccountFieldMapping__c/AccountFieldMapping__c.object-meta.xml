@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>This custom setting hold field mapping between commerce cloud profile and person type account in SFSC</description>
+    <enableFeeds>false</enableFeeds>
+    <label>AccountFieldMapping</label>
+    <visibility>Public</visibility>
+</CustomObject>

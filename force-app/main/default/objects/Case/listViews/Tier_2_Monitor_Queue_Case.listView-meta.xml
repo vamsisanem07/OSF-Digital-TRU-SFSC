@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tier_2_Monitor_Queue_Case</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>Store_ID__c</columns>
+    <columns>Queue_Sub_type__c</columns>
+    <columns>Channel__c</columns>
+    <columns>OWNER_NAME</columns>
+    <columns>UPDATEDBY_USER.ALIAS</columns>
+    <columns>CASES.LAST_UPDATE_DATE_ONLY</columns>
+    <columns>Web_Language__c</columns>
+    <columns>Assignment_Timestamp_Monitor_Queue__c</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Closed</value>
+    </filters>
+    <label>Tier 2-Monitoring/Niveau 2-Surveillance​</label>
+    <queue>Tier_2_Monitor_Queue</queue>
+    <sharedTo>
+        <role>ECR</role>
+        <role>ECR_Manager</role>
+        <role>Lead</role>
+        <role>Tier_2</role>
+    </sharedTo>
+</ListView>

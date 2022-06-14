@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Default_Account_cannot_be_renamed</fullName>
+    <active>true</active>
+    <description>Prevents Default account from being renamed as this is the restricted Default Account for Commerce Cloud Orders</description>
+    <errorConditionFormula>ISCHANGED(LastName) &amp;&amp; Is_Default_Account__c</errorConditionFormula>
+    <errorMessage>You cannot rename this account as this is the restricted Default Account for Commerce Cloud Orders</errorMessage>
+</ValidationRule>

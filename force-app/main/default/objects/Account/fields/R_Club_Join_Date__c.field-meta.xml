@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>R_Club_Join_Date__c</fullName>
+    <description>This signifies the date that a customer joined the R-Club rewards program.</description>
+    <externalId>false</externalId>
+    <label>R-Club Join Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>
