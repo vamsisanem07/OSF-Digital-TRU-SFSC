@@ -3,7 +3,8 @@
     <fullName>Type_should_be_mandatory</fullName>
     <active>true</active>
     <description>Type field is a mandatory field</description>
-    <errorConditionFormula>ISBLANK(TEXT(  Type  ))</errorConditionFormula>
+    <errorConditionFormula>AND(NOT(ISNEW()),
+				ISBLANK(TEXT(  Type  )))</errorConditionFormula>
     <errorDisplayField>Type</errorDisplayField>
     <errorMessage>This field is mandatory</errorMessage>
 </ValidationRule>
