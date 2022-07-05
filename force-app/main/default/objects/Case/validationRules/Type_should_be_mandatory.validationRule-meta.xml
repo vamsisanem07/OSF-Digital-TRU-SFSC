@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_should_be_mandatory</fullName>
+    <active>true</active>
+    <description>Type field is a mandatory field</description>
+    <errorConditionFormula>ISBLANK(TEXT(  Type  ))</errorConditionFormula>
+    <errorDisplayField>Type</errorDisplayField>
+    <errorMessage>This field is mandatory</errorMessage>
+</ValidationRule>
