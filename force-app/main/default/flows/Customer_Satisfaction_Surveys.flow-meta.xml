@@ -3,8 +3,8 @@
     <actionCalls>
         <name>Customer_Satisfaction_Survey_0</name>
         <label>Customer Satisfaction Survey</label>
-        <locationX>902</locationX>
-        <locationY>575</locationY>
+        <locationX>1067</locationX>
+        <locationY>815</locationY>
         <actionName>customer_satisfaction_survey_en</actionName>
         <actionType>dynamicSendSurveyInvitation</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -410,9 +410,31 @@
         </rules>
     </decisions>
     <decisions>
+        <name>Has_Survey</name>
+        <label>Has Survey</label>
+        <locationX>935</locationX>
+        <locationY>695</locationY>
+        <defaultConnector>
+            <targetReference>Customer_Satisfaction_Survey_0</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>NO</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Survey_Record</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
         <name>Role_and_Profile_Check</name>
         <label>Role and Profile Check</label>
-        <locationX>1034</locationX>
+        <locationX>1133</locationX>
         <locationY>455</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -440,7 +462,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Customer_Satisfaction_Survey_0</targetReference>
+                <targetReference>Get_Survey_Record</targetReference>
             </connector>
             <label>Profile Check</label>
         </rules>
@@ -466,6 +488,27 @@
         </value>
     </processMetadataValues>
     <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Survey_Record</name>
+        <label>Get Survey Record</label>
+        <locationX>935</locationX>
+        <locationY>575</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Has_Survey</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>SubjectId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>SurveySubject</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
     <start>
         <locationX>50</locationX>
         <locationY>0</locationY>
@@ -513,6 +556,16 @@
         <isOutput>false</isOutput>
         <value>
             <elementReference>$Record.Contact.Id</elementReference>
+        </value>
+    </variables>
+    <variables>
+        <name>HasSurvey</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <booleanValue>false</booleanValue>
         </value>
     </variables>
     <variables>
