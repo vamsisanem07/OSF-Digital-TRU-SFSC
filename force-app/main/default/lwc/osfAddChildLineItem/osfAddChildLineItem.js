@@ -37,7 +37,7 @@ export default class OsfAddChildLineItem extends NavigationMixin(LightningElemen
         let today = new Date().toISOString().slice(0, 10);
         this.maxDate = today;
         const aYearFromNow = new Date();
-        aYearFromNow.setFullYear(aYearFromNow.getFullYear() - 12);
+        aYearFromNow.setFullYear(aYearFromNow.getFullYear() - 13);
         this.minDate = aYearFromNow.toISOString().slice(0, 10);
         const month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul","Aug", "Sep", "Oct", "Nov", "Dec"];
         
@@ -60,7 +60,7 @@ export default class OsfAddChildLineItem extends NavigationMixin(LightningElemen
         this.labelChDob = this.lan == 'fr-ch' ? "Date de naissance:" : "Child's date of birth:";
         this.labelDupeChild = this.lan == 'fr-ch' ? "Ce nom et cette date de naissance ont déjà été soumis. Veuillez vérifier ces renseignements."
             : "Please review: this Name and Date of Birth have already been submitted.";
-        this.labelBadInput = this.lan == 'fr-ch' ? "Saisissez une valeur valide." : "Your entry does not match the allowed format MMM d, yyyy."
+        this.labelBadInput = this.lan == 'fr-ch' ? "Votre entrée ne correspond pas au format autorisé MMM J AAAA." : "Your entry does not match the allowed format MMM d, yyyy."
         
         this.labelOverflow = this.lan == 'fr-ch' ? 'La date doit être le '+maxError+' ou avant.' : 'Value must be ' + maxError + ' or earlier.'
         this.labelUnderflow = this.lan == 'fr-ch' ? 'La date doit être le '+minError+' ou après.' : 'Value must be ' + minError + ' or later.'
