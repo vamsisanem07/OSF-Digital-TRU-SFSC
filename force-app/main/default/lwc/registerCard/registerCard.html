@@ -243,7 +243,7 @@
                                             required="required"
                                             minlength=2
                                             maxlength=50
-                                            pattern="^([ABCEGHJKLMNPRSTVXY]\d[ABCEGHJKLMNPRSTVWXYZ]) {0,1}(\d[ABCEGHJKLMNPRSTVWXYZ]\d)$"
+                                            pattern="^[abcdefghijklmnopqrstuvwxyzABCEGHJKLMNPRSTVXYZ]\d[abcdefghijklmnopqrstuvwxyzABCEGHJKLMNPRSTVWXYZ][ -]?\d[abcdefghijklmnopqrstuvwxyzABCEGHJKLMNPRSTVWXYZ]\d$"
                                             message-when-value-missing={label.R_club_Error_Required}
                                             message-when-pattern-mismatch={label.R_club_Error_Postal_Code} ></lightning-input>
                                     <div class="slds-form-element_help">{label.R_club_Postal_Code_Example}</div>
