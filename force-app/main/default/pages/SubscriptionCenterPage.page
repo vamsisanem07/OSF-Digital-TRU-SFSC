@@ -323,7 +323,7 @@
     <div class="container txtCenter ">
         <img src="{!URLFOR($Resource.ToysBabiesLogo,'toysRUs.svg')}" class="head_toyLogo" />
         <img src="{!URLFOR($Resource.ToysBabiesLogo,'babiesRUs.svg')}" class="head_babyLogo" />
-        <img src="{!$Resource.LittilRiseLogo}" class="head_babyLogo" />
+       <!-- <img src="{!$Resource.LittilRiseLogo}" class="head_babyLogo" /> -->
     </div>
     <apex:form >
 
@@ -533,10 +533,10 @@
                                             <img src="{!URLFOR($Resource.ToysBabiesLogo,'babiesRUs.svg')}" class="babyLogo" />
                                             <a href="https://www.babiesrus.ca/en/home?utm_source=prefcentre" class="shopBtn">Shop Now</a>
                                         </div>
-                                        <div class="slds-col">
+                                      <!--   <div class="slds-col">
                                             <img src="{!$Resource.LittilRiseLogo}" class="" />
                                             <a href="https://www.riselittleearthling.ca/en/home" class="shopBtn">Shop Now</a>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                                 <div style="display:none" id='thanksfr'>
@@ -550,10 +550,10 @@
                                             <img src="{!URLFOR($Resource.ToysBabiesLogo,'babiesRUs.svg')}" class="babyLogo" />
                                             <a href="https://www.babiesrus.ca/fr/home?utm_source=prefcentre" class="shopBtn"> Magasinez </a>
                                         </div>
-                                        <div class="slds-col">
+                                     <!--    <div class="slds-col">
                                             <img src="{!$Resource.LittilRiseLogo}" class="" />
                                             <a href="https://www.riselittleearthling.ca/fr/home" class="shopBtn"> Magasinez </a>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                             </div>
